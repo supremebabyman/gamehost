@@ -4,8 +4,7 @@
   "description": "Server for Flash game launcher with HTML and CSS support",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "serve-static": "serve public"
+    "start": "node server.js"
   },
   "keywords": [
     "html",
@@ -14,14 +13,11 @@
     "flash",
     "ruffle"
   ],
-  "author": "Your Name",
+  "author": "Radio-A",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "serve": "^11.2.0"
   }
 }

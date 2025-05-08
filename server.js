@@ -1,22 +1,21 @@
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Enable CORS for all routes
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname)));
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Fallback route
+// Optional: handle 404.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, '404.html'));
 });
 
-// Start server
 app.listen(PORT, () => {
-  console.log(`Flash server running at http://localhost:${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
