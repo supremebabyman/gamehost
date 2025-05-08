@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <div id="game-ruffle" style="width: 800px; height: 600px; margin: auto"></div>
+
+  <script src="https://agi.armorgames.com/ruffle/ruffle.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const ruffle =
+        window.RufflePlayer?.newest() ?? window.RufflePlayer?.createPlayer();
+      const container = document.getElementById("game-ruffle");
+      if (ruffle && container) {
+        ruffle.style.width = "800px";
+        ruffle.style.height = "600px";
+        ruffle.load(
+          "https://cache.armorgames.com/files/games/swordssouls-17817.swf?v=1464609285"
+        );
+        container.appendChild(ruffle);
+      }
+    });
+  </script>
+</html>

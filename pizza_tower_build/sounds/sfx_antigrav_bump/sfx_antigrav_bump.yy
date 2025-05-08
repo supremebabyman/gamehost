@@ -1,0 +1,23 @@
+{
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sfx_antigrav_bump",
+  "audioGroupId": {
+    "name": "audiogroup_sfx",
+    "path": "audiogroups/audiogroup_sfx",
+  },
+  "bitDepth": 1,
+  "bitRate": 128,
+  "compression": 1,
+  "conversionMode": 0,
+  "duration": 0.454219,
+  "parent": {
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
+  },
+  "preload": false,
+  "sampleRate": 44100,
+  "soundFile": "sfx_antigrav_bump.wav",
+  "type": 0,
+  "volume": 1.0,
+}

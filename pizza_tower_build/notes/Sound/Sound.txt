@@ -1,0 +1,22 @@
+This Revision's Sound System is completely based off of D's FMOD Replacement Script
+found here: https://github.com/D-Official/PizzaTowerSwitch-FMOD
+
+But it wasn't just a drop-in replacement, as there were still some issues
+
+Lines 203 - 216
+	What is happening here is that the vanilla set_3D function did not work at all for me, and
+What it's supposed to do is increase and decrease a sound's volume based on how close
+the player was to whatever object was calling the sound, but it doesn't work, so I just disabled it
+
+Lines 1004 - 1010
+and Lines 2469 - 2485
+	so basically swap_two_tracks_intro just flat out softlocks on GX.GAMES Export
+not on any other Export, just GX.GAMES, but only when adding true as a last arguement, so ez fix
+
+ALSO, since all music files have been extracted from D's Switch Port, it has Lap 3 music
+left over, so yeah
+
+didn't use D's code other than this script tho
+
+obj_pause line 48
+scr_playerreset line 76

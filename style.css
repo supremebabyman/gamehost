@@ -1,0 +1,206 @@
+body {
+  padding-top: 60px; /* Space for the navbar */
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #000000;
+  font-family: Helvetica, Arial, sans-serif; /* Updated to use Helvetica */
+  color: white;
+  text-align: center;
+}
+
+#achievement,
+#arcane,
+#bonk,
+#btds,
+#btd1,
+#btd2,
+#btd5,
+#burrito,
+#chibi,
+#doodle,
+#fancy,
+#hss,
+#hsbtb,
+#hsetp,
+#hsftc,
+#hsstd,
+#imposs,
+#knight,
+#LTF3,
+#mike,
+#Pizza,
+#souls,
+#w1,
+#w2,
+#w3 {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#achievement:hover,
+#arcane:hover,
+#bonk:hover,
+#btds:hover,
+#btd1:hover,
+#btd2:hover,
+#btd5:hover,
+#burrito:hover,
+#chibi:hover,
+#doodle:hover,
+#fancy:hover,
+#hss:hover,
+#hsbtb:hover,
+#hsetp:hover,
+#hsftc:hover,
+#hsstd:hover,
+#imposs:hover,
+#knight:hover,
+#LTF3:hover,
+#mike:hover,
+#Pizza:hover,
+#souls:hover,
+#w1:hover,
+#w2:hover,
+#w3:hover {
+  background-color: #b1b1b1;
+  transform: scale(1.15);
+}
+
+/*Ruffle player atributes*/
+#flash-player {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  background: #000;
+  border: 2px solid #555;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between left and right sides */
+  padding: 0 20px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+}
+
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between dropdown and home */
+}
+
+/* RIGHT SIDE BUTTONS */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Home Button */
+#home {
+  gap: 50px;
+  margin-left: 75px;
+  padding: 10px 20px;
+  position: absolute;
+  font-size: 18px;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#home:hover {
+  background-color: #333333;
+  transform: scale(1.15);
+}
+
+/* Dropbtn & Dropdown */
+.dropbtn {
+  background-color: #111;
+  color: white;
+  padding: 25px;
+  font-size: 16px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: inherit;
+  background-image: url("images/dropdown.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #333333;
+}
+
+/* Nav bar buttons on right */
+#credits,
+#about,
+#uplog,
+#gamesug {
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+#credits:hover,
+#about:hover,
+#uplog:hover,
+#gamesug:hover {
+  background-color: #333333;
+  transform: scale(1.15);
+}

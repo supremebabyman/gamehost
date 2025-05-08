@@ -1,0 +1,73 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="../style.css" />
+      <title>Feedback</title>
+    </head>
+    <body>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn" link="images/dropdown.png"></button>
+          <div class="dropdown-content">
+            <a href="../html-bin/achievement.html">Achievement Unlocked</a>
+            <a href="../html-bin/arcane.html">Arcane Weapon</a>
+            <a href="../html-bin/BTDS.html">Bloons TD Series</a>
+            <a href="../html-bin/burrito.html">Burrito Bison</a>
+            <a href="../html-bin/chibi.html">Chibi Knight</a>
+            <a href="../html-bin/doodlejump.html">Doodle Jump</a>
+            <a href="../html-bin/FPA.html">Fancy Pants Series</a>
+            <a href="../html-bin/knight.html">Knightmare Tower</a>
+            <a href="../html-bin/LTF3">Learn to fly 3</a>
+            <a href="../html-bin/MSIPFI.html">Mike Shadow: I Paid for it!</a>
+            <a href="../html-bin/Pizza.html">Pizza Tower</a>
+            <a href="../html-bin/swords.html">Swords and Souls</a>
+          </div>
+        </div>
+        <h1 id="home">Radio-A's Unblocked Games</h1>
+        <div class="nav-links">
+          <a id="about">About</a>
+          <a id="credits">Credits</a>
+          <a id="uplog">Updates</a>
+          <a id="gamesug">Suggestions</a>
+        </div>
+      </nav>
+      <script>
+        const express = require("express");
+        const bodyParser = require("body-parser");
+        const fs = require("fs");
+        const path = require("path");
+
+        const app = express();
+        const port = 5000;
+
+        // Middleware
+        app.use(bodyParser.urlencoded({ extended: true }));
+        app.use(express.static("html-bin")); // Serves public/gameseg.html and scripts
+
+        // Feedback route
+        app.post("/submit-feedback", (req, res) => {
+          const feedback = req.body.feedback;
+          const filePath = path.join(__dirname, "feedback.txt");
+
+          if (!feedback || feedback.trim() === "") {
+            return res.status(400).send("Feedback cannot be empty.");
+          }
+
+          fs.appendFile(filePath, feedback + "\n", (err) => {
+            if (err) {
+              console.error("Error saving feedback:", err);
+              return res.status(500).send("Server error");
+            }
+            console.log("Feedback received:", feedback);
+            res.send("Thank you for your feedback!");
+          });
+        });
+
+        // Start server
+        app.listen(port, () => {
+          console.log(`✅ Server running at http://localhost:${5000}`);
+        });
+      </script>
+    </body>
+  </html>
+</DOCTYPE!>
