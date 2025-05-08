@@ -1,22 +1,27 @@
 {
-  "name": "html-css",
+  "name": "flash-server",
   "version": "1.0.0",
-  "description": "A template for HTML and CSS",
-  "main": "index.html",
+  "description": "Server for Flash game launcher with HTML and CSS support",
+  "main": "server.js",
   "scripts": {
-    "start": "serve"
+    "start": "node server.js",
+    "serve-static": "serve public"
   },
   "keywords": [
     "html",
-    "css"
+    "css",
+    "express",
+    "flash",
+    "ruffle"
   ],
-  "author": "Ives van Hoorne",
+  "author": "Your Name",
   "license": "MIT",
-  "devDependencies": {
-    "serve": "11.2.0"
-  },
   "dependencies": {
-    "body-parser": "2.2.0",
-    "express": "5.1.0"
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "serve": "^11.2.0"
   }
 }
