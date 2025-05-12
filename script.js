@@ -18,7 +18,6 @@ const IMP = document.getElementById("imposs");
 const Knight = document.getElementById("knight");
 const LTF3 = document.getElementById("LTF3");
 const Mike = document.getElementById("mike");
-const Pizza = document.getElementById("Pizza");
 const Soul = document.getElementById("souls");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
@@ -132,11 +131,6 @@ if (LTF3) {
 if (Mike) {
   Mike.addEventListener("click", function () {
     window.location.href = "../html-bin/MSIPFI.html";
-  });
-}
-if (Pizza) {
-  Pizza.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html"; //Ethan was here Xp
   });
 }
 if (Soul) {
