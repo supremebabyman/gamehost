@@ -28,14 +28,13 @@ body {
 #knight,
 #LTF3,
 #mike,
-#Pizza,
 #sonic,
 #souls,
 #smash,
 #w1,
 #w2,
 #w3,
-#2048 {
+#g2048 {
   padding: 10px 20px;
   font-size: 18px;
   margin: 10px;
@@ -67,7 +66,6 @@ body {
 #knight:hover,
 #LTF3:hover,
 #mike:hover,
-#Pizza:hover,
 #sonic:hover,
 #souls:hover,
 #smash:hover,

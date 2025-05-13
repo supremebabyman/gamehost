@@ -21,6 +21,7 @@ const LTF3 = document.getElementById("LTF3");
 const Mike = document.getElementById("mike");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
+const Smash = document.getElementById("smash");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
@@ -168,7 +169,7 @@ if (W3) {
 }
 if (G2048) {
   G2048.addEventListener("click", function () {
-    window.location.href = "../html-bin/w3.html";
+    window.location.href = "../html-bin/2048.html";
   });
 }
 
