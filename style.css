@@ -29,10 +29,13 @@ body {
 #LTF3,
 #mike,
 #Pizza,
+#sonic,
 #souls,
+#smash,
 #w1,
 #w2,
-#w3 {
+#w3,
+#2048 {
   padding: 10px 20px;
   font-size: 18px;
   margin: 10px;
@@ -65,10 +68,13 @@ body {
 #LTF3:hover,
 #mike:hover,
 #Pizza:hover,
+#sonic:hover,
 #souls:hover,
+#smash:hover,
 #w1:hover,
 #w2:hover,
-#w3:hover {
+#w3:hover,
+#g2048:hover {
   background-color: #b1b1b1;
   transform: scale(1.15);
 }

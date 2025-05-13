@@ -24,7 +24,7 @@ const Soul = document.getElementById("souls");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
-const G2048 = document.getElementById("2048");
+const G2048 = document.getElementById("g2048");
 
 // Other pages
 const About = document.getElementById("about");
@@ -136,14 +136,14 @@ if (Mike) {
     window.location.href = "../html-bin/MSIPFI.html";
   });
 }
-if (Soul) {
-  Soul.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
-  });
-}
 if (Sonic) {
   Sonic.addEventListener("click", function () {
     window.location.href = "../html-bin/flashsonic.html";
+  });
+}
+if (Soul) {
+  Soul.addEventListener("click", function () {
+    window.location.href = "../html-bin/construction.html";
   });
 }
 if (Smash) {
