@@ -9,6 +9,7 @@ const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
 const Doodle = document.getElementById("doodle");
 const Fancy = document.getElementById("fancy");
+const Flash = document.getElementById("flash");
 const HSBTB = document.getElementById("hsbtb");
 const HSETP = document.getElementById("hsetp");
 const HSFTC = document.getElementById("hsftc");
@@ -18,10 +19,12 @@ const IMP = document.getElementById("imposs");
 const Knight = document.getElementById("knight");
 const LTF3 = document.getElementById("LTF3");
 const Mike = document.getElementById("mike");
+const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
+const G2048 = document.getElementById("2048");
 
 // Other pages
 const About = document.getElementById("about");
@@ -138,8 +141,17 @@ if (Soul) {
     window.location.href = "../html-bin/construction.html";
   });
 }
+if (Sonic) {
+  Sonic.addEventListener("click", function () {
+    window.location.href = "../html-bin/flashsonic.html";
+  });
+}
+if (Smash) {
+  Smash.addEventListener("click", function () {
+    window.location.href = "../html-bin/smash.html";
+  });
+}
 if (W1) {
-  console.log("button has been pressed");
   W1.addEventListener("click", function () {
     window.location.href = "../html-bin/w1.html";
   });
@@ -151,6 +163,11 @@ if (W2) {
 }
 if (W3) {
   W3.addEventListener("click", function () {
+    window.location.href = "../html-bin/w3.html";
+  });
+}
+if (G2048) {
+  G2048.addEventListener("click", function () {
     window.location.href = "../html-bin/w3.html";
   });
 }
