@@ -18,6 +18,8 @@ const HSSTD = document.getElementById("hsstd");
 const IMP = document.getElementById("imposs");
 const Knight = document.getElementById("knight");
 const LTF3 = document.getElementById("LTF3");
+const Mario = document.getElementById("mario");
+const Meat = document.getElementById("meat");
 const Mike = document.getElementById("mike");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
@@ -130,6 +132,16 @@ if (Knight) {
 if (LTF3) {
   LTF3.addEventListener("click", function () {
     window.location.href = "../html-bin/LTF3.html"; //change to LTF3 later
+  });
+}
+if (Mario) {
+  Mario.addEventListener("click", function () {
+    window.location.href = "../html-bin/MSIPFI.html";
+  });
+}
+if (Meat) {
+  Meat.addEventListener("click", function () {
+    window.location.href = "../html-bin/MSIPFI.html";
   });
 }
 if (Mike) {
