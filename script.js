@@ -136,12 +136,12 @@ if (LTF3) {
 }
 if (Mario) {
   Mario.addEventListener("click", function () {
-    window.location.href = "../html-bin/MSIPFI.html";
+    window.location.href = "../html-bin/mario.html";
   });
 }
 if (Meat) {
   Meat.addEventListener("click", function () {
-    window.location.href = "../html-bin/MSIPFI.html";
+    window.location.href = "../html-bin/meatboy.html";
   });
 }
 if (Mike) {
