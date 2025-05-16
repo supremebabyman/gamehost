@@ -4,7 +4,7 @@ const Bonk = document.getElementById("bonk");
 const BTDS = document.getElementById("btds");
 const BTD1 = document.getElementById("btd1");
 const BTD2 = document.getElementById("btd2");
-const BTD5 = document.getElementById("btd2");
+const BTD5 = document.getElementById("btd5");
 const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
 const Doodle = document.getElementById("doodle");
@@ -13,6 +13,7 @@ const Flash = document.getElementById("flash");
 const HSBTB = document.getElementById("hsbtb");
 const HSETP = document.getElementById("hsetp");
 const HSFTC = document.getElementById("hsftc");
+const HSITA = document.getElementById("hsita");
 const HSS = document.getElementById("hss");
 const HSSTD = document.getElementById("hsstd");
 const IMP = document.getElementById("imposs");
@@ -107,6 +108,11 @@ if (HSETP) {
 if (HSFTC) {
   HSFTC.addEventListener("click", function () {
     window.location.href = "../html-bin/HSFtC.html";
+  });
+}
+if (HSITA) {
+  HSITA.addEventListener("click", function () {
+    window.location.href = "../html-bin/HSItA.html";
   });
 }
 if (HSS) {
