@@ -207,7 +207,7 @@ if (Rss) {
 }
 if (Rs1) {
   Rs1.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction1.html";
+    window.location.href = "../html-bin/construction.html";
   });
 }
 if (Rs2) {
