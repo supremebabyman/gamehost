@@ -27,6 +27,14 @@ const Padog = document.getElementById("padog");
 const Pafree = document.getElementById("pafree");
 const Pagames = document.getElementById("pagames");
 const Palu = document.getElementById("palu");
+const Rss = document.getElementById("rss");
+const Rs1 = document.getElementById("rs1");
+const Rs2 = document.getElementById("rs2");
+const Rs3 = document.getElementById("rs3");
+const Rs4 = document.getElementById("rs4");
+const Rs5 = document.getElementById("rs5");
+const Rt1 = document.getElementById("rt1");
+const Rt2 = document.getElementById("rt2");
 const Papan = document.getElementById("papan");
 const Papiz = document.getElementById("papiz");
 const Sonic = document.getElementById("sonic");
@@ -190,6 +198,46 @@ if (Papan) {
 if (Papiz) {
   Papiz.addEventListener("click", function () {
     window.location.href = "../html-bin/papiz.html";
+  });
+}
+if (Rss) {
+  Rss.addEventListener("click", function () {
+    window.location.href = "../html-bin/RSS.html";
+  });
+}
+if (Rs1) {
+  Rs1.addEventListener("click", function () {
+    window.location.href = "../html-bin/construction1.html";
+  });
+}
+if (Rs2) {
+  Rs2.addEventListener("click", function () {
+    window.location.href = "../html-bin/construction.html";
+  });
+}
+if (Rs3) {
+  Rs3.addEventListener("click", function () {
+    window.location.href = "../html-bin/RS3.html";
+  });
+}
+if (Rs4) {
+  Rs4.addEventListener("click", function () {
+    window.location.href = "../html-bin/RS4.html";
+  });
+}
+if (Rs5) {
+  Papiz.addEventListener("click", function () {
+    window.location.href = "../html-bin/RS5.html";
+  });
+}
+if (Rt1) {
+  Rt1.addEventListener("click", function () {
+    window.location.href = "../html-bin/RT1.html";
+  });
+}
+if (Rt2) {
+  Rt2.addEventListener("click", function () {
+    window.location.href = "../html-bin/RT2.html";
   });
 }
 if (Sonic) {
