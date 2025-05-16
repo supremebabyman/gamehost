@@ -22,6 +22,13 @@ const LTF3 = document.getElementById("LTF3");
 const Mario = document.getElementById("mario");
 const Meat = document.getElementById("meat");
 const Mike = document.getElementById("mike");
+const Paburg = document.getElementById("paburg");
+const Padog = document.getElementById("padog");
+const Pafree = document.getElementById("pafree");
+const Pagames = document.getElementById("pagames");
+const Palu = document.getElementById("palu");
+const Papan = document.getElementById("papan");
+const Papiz = document.getElementById("papiz");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Smash = document.getElementById("smash");
@@ -150,9 +157,39 @@ if (Meat) {
     window.location.href = "../html-bin/meatboy.html";
   });
 }
-if (Mike) {
-  Mike.addEventListener("click", function () {
-    window.location.href = "../html-bin/MSIPFI.html";
+if (Paburg) {
+  Paburg.addEventListener("click", function () {
+    window.location.href = "../html-bin/paburg.html";
+  });
+}
+if (Padog) {
+  Padog.addEventListener("click", function () {
+    window.location.href = "../html-bin/padoger.html";
+  });
+}
+if (Pafree) {
+  Pafree.addEventListener("click", function () {
+    window.location.href = "../html-bin/pafree.html";
+  });
+}
+if (Pagames) {
+  Pagames.addEventListener("click", function () {
+    window.location.href = "../html-bin/pagames.html";
+  });
+}
+if (Palu) {
+  Palu.addEventListener("click", function () {
+    window.location.href = "../html-bin/papalouie.html";
+  });
+}
+if (Papan) {
+  Papan.addEventListener("click", function () {
+    window.location.href = "../html-bin/papan.html";
+  });
+}
+if (Papiz) {
+  Papiz.addEventListener("click", function () {
+    window.location.href = "../html-bin/papiz.html";
   });
 }
 if (Sonic) {
