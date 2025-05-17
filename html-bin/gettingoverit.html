@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <title>Getting Over It</title>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn" link="../images/dropdown.png"></button>
+        <div class="dropdown-content">
+          <a href="../html-bin/achievement.html">Achievement Unlocked</a>
+          <a href="../html-bin/arcane.html">Arcane Weapon</a>
+          <a href="../html-bin/BTDS.html">Bloons TD Series</a>
+          <a href="../html-bin/burrito.html">Burrito Bison</a>
+          <a href="../html-bin/chibi.html">Chibi Knight</a>
+          <a href="../html-bin/doodlejump.html">Doodle Jump</a>
+          <a href="../html-bin/FPA.html">Fancy Pants Series</a>
+          <a href="../html-bin/knight.html">Knightmare Tower</a>
+          <a href="../html-bin/LTF3">Learn to fly 3</a>
+          <a href="../html-bin/MSIPFI.html">Mike Shadow: I Paid for it!</a>
+          <a href="../html-bin/Pizza.html">Pizza Tower</a>
+          <a href="../html-bin/swords.html">Swords and Souls</a>
+        </div>
+      </div>
+      <h1 id="home">Radio-A's Unblocked Games</h1>
+      <div class="nav-links">
+        <a id="about" href="about.html">About</a>
+        <a id="credits" href="credits.html">Credits</a>
+        <a id="uplog" href="update.html">Updates</a>
+        <a id="gamesug" href="gamesug.html">Suggestions</a>
+      </div>
+    </nav>
+    <div id="player">
+      <iframe
+        src="https://scratch.mit.edu/projects/389464290/embed"
+        allowtransparency="true"
+        width="905"
+        height="750"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen
+      ></iframe>
+      <button id="fullscreen" position="absolute" alt="Fullscreen">
+        Fullscreen
+      </button>
+      <p>Fullscreen might be broken, sorry</p>
+    </div>
+    <script>
+      const Fullscreen = document.getElementById("fullscreen");
+      var mode = 0;
+      Fullscreen.addEventListener("click", function () {
+        if (mode === 0) {
+          player.style.width = "905";
+          player.style.height = "750";
+          mode = 1;
+          console.log("New mode is Fullscreen. New Mode = " + mode);
+        } else {
+          player.style.width = "603";
+          player.style.height = "500";
+          mode = 0;
+          console.log("New mode is Windowed. New Mode = " + mode);
+        }
+      });
+    </script>
+    <script src="../script.js"></script>
+  </body>
+</html>
+<!--The ratio to scale the window by is 1.206467662 to 1-->

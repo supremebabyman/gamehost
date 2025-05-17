@@ -1,21 +1,1151 @@
 <!DOCTYPE html>
-<html>
-  <div id="game-ruffle" style="width: 800px; height: 600px; margin: auto"></div>
+<html xmlns:fb="http://www.facebook.com/2008/fbml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      class="ag3">
+<head>
+        
+    <script>
+        if (top != self) {
+            document.write('<style>body{display:none;}</style>');
+            top.location.href = self.location.href;
+        }
+    </script>
 
-  <script src="https://agi.armorgames.com/ruffle/ruffle.js"></script>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      const ruffle =
-        window.RufflePlayer?.newest() ?? window.RufflePlayer?.createPlayer();
-      const container = document.getElementById("game-ruffle");
-      if (ruffle && container) {
-        ruffle.style.width = "800px";
-        ruffle.style.height = "600px";
-        ruffle.load(
-          "https://cache.armorgames.com/files/games/swordssouls-17817.swf?v=1464609285"
-        );
-        container.appendChild(ruffle);
-      }
-    });
-  </script>
+    <meta name="date" content="Sat, 17 May 2025 18:16:49 +0000">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <meta name="robots" content="noodp,noydir">
+
+    <meta property="og:site_name" content="Armor Games">
+    <meta property="og:description" content="Swords and Souls, a free online Adventure game brought to you by Armor Games. Welcome to Soul Town!  Design your Soul, train him and step into the Arena!  Unlock new skills, buy new equipment and make your way to the top in this exciting RPG/Training game!
+
+Features:
+- 5 fun mini-games to improve your hero&#039;s stats
+- Over 30 Arena levels and Survival mode
+- 44 enemies and bosses
+- Tons of equipment, upgrades, skills, items and abilities
+- A home to build and secrets to find
+- A museum to invest in and complete
+
+Hey SoulGamers, Argl here! I wanted to share with you this little Soul Adventure I made on my own during the last 6 months. I hope you&#039;ll enjoy it, as usual it&#039;s entirely free. Leave your comments and feedback, I will read them :)">
+    <meta property="og:email"  content="help@armorgames.com">
+    <meta property="og:title"  content="Swords and Souls - Play on Armor Games">
+    <meta property="og:image"  content="https://gamemedia.armorgames.com/17817/icn_heroimage.png">
+    <meta property="og:type"   content="game">
+    <meta property="fb:app_id" content="111604448880616">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@ArmorGames"/>
+    <meta name="twitter:title" content="Swords and Souls - Play on Armor Games"/>
+    <meta name="twitter:description" content="Swords and Souls, a free online Adventure game brought to you by Armor Games. Welcome to Soul Town!  Design your Soul, train him and step into the Arena!  Unlock new skills, buy new equipment and make your way to the top in this exciting RPG/Training game!
+
+Features:
+- 5 fun mini-games to improve your hero&#039;s stats
+- Over 30 Arena levels and Survival mode
+- 44 enemies and bosses
+- Tons of equipment, upgrades, skills, items and abilities
+- A home to build and secrets to find
+- A museum to invest in and complete
+
+Hey SoulGamers, Argl here! I wanted to share with you this little Soul Adventure I made on my own during the last 6 months. I hope you&#039;ll enjoy it, as usual it&#039;s entirely free. Leave your comments and feedback, I will read them :)"/>
+    <meta name="twitter:image:src" content="https://gamemedia.armorgames.com/17817/icn_heroimage.png"/>
+    <meta name="twitter:image" content="https://gamemedia.armorgames.com/17817/icn_heroimage.png"/>
+    <meta name="medium" content="mult">
+    <meta name="description" content="Swords and Souls, a free online Adventure game brought to you by Armor Games. Welcome to Soul Town!  Design your Soul, train him and step into the Arena!  Unlock new skills, buy new equipment and make your way to the top in this exciting RPG/Training game!
+
+Features:
+- 5 fun mini-games to improve your hero&#039;s stats
+- Over 30 Arena levels and Survival mode
+- 44 enemies and bosses
+- Tons of equipment, upgrades, skills, items and abilities
+- A home to build and secrets to find
+- A museum to invest in and complete
+
+Hey SoulGamers, Argl here! I wanted to share with you this little Soul Adventure I made on my own during the last 6 months. I hope you&#039;ll enjoy it, as usual it&#039;s entirely free. Leave your comments and feedback, I will read them :)">
+    <meta name="keywords" content="Swords and Souls, free online game, adventure games">
+    <title>Swords and Souls - Play on Armor Games</title>
+    <link rel="alternate" href="/feed/new-games" type="application/rss+xml" title="Newest Games Feed" />
+    <link rel="alternate" href="/updates/feed" type="application/rss+xml" title="Game Updates Feed" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffcc04">
+    <meta name="theme-color" content="#2a2a2a">
+    <link rel="P3Pv1" href="http://armorgames.com/w3c/p3p.xml">
+    <link rel="image_src" href="https://gamemedia.armorgames.com/17817/icn_heroimage.png">
+
+    <link rel="stylesheet" href="/min/core.css?1f4d0933">
+
+    
+                        
+        <script src="https://hb.vntsm.com/v4/live/vms/sites/armorgames.com/index.js" async></script>
+
+    <script>
+        self.__VM = self.__VM || [];
+        self.gameId = null;
+        self.slots = {};
+
+        self.addSlot = function (name, id) {
+            if (!(name in self.slots)) {
+                self.slots[name] = new Set([id]);
+                return;
+            }
+
+            self.slots[name].add(id);
+        }
+
+            self.addSlot("billboard", "venatus_billboard_play_game_top");
+    self.addSlot("leaderboard", "venatus_leaderboard_play_game_bottom");
+    self.addSlot("mpu", "venatus_mpu_play");
+    self.addSlot("skin", "venatus_skin_global");
+	self.gameId = 17817;
+
+
+        for(const [slot, ids] of Object.entries(self.slots)) {
+            if(ids.size === 0) {
+                continue;
+            }
+
+                        if(slot === 'desktop_takeover' || slot === 'skin') {
+                window.addEventListener('DOMContentLoaded', function() {
+                    const [id] = ids;
+                    const style = slot === 'desktop_takeover' ? 'margin-left: -16px;' : 'width: 2px; height: 2px;';
+                    const html = `<div id="${id}" style="${style}"></div>`;
+                    const content = document.getElementById('content-canvas') ?? document.getElementById('content');
+
+                    if(content) {
+                        const position = slot === 'desktop_takeover' ? 'afterbegin' : 'beforeend';
+                        content.insertAdjacentHTML(position, html);
+                    }
+                });
+            }
+
+            self.__VM.push(function (admanager, scope) {
+                scope.Config.get(slot).displayMany(Array.from(ids));
+            });
+
+            if(self.gameId) {
+                self.__VM.push(function (admanager, scope) {
+                    scope.AdServer.gam.setKeysAndValues({'armorGames':[self.gameId.toString()]});
+                });
+            }
+        }
+    </script>
+
+    <script>function jqDefer(e){if(typeof window.jQuery!=="undefined"){e()}else{setTimeout(function(){jqDefer(e)},50)}}</script>
+    <link href="/stylesheets/select2.css" rel="stylesheet" type="text/css">
+<style>
+    #gamefilearea {
+        margin-left:77px;
+    }
+    </style>
+<script>
+        window.startPlayCounter = function() {
+        jqDefer(function(){
+            setTimeout(function(){
+                jQuery.post('/service/play-count',{'ajax':1, 'id': 17817});
+            },20000);
+        });
+    };
+    </script>
+</head>
+<body id="page-game" class="p3">
+    <script defer data-domain="armorgames.com" src="https://p.armorgames.net/js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <div id="content-canvas" class="container">
+                <div id="ag3-header" class="ag-nav">
+        
+    <div class="top-banner">
+        <a href="/"><img src="/images/ag3/logo.svg" height="62" width="300" /></a>
+
+        <a id="ags-steam-games" href="https://store.steampowered.com/publisher/armorgamesstudios/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.2 2.2 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.22 2.22 0 0 1-1.312-1.568L.33 10.333Z"/>
+              <path d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.7 1.7 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027m2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048"/>
+            </svg>
+            AGS Steam Games
+        </a>
+
+        <form style="display: inline" id="search-results" action="/search">
+            <button tabindex="6" type="submit" class="icon btn-search"><img src="/images/ag3/search-icon.svg"></button>
+            <input
+                id="search-input"
+                type="text"
+                name="q"
+                class="search"
+                autocomplete="off"
+                placeholder="Search Games"
+                tabindex="5"
+            />
+        </form>
+        <div id="profile-content">
+                            <div id="login-group">
+                    <a href="/register" class="create-account">Create Account</a>
+                    <a href="/login" class="login">Login</a>
+                </div>
+                    </div>
+
+    </div>
+
+    <div class="nav">
+        <ul class="nav-set">
+            <li class="nav-item ">
+                <a href="/category/mmo-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="MMO">MMO</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/strategy-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Strategy">Strategy</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/shooting-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Shooting">Shooting</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/action-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Action">Action</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/adventure-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Adventure">Adventure</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/puzzle-skill-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Puzzle & Skill">Puzzle</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/tower-defense-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Tower Defense">Tower Defense</a>
+            </li>
+            <li class="nav-item ">
+                <a href="/category/idle-games" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Idle">Idle</a>
+            </li>
+            <li class="nav-item nav-item-dropdown">
+                <a href="/category/all" class="dropdown-link nav-link">More</a>
+                <div class="dropdown-menu">
+                    <div class="expanded">
+
+                        <div class="categories">
+                            <h3>Categories</h3>
+                            <ul>
+                                <li class="expanded-item"><a href="/category/multiplayer-games">Multiplayer</a></li>
+                                <li class="expanded-item"><a href="/category/clicker-games">Clicker</a></li>
+                                <li class="expanded-item"><a href="/category/survival-games">Survival</a></li>
+                                <li class="expanded-item"><a href="/category/platform-games">Platform</a></li>
+                                <li class="expanded-item"><a href="/category/army-games">Army</a></li>
+                                <li class="expanded-item"><a href="/category/war-games">War</a></li>
+                                <li class="expanded-item"><a href="/category/upgrade-games">Upgrade</a></li>
+                                <li class="expanded-item"><a href="/category/rpg-games">RPG</a></li>
+                                <li class="expanded-item"><a href="/category/zombie-games">Zombie</a></li>
+                                <li class="expanded-item"><a href="/category/horror-games">Horror</a></li>
+                                <li class="expanded-item"><a href="/category/point-and-click-games">Point and Click</a></li>
+                                <li class="expanded-item"><a href="/category/all" style="text-decoration: underline">All Categories</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="quests">
+                            <h3>Quests</h3>
+                            <ul id="topnav-quest-link">
+                                <li class="expanded-item"><a href="/quests">Latest Quests</a></li>
+                                <li class="expanded-item"><a href="/category/quest-games">Quest Games</a></li>
+                                <li class="expanded-item"><a href="/quests-board">Hero Board</a></li>
+
+                                                            </ul>
+                        </div>
+
+                        <div class="community">
+                            <h3>Community</h3>
+                            <ul>
+                                <li class="expanded-item" style="clear: both;"><a href="/ranking">Player Rankings</a></li>
+                                <li class="expanded-item" style="clear: both;"><a href="/random">Random Game</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item ">
+                <a href="/community" class="nav-link" data-ga-category="Nav: Main" data-ga-action="Primary Click" data-ga-label="Forums">Forums</a>
+            </li>
+
+            <li class="nav-item nav-item-dropdown">
+                <a href="https://developers.armorgames.com" class="dropdown-link nav-link">Developer Portal</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="https://developers.armorgames.com">Submit a Game</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="https://armorgamesstudios.com">Armor Games Studios</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        
+
+    <div id="venatus_billboard_play_game_top" class="ad-large-leaderboard-90"></div>
+<section class="game-header clearfix">
+    <div class="play-controls">
+        
+                            </div>
+    <h1>
+                Swords and Souls    </h1>
+
+    <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            98                    </td>
+        
+                    <td class="quests ">
+                <i class="symbol_sm type-shield_sm"></i>
+                9            </td>
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            11M        </td>
+    </tr>
+    </tbody>
+</table>
+    <div class="tags">
+                <a class="tag-category" href="/category/mythological-games">Mythological</a>
+                <a class="tag-category" href="/category/flash-games">Flash</a>
+                <a class="tag-category" href="/category/online-save-games">Online Save</a>
+                <a class="tag-category" href="/category/sword-games">Sword</a>
+                <a class="tag-category" href="/category/mini-games">Mini</a>
+            </div>
+    <div class="tags-selector" style="display:none">
+        <div class="control-group" id="tags-block">
+            <label class="control-label" for="tags-text">Tags</label>
+            <input type="hidden" id="tags-input" value="" class="span5">
+        </div>
+    </div>
+    </section>
+
+    
+<section id="gamearea">
+
+            
+            
+    <a href="/play/17846/specter-knight?rt=l" class="related-tab related-tab-left hide"  style="margin-top:225px;background-image:url('https://gamemedia.armorgames.com/17846/icn_feat.png');">
+        <div class="control"><img src="//cache.armorgames.com/files/thumbnails/specter-knight-17846.png?v=1441640828" id="related-tab-thumb-left" class="thumb hide" alt="Specter Knight"/></div>
+    </a>
+    <a href="/circloo-game/17860?rt=r" class="related-tab related-tab-right hide" style="margin-top:225px;background-image:url('https://gamemedia.armorgames.com/17860/icn_feat.png');">
+        <div class="control"><img src="//cache.armorgames.com/files/thumbnails/circloo-17860.png?v=1442504040" id="related-tab-thumb-right" class="thumb hide" alt="circloO"/></div>
+    </a>
+    
+    
+    <div id="noflash" style="display: none;">
+        <h2>Your browser does not support our Flash emulator.</h2>
+        <p>Please use a modern browser such as <a href="https://www.google.com/chrome/">Chrome</a>, <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>, or <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>.</p>
+    </div>
+
+    <script>
+        // This is a fairly simple check for WebAssembly support
+        if (typeof WebAssembly !== "object" || typeof WebAssembly.instantiate !== "function") {
+            document.getElementById('noflash').removeAttribute('style');
+        }
+
+        let startGame = function () {
+            // Show the Ruffle player and start the movie
+            document.getElementById('game-ruffle').style.removeProperty('display');
+            document.getElementById('gamefileEmbed').play();
+        };
+
+        // Setup Ruffle config so it polyfills the Flash <object>
+        window.RufflePlayer = window.RufflePlayer || {};
+
+        window.RufflePlayer.config = {
+            "allowScriptAccess": true,
+            "autoplay": "off", // We will manually play the movie after the button click
+            "autostart": "off",
+            "credentialAllowList": ["https://services.armorgames.com"],
+            "unmuteOverlay": "hidden",
+            "upgradeToHttps": window.location.protocol === "https:"
+        };
+    </script>
+
+    <script src="https://agi.armorgames.com/ruffle/ruffle.js"></script>
+
+
+<div id="play-game">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor"
+             class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+        </svg>
+
+        <p>Play game</p>
+    </div>
+</div>
+
+
+
+<div id="gamefilearea" style="height:600px; display: none;">
+    <div id="game-ruffle" style="display: none;">
+        <!--suppress HtmlDeprecatedAttribute, HttpUrlsUsage -->
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+        width="800" height="600" id="gamefile" align="middle">
+    <param name="allowScriptAccess" value="always" />
+    <param name="movie" value="https://cache.armorgames.com/files/games/swordssouls-17817.swf?v=1464609285" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="window" />
+    <param name="allowfullscreen" value="false" />
+    <param name="allowfullscreeninteractive" value="false" />
+    <param name="fullScreenAspectRatio" value="" />
+    <param name="quality" value="high" />
+    <param name="play" value="true" />
+    <param name="loop" value="true" />
+    <param name="menu" value="" />
+    <param name="flashvars" value="gameID=17817" />
+    <param name="hasPriority" value="true" />
+
+    <!--suppress CheckTagEmptyBody, HtmlExtraClosingTag -->
+    <embed src="https://cache.armorgames.com/files/games/swordssouls-17817.swf?v=1464609285"
+           width="800"
+           height="600"
+           id="gamefileEmbed"
+           name="gamefile"
+           align="middle"
+           wmode="window"
+           allowfullscreen="false"
+           allowfullscreeninteractive="false"
+           fullScreenAspectRatio=""
+           quality="high"
+           play="true"
+           loop="true"
+           menu=""
+           allowScriptAccess="always"
+           flashvars="gameID=17817"
+           hasPriority="true"
+           type="application/x-shockwave-flash"
+           pluginspage="http://www.adobe.com/go/getflashplayer"></embed>
+</object>
+    </div>
+</div>
+</section>
+
+    <div id="venatus_leaderboard_play_game_bottom" class="ad-leaderboard"></div>
+<section class="game-secondary clearfix">
+    <div class="col col-left">
+
+
+        <ul class="tab-lite clearfix" id="game-nav">
+                            <li class="active"><a href="#quest-tab">Quests</a></li>
+                        <li class=""><a href="#description-tab">Overview</a></li>
+                            <li><a href="#updates-tab">Updates</a></li>
+                    </ul>
+
+                <div id="quest-tab" class="tab-lite-tab">
+            <div class="support-links">
+                <a href="//armor.ag/swords-and-souls-quest-chat" target="_blank">Quest Chat</a>
+                <a href="/quests" target="_blank">All Quests</a>
+            </div>
+            <ul id="quest-list" class="achievements quests clearfix">
+                                    <li class="loading " data-quest-id="1068" data-dev-id="doubleTarget" data-target-value="1">
+                        <img id="doubleTarget" src="//quests.armorgames.com/game/17817/media/icon/b5d3b6cc21b90d405d01a09a1984af2a.png?v=1442603176" data-title="Neat Shot" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>342,363</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Easy</span></div><p>Hit Two Targets With One Arrow (Accuracy Training)</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1069" data-dev-id="secrets" data-target-value="1">
+                        <img id="secrets" src="//quests.armorgames.com/game/17817/media/icon/7c72df772abee8b288d8a4c65c7f1ce4.png?v=1442603204" data-title="Mystery" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>258,881</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Easy</span></div><p>Unlock 3 Secret Achievements.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1070" data-dev-id="stats" data-target-value="1">
+                        <img id="stats" src="//quests.armorgames.com/game/17817/media/icon/92877874a3ebfb48417cb62e2faa9a55.png?v=1442603222" data-title="Getting Stronger" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>313,137</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Easy</span></div><p>Raise Any Stats Above 1000.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1071" data-dev-id="share" data-target-value="1">
+                        <img id="share" src="//quests.armorgames.com/game/17817/media/icon/6167adb97bc6d1fbfc501ff1727ec1fe.png?v=1442603233" data-title="Shareholder" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>326,790</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Easy</span></div><p>Get 20% Revenue Share At The Museum.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1072" data-dev-id="children" data-target-value="1">
+                        <img id="children" src="//quests.armorgames.com/game/17817/media/icon/19cdd567fae1361d4f7e183f6b25e9a5.png?v=1442603253" data-title="Sherlock" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>186,612</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Medium</span></div><p>Find 6 Lost Children.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading last" data-quest-id="1073" data-dev-id="beat10" data-target-value="1">
+                        <img id="beat10" src="//quests.armorgames.com/game/17817/media/icon/103b3317cce13442c79a75f4a21b28f9.png?v=1442603271" data-title="No Match" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>141,719</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Medium</span></div><p>Beat Level 10 Boss Without Getting Hit.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1074" data-dev-id="silverMission" data-target-value="1">
+                        <img id="silverMission" src="//quests.armorgames.com/game/17817/media/icon/f3bf774109ee7a8a4e47e0909ac7c06c.png?v=1442603333" data-title="Serious Learner" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>188,500</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Medium</span></div><p>Get At Least Silver Medals For Missions In All Trainings.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1075" data-dev-id="supergoldCombo" data-target-value="1">
+                        <img id="supergoldCombo" src="//quests.armorgames.com/game/17817/media/icon/874f5875f6016e9401435cc671fe896d.png?v=1442603290" data-title="Gifted Psychopath" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>4,303</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Hard</span></div><p>Get Super Gold Medals For Combo In All Trainings.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                                    <li class="loading " data-quest-id="1076" data-dev-id="beatScarow" data-target-value="1">
+                        <img id="beatScarow" src="//quests.armorgames.com/game/17817/media/icon/c8e8639088e1a7a13dd9ed675432c934.png?v=1442603318" data-title="Eternal Champion" data-content='<table>
+            <tr>
+              <th>Players Completed:</th>
+              <td>76,703</td>
+            </tr><tr>
+              <th>Release Date:</th>
+              <td>Sep 18th, 2015</td>
+            </tr><!--complete_date--></table>
+              <div class="tags"><span class="label">Hard</span></div><p>Beat The True Last Boss.</p>' />
+                        <div class="status">
+                            <div class="complete">complete</div>
+                            <div class="q-progress"><div class="q-indicator"></div></div>
+                        </div>
+                                            </li>
+                            </ul>
+        </div>
+        
+        <div id="description-tab" class="tab-lite-tab hide ">
+                        <table class="stats">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="head">Plays</div>
+                        <div class="value">11,435,671</div>
+                    </td>
+                    <td>
+                        <div class="head">Ratings</div>
+                        <div class="value">52,954</div>
+                    </td>
+                    <td>
+                        <div class="head">Favorites</div>
+                        <div class="value">59,736</div>
+                    </td>
+                    <td>
+                        <div class="head">Published</div>
+                        <div class="value">
+                            Sep 18, 2015                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+                            <article class="categories">
+                    <h2>Related Categories</h2>
+                                            <a class="tag-category" href="/category/mythological-games">Mythological</a>
+                                            <a class="tag-category" href="/category/flash-games">Flash</a>
+                                            <a class="tag-category" href="/category/online-save-games">Online Save</a>
+                                            <a class="tag-category" href="/category/sword-games">Sword</a>
+                                            <a class="tag-category" href="/category/mini-games">Mini</a>
+                                            <a class="tag-category" href="/category/games-of-2015-games">Games of 2015</a>
+                                            <a class="tag-category" href="/category/game-of-the-year-games">Game of the Year</a>
+                                            <a class="tag-category" href="/category/quest-games">Quest</a>
+                                            <a class="tag-category" href="/category/archery-games">Archery</a>
+                                            <a class="tag-category" href="/category/reaction-time-games">Reaction Time</a>
+                                            <a class="tag-category" href="/category/adventure-games">Adventure</a>
+                                    </article>
+                        <article id="description">
+                <h2>Description</h2>
+                <p>Welcome to Soul Town!  Design your Soul, train him and step into the Arena!  Unlock new skills, buy new equipment and make your way to the top in this exciting RPG/Training game!</p>
+<p>Features:<br />
+- 5 fun mini-games to improve your hero's stats<br />
+- Over 30 Arena levels and Survival mode<br />
+- 44 enemies and bosses<br />
+- Tons of equipment, upgrades, skills, items and abilities<br />
+- A home to build and secrets to find<br />
+- A museum to invest in and complete</p>
+<p>Hey SoulGamers, Argl here! I wanted to share with you this little Soul Adventure I made on my own during the last 6 months. I hope you'll enjoy it, as usual it's entirely free. Leave your comments and feedback, I will read them :)</p>
+            </article>
+            <article id="controls-text">
+                                <h2>Controls</h2>
+                <p>Mouse for most interactions (explained in-game)</p>
+<p>Training:<br />
+Arrows/WASD and Mouse</p>
+<p>Battles:<br />
+1-6 = Use Skills<br />
+1-6 + Shift = Use Potions and Spells</p>
+                            </article>
+        </div>
+
+                <div id="updates-tab" class="tab-lite-tab hide">
+                    <article>
+                <h2>May 30, 2016</h2>
+                <div style="white-space: pre-line">Ragnarok Spell has been added! Have fun! </div>
+            </article>
+                    <article>
+                <h2>November 9, 2015</h2>
+                <div style="white-space: pre-line">FINAL UPDATE!
+ - Smoother difficulty curve for Strength training (VERY popular demand!)
+ - Improved performances (less lagg should happen)
+ - End of Halloween event</div>
+            </article>
+                    <article>
+                <h2>October 22, 2015</h2>
+                <div style="white-space: pre-line">UPDATE - GRIND FOR ETERNITY!
+- TURBO mode for training (unlocked at Level 70)
+- Trade Ruby for XP in the Shop (after unlocking Survival)
+- Checkpoints every 5 waves in the Survival
+- Quit Survival saves your results
+- Training missions continue for ever
+- Training missions beyond 50 are more rewarding
+- Glory earned in Survival gives XP boost
+- Bigger cross hair in Accuracy Training</div>
+            </article>
+                </div>
+        
+                    <a href="/page/armor-games-rules" target="_blank" class="pull-right" style="color:#7f929c;color:rgba(0,39,59,.5);font-size: 13px;font-weight: bold;">Commenting Rules & Guidelines</a>
+                            <div id="comments"></div>
+                                
+    </div>
+    <div class="col col-right">
+        <header class="clearfix">
+
+            
+
+    <div id="rating-widget" data-pid="17817" data-ptype="game">
+        <div class="rating-control">
+
+            <button id="upvote-button" class="vote-icon up-vote " value="up"  data-toggle="tooltip" title="Like This">
+                <i class="symbol type-rate-up"></i>
+                <i class="symbol type-rate-up-selected"></i>
+            </button><div class="rating-display">
+                                    <span style="">98</span>
+                            </div><button id="downvote-button" class="vote-icon down-vote " value="down" data-toggle="tooltip" title="Dislike This">
+                <i class="symbol type-rate-down"></i>
+                <i class="symbol type-rate-down-selected"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="downvote-modal" tabindex="-1" role="dialog" style="display:none">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Oh no! Could you tell us what you didn't like?</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="1" id="reason-1" checked="true">
+                        <label for="reason-1">No reason.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="2" id="reason-2">
+                        <label for="reason-2">It's broken, I can't play.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="3" id="reason-3">
+                        <label for="reason-3">It's too hard.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="4" id="reason-4">
+                        <label for="reason-4">It offends or disgusts me.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="5" id="reason-5">
+                        <label for="reason-5">I played it on another website.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="6" id="reason-6">
+                        <label for="reason-6">It's like another game.</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="downvote-reason" value="7" id="reason-7">
+                        <label for="reason-7">I just don't like it.</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="downvote-button-submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    
+    
+
+            <div class="clearfix pull-right">
+
+                                    <button id="fav-btn-disabled" class="btn-ag" data-toggle="tooltip" title="Login To Save">
+                        <i class="symbol type-heart-add-mono"></i>
+                        <span class="words words-fav">Fav</span>
+                    </button>
+                
+                <button class="btn-ag" id="share-menu-link" data-toggle="tooltip" title="Copy URL to Clipboard" data-url="https://armorgames.com/play/17817/swords-and-souls"><i class="symbol type-share"></i> Share</button>
+
+                                <button id="flag-btn" class="btn-ag" data-toggle="tooltip" title="Report Trouble"><i class="symbol type-flag"></i> Flag</button>
+                            </div>
+        </header>
+
+                    <div id="venatus_mpu_play" class="ad-lrgrec"></div>        
+        <article class="dev-info">
+            <ul class="tab-lite tab-lite-header clearfix">
+                <li class="active">About the Developer</li>
+            </ul>
+            <div class="support-links">
+                <a href="//armorgames.com/user/SoulGame" target="_blank">Profile</a>
+                <a href="/author/soulgame" target="_blank">All Games</a>
+            </div>
+            <div class="bio">
+                <a href="//armorgames.com/user/SoulGame"><img class="armatar" src="/armatar/GRp?size=60&overlay=user" alt="SoulGame"/></a>
+                Swords and Souls was developed by <b><a href="//armorgames.com/user/SoulGame" target="_blank">SoulGame</a></b>.
+            </div>
+        </article>
+
+                <article class="recommended">
+            <ul class="tab-lite tab-lite-header clearfix">
+                <li class="active">Recommended</li>
+            </ul>
+                            <a href="/aground-game/18245?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/18245/icn_feat.png" class="letterbox" alt="Aground" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Aground</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            97                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            3M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/games-of-2017-games">Games of 2017</div>
+                                                    <div class="tag-category" data-href="/category/dragon-games">Dragon</div>
+                                                    <div class="tag-category" data-href="/category/adventure-games">Adventure</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/play/14775/strike-force-heroes-2?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/14775/icn_feat.png" class="letterbox" alt="Strike Force Heroes 2" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Strike Force Heroes 2</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            97                    </td>
+        
+                    <td class="quests ">
+                <i class="symbol_sm type-shield_sm"></i>
+                10            </td>
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            28M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/flash-games">Flash</div>
+                                                    <div class="tag-category" data-href="/category/team-games">Team</div>
+                                                    <div class="tag-category" data-href="/category/online-save-games">Online Save</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/play/18869/epic-battle-fantasy-5?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/18869/icn_feat.png" class="letterbox" alt="Epic Battle Fantasy 5" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Epic Battle Fantasy 5</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            98                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            629K        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/flash-games">Flash</div>
+                                                    <div class="tag-category" data-href="/category/rpg-games">RPG</div>
+                                                    <div class="tag-category" data-href="/category/adventure-games">Adventure</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/play/12275/raze-2?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/12275/icn_feat.png" class="letterbox" alt="Raze 2" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Raze 2</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            96                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            29M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/alien-games">Alien</div>
+                                                    <div class="tag-category" data-href="/category/games-of-2011-games">Games of 2011</div>
+                                                    <div class="tag-category" data-href="/category/zombie-games">Zombie</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/sabotage-game/18799?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/18799/icn_feat.png" class="letterbox" alt="Sabotage" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Sabotage</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            96                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            434K        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/adventure-games">Adventure</div>
+                                                    <div class="tag-category" data-href="/category/html-games">HTML</div>
+                                                    <div class="tag-category" data-href="/category/game-jams-games">Game Jams</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/play/12141/kingdom-rush?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/12141/icn_feat.png" class="letterbox" alt="Kingdom Rush" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Kingdom Rush</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            97                    </td>
+        
+                    <td class="quests ">
+                <i class="symbol_sm type-shield_sm"></i>
+                15            </td>
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            75M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/quest-games">Quest</div>
+                                                    <div class="tag-category" data-href="/category/defense-games">Defense</div>
+                                                    <div class="tag-category" data-href="/category/medieval-games">Medieval</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/play/17817/swords-and-souls?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/17817/icn_feat.png" class="letterbox" alt="Swords and Souls" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Swords and Souls</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            98                    </td>
+        
+                    <td class="quests ">
+                <i class="symbol_sm type-shield_sm"></i>
+                9            </td>
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            11M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/mythological-games">Mythological</div>
+                                                    <div class="tag-category" data-href="/category/flash-games">Flash</div>
+                                                    <div class="tag-category" data-href="/category/sword-games">Sword</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/rogue-fable-iii-game/18602?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/18602/icn_feat.png" class="letterbox" alt="Rogue Fable III" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Rogue Fable III</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            96                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            5M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/pixel-games">Pixel</div>
+                                                    <div class="tag-category" data-href="/category/adventure-games">Adventure</div>
+                                                    <div class="tag-category" data-href="/category/html-games">HTML</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/food-and-wood-game/19536?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/19536/icn_feat.png" class="letterbox" alt="Food and Wood" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">Food and Wood</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            97                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            87K        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/adventure-games">Adventure</div>
+                                                    <div class="tag-category" data-href="/category/html-games">HTML</div>
+                                                    <div class="tag-category" data-href="/category/sword-games">Sword</div>
+                                                </div>
+                    </div>
+                </a>
+                            <a href="/play/12009/the-last-stand-union-city?game-referral=swords+and+souls" class="game">
+                    
+    <div class="preview-img">
+                    <img src="https://gamemedia.armorgames.com/12009/icn_feat.png" class="letterbox" alt="The Last Stand - Union City" loading="lazy" />
+            </div>
+                    <div class="info">
+                        <div class="name">The Last Stand - Union City</div>
+                        <table class="stats">
+    <tbody>
+    <tr>
+                <td class="rating first">
+                            96                    </td>
+        
+        
+        <td class="plays ">
+            <i class="symbol_sm type-joystick2_sm"></i>
+            25M        </td>
+    </tr>
+    </tbody>
+</table>
+                        <div class="tags">
+                                                    <div class="tag-category" data-href="/category/tactical-games">Tactical</div>
+                                                    <div class="tag-category" data-href="/category/virus-games">Virus</div>
+                                                    <div class="tag-category" data-href="/category/adventure-games">Adventure</div>
+                                                </div>
+                    </div>
+                </a>
+                    </article>
+            </div>
+</section>
+
+
+    </div>
+<div id="footer" class="container">
+    <div class="footer-top">
+        <div class="column">
+            <a href="/">
+                <svg style="margin-top: 12px;" width="140px" height="80px" class="logo" viewBox="0 0 157 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Registration-Page" transform="translate(-377.000000, -797.000000)" fill="#FFFFFF">
+                            <g id="Layer_7" transform="translate(272.000000, 463.000000)">
+                                <g id="Group" transform="translate(105.000000, 334.000000)">
+                                    <g transform="translate(57.000000, 0.000000)" fill-rule="nonzero" id="Shape">
+                                        <path d="M44,8.8 L42.9,8.8 C31.5,8.8 22.9,1.4 22.8,1.3 L22.7,1.2 L22.1,0.7 L21.5,1.2 L21.4,1.3 C21.3,1.4 12.7,8.8 1.3,8.8 L0.2,8.8 L0.2,39.2 C0.2,57.1 21.9,64.6 22.1,64.7 C22.3,64.6 44.1,57.2 44.1,39.2 L44,8.8 Z M41.8,39.3 C41.8,54.4 24.7,61.4 22.1,62.4 C19.5,61.4 2.4,54.5 2.4,39.3 C2.4,39.3 2.4,12.9 2.4,11 C12.3,10.6 19.9,5.4 22.1,3.6 C24.4,5.4 31.9,10.6 41.8,11 C41.8,12.9 41.8,39.3 41.8,39.3 Z"></path>
+                                        <path d="M3.4,12.2 C3.4,14 3.4,38.9 3.4,38.9 C3.4,53.2 19.5,59.7 22,60.7 C24.5,59.8 40.6,53.2 40.6,38.9 C40.6,38.9 40.6,14 40.6,12.2 C31.2,11.8 24.1,6.9 22,5.3 C19.9,6.9 12.8,11.8 3.4,12.2 Z M26.9,42.7 L23.5,42.7 C23.4,43.1 23.4,46.8 23.5,47.4 C23.6,47.6 23.7,47.7 23.8,47.9 C23.8,47.9 24.3,48.4 24.3,48.4 C24.3,48.4 23.4,49.7 22.6,49.2 C22.6,49.2 23.7,49.8 22,52.9 C22,52.9 22,52.9 22,52.9 C22,52.9 22,52.9 22,52.9 C20.3,49.8 21.4,49.2 21.4,49.2 C20.6,49.7 19.7,48.4 19.7,48.4 C19.7,48.4 20.2,47.9 20.2,47.9 C20.3,47.8 20.4,47.6 20.5,47.4 C20.5,46.8 20.5,43 20.5,42.7 L17.1,42.7 C16.4,42.7 15.9,42.2 15.9,41.5 C15.9,40.8 16.4,40.3 17.1,40.3 C17.6,40.3 18.1,40.6 18.3,41.1 L19.6,41.1 L20.3,31.3 L22,30 L23.7,31.3 L24.4,41.1 L25.7,41.1 C25.9,40.6 26.3,40.3 26.9,40.3 C27.6,40.3 28.1,40.8 28.1,41.5 C28.2,42.2 27.6,42.7 26.9,42.7 Z M13.1,33.7 L15.8,26.9 L22,26.9 L13.1,33.7 Z M22.1,26.9 L28.3,26.9 L31,33.7 L22.1,26.9 Z M22.7,18.1 C23.5,17.6 24.9,18.9 24.9,18.9 C24.9,18.9 24.4,19.4 24.4,19.4 C24,19.8 23.8,20.4 23.7,20.9 C23.7,21.5 23.8,22.1 24.2,22.6 C24.7,23.3 25.5,23.9 26.4,23.9 C26.6,23.9 26.9,23.9 27.1,23.8 C27.8,23.6 28.4,23.1 28.6,22.4 C28.9,21.6 28.7,20.8 28.4,20.1 C28.3,19.9 28.2,19.7 28.1,19.5 C28,19.3 27.9,19.2 27.7,19.1 C27.5,18.9 27.3,18.8 27,18.7 C27,18.7 28.7,18.1 29.9,19.2 C29.9,19.2 33.1,16.1 34.8,15.9 L28.7,25.9 L28.6,26 L15.4,26 L15.3,25.9 L9.2,15.9 C10.9,16.1 14.1,19.2 14.1,19.2 C15.4,18.1 17,18.7 17,18.7 C16.8,18.8 16.5,18.9 16.3,19.1 C16.2,19.2 16,19.4 15.9,19.5 C15.8,19.7 15.7,19.9 15.6,20.1 C15.2,20.8 15.1,21.6 15.4,22.4 C15.6,23.1 16.2,23.6 16.9,23.8 C17.1,23.9 17.4,23.9 17.6,23.9 C18.5,23.9 19.3,23.3 19.8,22.6 C20.1,22.1 20.3,21.5 20.3,20.9 C20.3,20.3 20,19.8 19.6,19.4 C19.6,19.4 19.1,18.9 19.1,18.9 C19.1,18.9 20.4,17.6 21.3,18.1 C21.3,18.1 20.2,15.6 21.9,12.6 C21.9,12.6 21.9,12.6 21.9,12.6 C21.9,12.6 21.9,12.6 21.9,12.6 C23.7,15.6 22.7,18.1 22.7,18.1 Z"></path>
+                                    </g>
+                                    <g transform="translate(0.000000, 76.000000)">
+                                        <path d="M5.5,1 L8.9,1 L14.3,13.7 L10.5,13.7 L9.6,11.4 L4.7,11.4 L3.8,13.7 L0.1,13.7 L5.5,1 Z M8.5,8.8 L7.1,5.2 L5.7,8.8 L8.5,8.8 Z" id="Shape" fill-rule="nonzero"></path>
+                                        <path d="M16.9,1.1 L22.9,1.1 C24.8,1.1 26.2,1.6 27,2.5 C27.7,3.2 28.1,4.2 28.1,5.4 C28.1,7.3 27.1,8.6 25.5,9.3 L28.5,13.7 L24.5,13.7 L22,9.9 L20.5,9.9 L20.5,13.7 L17,13.7 L17,1.1 L16.9,1.1 Z M22.7,7.2 C23.9,7.2 24.6,6.6 24.6,5.7 C24.6,4.7 23.9,4.2 22.7,4.2 L20.4,4.2 L20.4,7.2 L22.7,7.2 Z" id="Shape" fill-rule="nonzero"></path>
+                                        <polygon id="Path" points="31.3 1.1 35 1.1 38 6 41 1.1 44.7 1.1 44.7 13.7 41.2 13.7 41.2 6.4 38 11.3 38 11.3 34.8 6.4 34.8 13.6 31.4 13.6 31.4 1.1"></polygon>
+                                        <path d="M47.3,7.5 C47.3,3.8 50.2,0.9 54.1,0.9 C58,0.9 60.9,3.8 60.9,7.4 C60.9,11 58,14 54.1,14 C50.2,14 47.3,11.1 47.3,7.5 Z M57.3,7.5 C57.3,5.6 56,4.1 54.1,4.1 C52.2,4.1 50.9,5.7 50.9,7.5 C50.9,9.3 52.2,10.9 54.1,10.9 C56,10.9 57.3,9.3 57.3,7.5 Z" id="Shape" fill-rule="nonzero"></path>
+                                        <path d="M63.8,1.1 L69.8,1.1 C71.7,1.1 73.1,1.6 73.9,2.5 C74.6,3.2 75,4.2 75,5.4 C75,7.3 74,8.6 72.4,9.3 L75.4,13.7 L71.4,13.7 L68.9,9.9 L67.4,9.9 L67.4,13.7 L63.9,13.7 L63.9,1.1 L63.8,1.1 Z M69.6,7.2 C70.8,7.2 71.5,6.6 71.5,5.7 C71.5,4.7 70.8,4.2 69.6,4.2 L67.3,4.2 L67.3,7.2 L69.6,7.2 Z" id="Shape" fill-rule="nonzero"></path>
+                                        <path d="M88.7,14 C84.7,14 82.1,11.2 82.1,7.5 C82.1,3.9 84.8,0.9 88.6,0.9 C90.8,0.9 92.2,1.5 93.5,2.6 L92.1,4.3 C91.1,3.5 90.2,2.9 88.6,2.9 C86.3,2.9 84.5,4.9 84.5,7.4 C84.5,10 86.2,11.9 88.8,11.9 C90,11.9 91.1,11.5 91.9,10.9 L91.9,8.5 L88.7,8.5 L88.7,6.6 L94.1,6.6 L94.1,11.9 C92.7,13.1 90.9,14 88.7,14 Z" id="Path"></path>
+                                        <path d="M111.1,13.8 L108.8,13.8 L107.5,10.7 L101.5,10.7 L100.2,13.8 L97.9,13.8 L103.5,1.1 L105.6,1.1 L111.1,13.8 Z M104.5,3.7 L102.3,8.8 L106.6,8.8 L104.5,3.7 Z" id="Shape" fill-rule="nonzero"></path>
+                                        <polygon id="Path" points="121.3 10.7 121.3 10.7 117.3 4.8 117.3 13.8 115.1 13.8 115.1 1.2 117.5 1.2 121.3 7.2 125.1 1.2 127.5 1.2 127.5 13.8 125.3 13.8 125.3 4.7"></polygon>
+                                        <polygon id="Path" points="141.9 3.1 134.8 3.1 134.8 6.4 141.1 6.4 141.1 8.4 134.8 8.4 134.8 11.8 142 11.8 142 13.8 132.5 13.8 132.5 1.2 141.9 1.2 141.9 3.1"></polygon>
+                                        <path d="M152.4,6.4 C155.1,7 156.5,8 156.5,10.1 C156.5,12.5 154.6,13.9 152,13.9 C150.1,13.9 148.2,13.2 146.7,11.9 L148,10.3 C149.2,11.3 150.4,11.9 152,11.9 C153.4,11.9 154.2,11.3 154.2,10.3 C154.2,9.4 153.7,8.9 151.3,8.4 C148.6,7.8 147.1,7 147.1,4.6 C147.1,2.4 148.9,0.9 151.4,0.9 C153.2,0.9 154.7,1.5 156,2.5 L154.8,4.2 C153.7,3.4 152.5,2.9 151.4,2.9 C150.1,2.9 149.3,3.6 149.3,4.4 C149.4,5.4 150,5.9 152.4,6.4 Z" id="Path"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href="http://developers.armorgames.com/">Dev Portal</a></li>
+                <li><a href="https://support.armorgames.com" target="_blank">Support</a></li>
+                <li><a href="https://www.armorgamesstudios.com" target="_blank">Publishing</a></li>
+                <li><a href="https://www.armorgamesstudios.com/jobs" target="_blank">Jobs</a></li>
+                <li><a href="mailto:ads@armorgames.com?subject=Advertising With Armor Games">Advertise</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="social">
+                <li class="title">Follow Us:</li>
+                <li>
+                    <a href="https://www.facebook.com/ArmorGames/" target="_blank">
+                        <svg width="7px" height="14px" viewBox="0 0 7 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Registration-Page" transform="translate(-998.000000, -1923.000000)" fill="#FFFFFF">
+                                    <g id="Layer_7" transform="translate(273.000000, 459.000000)">
+                                        <g id="Group" transform="translate(721.000000, 1430.000000)">
+                                            <path id="facebook" d="M8.8,37.2 C8.8,36.7 9.1,36.6 9.4,36.6 C9.6,36.6 10.8,36.6 10.8,36.6 L10.8,34.4 L8.8,34.4 C6.6,34.4 6.1,36.1 6.1,37.1 L6.1,38.6 L4.8,38.6 L4.8,40.9 L6.1,40.9 C6.1,43.8 6.1,47.4 6.1,47.4 L8.8,47.4 C8.8,47.4 8.8,43.8 8.8,40.9 L10.6,40.9 L10.8,38.6 L8.8,38.6 L8.8,37.2 Z" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ArmorGames" target="_blank">
+                        <svg width="13px" height="11px" viewBox="0 0 13 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Registration-Page" transform="translate(-995.000000, -1957.000000)" fill="#FFFFFF">
+                                    <g id="Layer_7" transform="translate(273.000000, 459.000000)">
+                                        <g id="Group" transform="translate(721.000000, 1430.000000)">
+                                            <path id="twitter" d="M13.8,68.9 C13.3,69.2 12.8,69.4 12.2,69.5 C11.7,69 11.1,68.7 10.3,68.7 C8.9,68.7 7.7,69.9 7.7,71.3 C7.7,71.5 7.7,71.7 7.8,71.9 C5.7,71.8 3.8,70.8 2.5,69.2 C2.3,69.6 2.2,70 2.2,70.5 C2.2,71.4 2.7,72.2 3.3,72.6 C2.9,72.6 2.5,72.5 2.1,72.3 C2.1,72.3 2.1,72.3 2.1,72.3 C2.1,73.5 3,74.6 4.2,74.8 C4,74.9 3.8,74.9 3.5,74.9 C3.3,74.9 3.2,74.9 3,74.9 C3.3,75.9 4.3,76.7 5.4,76.7 C4.5,77.4 3.4,77.8 2.2,77.8 C2,77.8 1.8,77.8 1.6,77.8 C2.7,78.5 4.1,79 5.5,79 C10.2,79 12.8,75.1 12.8,71.7 C12.8,71.6 12.8,71.5 12.8,71.4 C13.3,71 13.7,70.6 14.1,70.1 C13.6,70.3 13.1,70.4 12.6,70.5 C13.2,70 13.6,69.5 13.8,68.9 Z" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        Twitter
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="/page/armor-games-rules">Conduct Guidelines</a>
+        <a href="/copyright">&copy; 2025 Armor Games</a>
+        <a href="/page/terms-and-conditions">Terms of Service</a>
+        <a href="https://armorgamesstudios.com/privacy/" target="_blank">Privacy Policy</a>
+    </div>
+</div>
+<script>
+window._gameId=17817;
+var _stripe_data={"key":"pk_live_vXisfbs6WUfXeAGqoM18cd9e","email":null};
+</script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script src="/min/agi.js?1f4d0933"></script>
+</body>
 </html>
+
+<!-- Generated: Sat, 17 May 2025 18:16:49 +0000 -->

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </head>
@@ -18,7 +18,7 @@
           <a href="../html-bin/burrito.html">Burrito Bison</a>
           <a href="../html-bin/chibi.html">Chibi Knight</a>
           <a href="../html-bin/doodlejump.html">Doodle Jump</a>
-          <a href="../html-bin/FPA.html">Fancy Pants Series</a> 
+          <a href="../html-bin/FPA.html">Fancy Pants Series</a>
           <a href="../html-bin/knight.html">Knightmare Tower</a>
           <a href="../html-bin/LTF3">Learn to fly 3</a>
           <a href="../html-bin/MSIPFI.html">Mike Shadow: I Paid for it!</a>
@@ -35,9 +35,47 @@
       </div>
     </nav>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <div id="player">
-      <embed src="../temporarygames/swordssouls.swf" width="800" height="600" id="gamefileEmbed" name="gamefile" align="middle" wmode="window" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="always" flashvars="gameID=17817" haspriority="true" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer"></embed>
-        <p style="color: #ffffff;">If you want to fullscreen, right click, then press "fullscreen" near the middle of the list</p>
+    <div id="container" style="width: 900px; height: 700px" position="absolute">
+      <script type="text/javascript">
+        function play() {
+          const ruffle =
+            window.RufflePlayer?.newest() ||
+            window.RufflePlayer?.config ||
+            window.RufflePlayer;
+          if (!ruffle || !ruffle.createPlayer) {
+            console.error("Ruffle is not loaded or supported.");
+            return;
+          }
+
+          const player = ruffle.createPlayer();
+          player.config = {
+            autoplay: true,
+            contextMenu: false,
+            splashScreen: false,
+            warnOnUnsupportedContent: false,
+            allowScriptAccess: true,
+            maxExecutionDuration: 30,
+          };
+
+          const container = document.getElementById("container");
+          container.innerHTML = ""; // Clear previous content
+          container.appendChild(player);
+
+          // Proper style with units
+
+          player
+            .load("https://files.crazygames.com/swordssouls.swf")
+            .then(() => {
+              window.parent.postMessage({ type: "ruffleready" }, "*");
+            });
+        }
+
+        play();
+      </script>
+      <p>
+        If you want to fullscreen, right click, then press "fullscreen" near the
+        middle of the list.
+      </p>
     </div>
     <script src="../script.js"></script>
   </body>

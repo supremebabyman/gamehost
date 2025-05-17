@@ -8,6 +8,7 @@ const BTD5 = document.getElementById("btd5");
 const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
 const Doodle = document.getElementById("doodle");
+const Electric = document.getElementById("electric");
 const Fancy = document.getElementById("fancy");
 const Flash = document.getElementById("flash");
 const HSBTB = document.getElementById("hsbtb");
@@ -26,6 +27,8 @@ const Paburg = document.getElementById("paburg");
 const Padog = document.getElementById("padog");
 const Pafree = document.getElementById("pafree");
 const Pagames = document.getElementById("pagames");
+const Papan = document.getElementById("papan");
+const Papiz = document.getElementById("papiz");
 const Palu = document.getElementById("palu");
 const Rss = document.getElementById("rss");
 const Rs1 = document.getElementById("rs1");
@@ -35,8 +38,7 @@ const Rs4 = document.getElementById("rs4");
 const Rs5 = document.getElementById("rs5");
 const Rt1 = document.getElementById("rt1");
 const Rt2 = document.getElementById("rt2");
-const Papan = document.getElementById("papan");
-const Papiz = document.getElementById("papiz");
+const Scratch = document.getElementById("scratch");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Smash = document.getElementById("smash");
@@ -62,11 +64,6 @@ if (Achievement) {
 if (Arcane) {
   Arcane.addEventListener("click", function () {
     window.location.href = "../html-bin/arcane.html";
-  });
-}
-if (Bonk) {
-  Bonk.addEventListener("click", function () {
-    window.location.href = "../html-bin/bonkio.html";
   });
 }
 if (BTDS) {
@@ -104,6 +101,11 @@ if (Doodle) {
     window.location.href = "../html-bin/doodlejump.html";
   });
 }
+if (Electric) {
+  Electric.addEventListener("click", function () {
+    window.location.href = "../html-bin/construction.html";
+  });
+}
 if (Fancy) {
   Fancy.addEventListener("click", function () {
     window.location.href = "../html-bin/FPA.html";
@@ -119,7 +121,6 @@ if (HSETP) {
     window.location.href = "../html-bin/HSEtP.html";
   });
 }
-
 if (HSFTC) {
   HSFTC.addEventListener("click", function () {
     window.location.href = "../html-bin/HSFtC.html";
@@ -207,12 +208,12 @@ if (Rss) {
 }
 if (Rs1) {
   Rs1.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
+    window.location.href = "../html-bin/RS1.html";
   });
 }
 if (Rs2) {
   Rs2.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
+    window.location.href = "../html-bin/RS2.html";
   });
 }
 if (Rs3) {
@@ -240,6 +241,11 @@ if (Rt2) {
     window.location.href = "../html-bin/RT2.html";
   });
 }
+if (Scratch) {
+  Scratch.addEventListener("click", function () {
+    window.location.href = "../html-bin/gettingoverit.html";
+  });
+}
 if (Sonic) {
   Sonic.addEventListener("click", function () {
     window.location.href = "../html-bin/flashsonic.html";
@@ -247,7 +253,7 @@ if (Sonic) {
 }
 if (Soul) {
   Soul.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
+    window.location.href = "../html-bin/swords.html";
   });
 }
 if (Smash) {
