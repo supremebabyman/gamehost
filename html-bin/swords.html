@@ -35,15 +35,20 @@
       </div>
     </nav>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <div id="container" style="width: 900px; height: 700px" position="absolute">
+    <!-- Centering Container -->
+    <div>
+      <div
+        id="container-wrapper"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <div id="container" style="width: 900px; height: 675px"></div>
+      </div>
+
       <script type="text/javascript">
         function play() {
-          const ruffle =
-            window.RufflePlayer?.newest() ||
-            window.RufflePlayer?.config ||
-            window.RufflePlayer;
+          const ruffle = window.RufflePlayer?.newest();
           if (!ruffle || !ruffle.createPlayer) {
-            console.error("Ruffle is not loaded or supported.");
+            console.error("Ruffle is not loaded correctly.");
             return;
           }
 
@@ -57,11 +62,12 @@
             maxExecutionDuration: 30,
           };
 
-          const container = document.getElementById("container");
-          container.innerHTML = ""; // Clear previous content
-          container.appendChild(player);
+          player.style.width = "100%";
+          player.style.height = "100%";
 
-          // Proper style with units
+          const container = document.getElementById("container");
+          container.innerHTML = ""; // Clear any existing content
+          container.appendChild(player);
 
           player
             .load("https://files.crazygames.com/swordssouls.swf")
@@ -72,7 +78,7 @@
 
         play();
       </script>
-      <p>
+      <p style="text-align: center; color: #ffffff">
         If you want to fullscreen, right click, then press "fullscreen" near the
         middle of the list.
       </p>
