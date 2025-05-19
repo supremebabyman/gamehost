@@ -1,4 +1,4 @@
-const Achievement = document.getElementById("achievement");
+const Achievement2 = document.getElementById("achievement2");
 const Arcane = document.getElementById("arcane");
 const Bonk = document.getElementById("bonk");
 const BTDS = document.getElementById("btds");
@@ -56,9 +56,9 @@ const Uplog = document.getElementById("uplog");
 // Front pages
 // *Crickets*
 
-if (Achievement) {
-  Achievement.addEventListener("click", function () {
-    window.location.href = "../html-bin/achievement.html";
+if (Achievement2) {
+  Achievement2.addEventListener("click", function () {
+    window.location.href = "../html-bin/achievement2.html";
   });
 }
 if (Arcane) {
