@@ -1,3 +1,4 @@
+const Achievement = document.getElementById("achievement");
 const Achievement2 = document.getElementById("achievement2");
 const Arcane = document.getElementById("arcane");
 const Bonk = document.getElementById("bonk");
@@ -8,6 +9,11 @@ const BTD5 = document.getElementById("btd5");
 const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
 const Doodle = document.getElementById("doodle");
+const DSS = document.getElementById("dss");
+const DS1 = document.getElementById("ds1");
+const DS2 = document.getElementById("ds2");
+const DS3 = document.getElementById("ds3");
+const DS4 = document.getElementById("ds4");
 const Electric = document.getElementById("electric");
 const Fancy = document.getElementById("fancy");
 const Flash = document.getElementById("flash");
@@ -42,6 +48,7 @@ const Scratch = document.getElementById("scratch");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Smash = document.getElementById("smash");
+const Level = document.getElementById("level");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
@@ -56,6 +63,11 @@ const Uplog = document.getElementById("uplog");
 // Front pages
 // *Crickets*
 
+if (Achievement) {
+  Achievement.addEventListener("click", function () {
+    window.location.href = "../html-bin/achievement.html";
+  });
+}
 if (Achievement2) {
   Achievement2.addEventListener("click", function () {
     window.location.href = "../html-bin/achievement2.html";
@@ -99,6 +111,31 @@ if (Chibi) {
 if (Doodle) {
   Doodle.addEventListener("click", function () {
     window.location.href = "../html-bin/doodlejump.html";
+  });
+}
+if (DLS) {
+  DLS.addEventListener("click", function () {
+    window.location.href = "../html-bin/dls.html";
+  });
+}
+if (DL1) {
+  DL1.addEventListener("click", function () {
+    window.location.href = "../html-bin/ducklife.html";
+  });
+}
+if (DL2) {
+  DL2.addEventListener("click", function () {
+    window.location.href = "../html-bin/ducklife2.html";
+  });
+}
+if (DL3) {
+  DL3.addEventListener("click", function () {
+    window.location.href = "../html-bin/ducklife3.html";
+  });
+}
+if (DL4) {
+  DL4.addEventListener("click", function () {
+    window.location.href = "../html-bin/ducklife4.html";
   });
 }
 if (Electric) {
@@ -259,6 +296,11 @@ if (Soul) {
 if (Smash) {
   Smash.addEventListener("click", function () {
     window.location.href = "../html-bin/smash.html";
+  });
+}
+if (Level) {
+  Level.addEventListener("click", function () {
+    window.location.href = "../html-bin/thisistheonlylevel.html";
   });
 }
 if (W1) {
