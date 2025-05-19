@@ -9,11 +9,11 @@ const BTD5 = document.getElementById("btd5");
 const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
 const Doodle = document.getElementById("doodle");
-const DSS = document.getElementById("dss");
-const DS1 = document.getElementById("ds1");
-const DS2 = document.getElementById("ds2");
-const DS3 = document.getElementById("ds3");
-const DS4 = document.getElementById("ds4");
+const DLS = document.getElementById("dls");
+const DL1 = document.getElementById("dl1");
+const DL2 = document.getElementById("dl2");
+const DL3 = document.getElementById("dl3");
+const DL4 = document.getElementById("dl4");
 const Electric = document.getElementById("electric");
 const Fancy = document.getElementById("fancy");
 const Flash = document.getElementById("flash");
@@ -105,7 +105,7 @@ if (Burrito) {
 }
 if (Chibi) {
   Chibi.addEventListener("click", function () {
-    window.location.href = "../html-bin/chibi.html"; //make chibi.html later
+    window.location.href = "../html-bin/chibi.html";
   });
 }
 if (Doodle) {
@@ -264,7 +264,7 @@ if (Rs4) {
   });
 }
 if (Rs5) {
-  Papiz.addEventListener("click", function () {
+  Rs5.addEventListener("click", function () {
     window.location.href = "../html-bin/RS5.html";
   });
 }
