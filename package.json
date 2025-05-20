@@ -4,7 +4,7 @@
   "description": "Server for Flash game launcher with HTML and CSS support",
   "main": "server.js",
   "scripts": {
-    "start": "Node server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "html",
