@@ -140,7 +140,7 @@ if (DL4) {
 }
 if (Electric) {
   Electric.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
+    window.location.href = "../html-bin/electricman2.html";
   });
 }
 if (Fancy) {
