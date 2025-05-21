@@ -23,6 +23,8 @@ Files needed to be implemented:
 LTF2
 Jacksmith
 Super smash flash 2
+Moto x3m 1 and 2
+Factory balls 1 and 2
 Cookie Clicker
 
 Need to be added to js:
