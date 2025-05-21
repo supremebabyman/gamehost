@@ -27,10 +27,17 @@ const HSS = document.getElementById("hss");
 const HSSTD = document.getElementById("hsstd");
 const IMP = document.getElementById("imposs");
 const Knight = document.getElementById("knight");
+const Jack = document.getElementById("jack");
+const Level = document.getElementById("level");
+const LTFS = document.getElementById("LTFS");
+const LTF1 = document.getElementById("LTF1");
+const LTF2 = document.getElementById("LTF2");
 const LTF3 = document.getElementById("LTF3");
 const Mario = document.getElementById("mario");
 const Meat = document.getElementById("meat");
 const Mike = document.getElementById("mike");
+const Moto = document.getElementById("moto");
+const Moto2 = document.getElementById("moto2");
 const Paburg = document.getElementById("paburg");
 const Padog = document.getElementById("padog");
 const Pafree = document.getElementById("pafree");
@@ -51,7 +58,7 @@ const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Smash = document.getElementById("smash");
 const Smash2 = document.getElementById("smash2");
-const Level = document.getElementById("level");
+const toss = document.getElementById("toss");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
@@ -199,6 +206,21 @@ if (IMP) {
 if (Knight) {
   Knight.addEventListener("click", function () {
     window.location.href = "../html-bin/knight.html"; //Make Knight.html later
+  });
+}
+if (Jack) {
+  Jack.addEventListener("click", function () {
+    window.location.href = "../html-bin/jacksmith.html"; //Make Knight.html later
+  });
+}
+if (LTFS) {
+  LTFS.addEventListener("click", function () {
+    window.location.href = "../html-bin/LTFS.html"; //Make Knight.html later
+  });
+}
+if (LTF1) {
+  LTF1.addEventListener("click", function () {
+    window.location.href = "../html-bin/LTF1.html"; //Make Knight.html later
   });
 }
 if (LTF3) {
