@@ -1,6 +1,8 @@
 const Achievement = document.getElementById("achievement");
 const Achievement2 = document.getElementById("achievement2");
 const Arcane = document.getElementById("arcane");
+const Balls = document.getElementById("balls");
+const Balls2 = document.getElementById("balls2");
 const Bonk = document.getElementById("bonk");
 const BTDS = document.getElementById("btds");
 const BTD1 = document.getElementById("btd1");
@@ -48,6 +50,7 @@ const Scratch = document.getElementById("scratch");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Smash = document.getElementById("smash");
+const Smash2 = document.getElementById("smash2");
 const Level = document.getElementById("level");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
@@ -76,6 +79,16 @@ if (Achievement2) {
 if (Arcane) {
   Arcane.addEventListener("click", function () {
     window.location.href = "../html-bin/arcane.html";
+  });
+}
+if (Balls) {
+  Balls.addEventListener("click", function () {
+    window.location.href = "../html-bin/balls.html";
+  });
+}
+if (Balls2) {
+  Balls2.addEventListener("click", function () {
+    window.location.href = "../html-bin/balls2.html";
   });
 }
 if (BTDS) {
