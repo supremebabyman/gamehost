@@ -1,21 +1,29 @@
 const express = require("express");
+const fs = require("fs");
 const path = require("path");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-
 const app = express();
 const PORT = process.env.PORT || 3040;
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname)));
+app.use(express.static("."));
+app.use(express.json());
 
-// Optional: handle 404.html
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "404.html"));
+// Feedback submission route
+app.post("/submit-feedback", (req, res) => {
+  const feedback = req.body.feedback;
+  const timestamp = new Date().toISOString();
+  const entry = `\n[${timestamp}]\n${feedback}\n`;
+
+  const filePath = path.join(__dirname, "feedback.txt");
+
+  fs.appendFile(filePath, entry, (err) => {
+    if (err) {
+      console.error("Error writing to file:", err);
+      return res.status(500).json({ message: "Failed to save feedback." });
+    }
+    res.json({ message: "Feedback submitted successfully!" });
+  });
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
