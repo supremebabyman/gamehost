@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 3040;
 const DISCORD_WEBHOOK_URL =
   "https://discord.com/api/webhooks/1374920243482329129/OQnFTa7uZ30a7B3rfjm85O8Z163_06HhSAnJVrKe7hYn87ZyNc0XOB-2OzPmfW2lvN29";
 
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
+
 app.post("/submit-feedback", async (req, res) => {
   const feedback = req.body.feedback;
   const timestamp = new Date().toISOString();
