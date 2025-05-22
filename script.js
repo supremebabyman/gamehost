@@ -238,6 +238,16 @@ if (Meat) {
     window.location.href = "../html-bin/meatboy.html";
   });
 }
+if (Moto) {
+  Moto.addEventListener("click", function () {
+    window.location.href = "../html-bin/moto.html";
+  });
+}
+if (Moto2) {
+  Moto2.addEventListener("click", function () {
+    window.location.href = "../html-bin/moto2.html";
+  });
+}
 if (Paburg) {
   Paburg.addEventListener("click", function () {
     window.location.href = "../html-bin/paburg.html";
@@ -331,6 +341,11 @@ if (Soul) {
 if (Smash) {
   Smash.addEventListener("click", function () {
     window.location.href = "../html-bin/smash.html";
+  });
+}
+if (Smash2) {
+  Smash2.addEventListener("click", function () {
+    window.location.href = "../html-bin/smash2.html";
   });
 }
 if (Level) {
