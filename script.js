@@ -372,7 +372,7 @@ if (Credits) {
 }
 if (Gamesug) {
   Gamesug.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
+    window.location.href = "../html-bin/gamesug.html";
   });
 }
 if (Home) {
