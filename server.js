@@ -2,7 +2,8 @@ const express = require("express");
 const fetch = require("node-fetch");
 const path = require("path");
 const app = express();
-const port = process.env.PORT || 3040;
+const PORT = process.env.PORT || 3040;
+const port = PORT;
 // Using node-fetch v2
 
 const DISCORD_WEBHOOK_URL =
