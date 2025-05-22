@@ -1,11 +1,12 @@
 const express = require("express");
-const fetch = require("node-fetch"); 
+const fetch = require("node-fetch");
 const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3040;
 
 // Don't abuse this just because it's there
-const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1374920243482329129/OQnFTa7uZ30a7B3rfjm85O8Z163_06HhSAnJVrKe7hYn87ZyNc0XOB-2OzPmfW2lvN29";
+const DISCORD_WEBHOOK_URL =
+  "https://discord.com/api/webhooks/1374920243482329129/OQnFTa7uZ30a7B3rfjm85O8Z163_06HhSAnJVrKe7hYn87ZyNc0XOB-2OzPmfW2lvN29";
 
 app.use(express.static("."));
 app.use(express.json());
