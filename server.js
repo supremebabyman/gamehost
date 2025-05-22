@@ -3,13 +3,10 @@ const fetch = require("node-fetch");
 const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3040;
+// Using node-fetch v2
 
-// Don't abuse this just because it's there
 const DISCORD_WEBHOOK_URL =
   "https://discord.com/api/webhooks/1374920243482329129/OQnFTa7uZ30a7B3rfjm85O8Z163_06HhSAnJVrKe7hYn87ZyNc0XOB-2OzPmfW2lvN29";
-
-app.use(express.static("."));
-app.use(express.json());
 
 app.post("/submit-feedback", async (req, res) => {
   const feedback = req.body.feedback;
@@ -23,15 +20,14 @@ app.post("/submit-feedback", async (req, res) => {
       body: JSON.stringify({ content: message }),
     });
 
+    const result = await response.text(); // Add this
+    console.log("Discord response:", result); // Add this
+
     if (!response.ok) throw new Error("Discord webhook failed");
 
     res.json({ message: "Feedback submitted successfully!" });
   } catch (error) {
     console.error("Error sending to Discord:", error);
-    res.status(500).json({ message: "Failed to send feedback." });
+    res.status(500).json({ message: `Failed: ${error.message}` });
   }
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
 });
