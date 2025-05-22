@@ -397,6 +397,6 @@ if (Home) {
 }
 if (Uplog) {
   Uplog.addEventListener("click", function () {
-    window.location.href = "../html-bin/update.html";
+    window.location.href = "../html-bin/updates.html";
   });
 }

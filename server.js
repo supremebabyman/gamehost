@@ -2,7 +2,7 @@ const express = require("express");
 const fetch = require("node-fetch");
 const path = require("path");
 const app = express();
-const PORT = process.env.PORT || 46314;
+const PORT = process.env.PORT || 10000;
 const port = PORT;
 // Using node-fetch v2
 
