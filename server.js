@@ -9,6 +9,10 @@ const port = PORT;
 const DISCORD_WEBHOOK_URL =
   "https://discord.com/api/webhooks/1374920243482329129/OQnFTa7uZ30a7B3rfjm85O8Z163_06HhSAnJVrKe7hYn87ZyNc0XOB-2OzPmfW2lvN29";
 
+app.get("/", (req, res) => {
+  res.redirect("/html-bin/gamesug.html");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
