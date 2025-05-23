@@ -1,8 +1,4 @@
-const app = express();
-const express = require("express");
-const fetch = require("node-fetch");
-
-const DISCORD_WEBHOOK_URL = process.env.webfeed;
+import { DISCORD_WEBHOOK_URL, fetch, app } from "../server.js";
 
 app.post("/submit-feedback", async (req, res) => {
   try {
