@@ -1,25 +1,22 @@
 const express = require("express");
 const fetch = require("node-fetch");
 const path = require("path");
+const dotenv = require("dotenv").config();
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000; // CodeSandbox assigns this
 
-const DISCORD_WEBHOOK_URL =
-  "https://discord.com/api/webhooks/1374920243482329129/OQnFTa7uZ30a7B3rfjm85O8Z163_06HhSAnJVrKe7hYn87ZyNc0XOB-2OzPmfW2lvN29";
+const DISCORD_WEBHOOK_URL = process.env.webfeed;
 
 // Middleware
-app.use(express.static(__dirname)); // Serve static files like index.html
-app.use(express.json()); // Parse incoming JSON
+app.use(express.static(__dirname));
+app.use(express.json());
 
-// ✅ Serve index.html at root
-
+// Serve index.html at root
 app.get("/", (req, res) => {
-  const filePath = path.join(__dirname, "index.html");
-  console.log("Sending file from:", filePath);
-  res.sendFile(filePath);
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// ✅ Feedback route
+// Feedback route
 app.post("/submit-feedback", async (req, res) => {
   const feedback = req.body.feedback;
   const timestamp = new Date().toISOString();
@@ -44,7 +41,7 @@ app.post("/submit-feedback", async (req, res) => {
   }
 });
 
-// ✅ Start server (ONLY ONCE!)
+// ✅ Start only with environment-assigned port
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
