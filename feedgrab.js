@@ -1,5 +1,3 @@
-import { DISCORD_WEBHOOK_URL, fetch, app } from "../server.js";
-
 app.post("/submit-feedback", async (req, res) => {
   try {
     const feedback = req.body.feedback;
