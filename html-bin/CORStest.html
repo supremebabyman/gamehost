@@ -1,49 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Pizza Tower</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </head>
-  <body style="background-color: rgb(0, 0, 0)">
+  <title>Swords and Souls</title>
+  <body>
     <!-- Navigation Bar -->
     <nav>
       <div class="dropdown">
         <button class="dropbtn" link="images/dropdown.png"></button>
         <div class="dropdown-content">
-          <a href="arcane.html">Arcane Weapon</a>
-          <a href="chibi.html">Chibi Knight</a>
-          <a href="birrito.html">Birrito Bison</a>
-          <a href="MSIPFI.html">Mike Shadow: I Paid for it!</a>
-          <a href="knight.html">Knightmare Tower</a>
-          <a href="LTF3.html">Learn to fly 3</a>
-          <a href="Pizza.html">Pizza Tower</a>
-          <a href="swords.html">Swords and Souls</a>
-          <a href="Undertale.html">Undertale</a>
+          <a href="../html-bin/achievement.html">Achievement Unlocked</a>
+          <a href="../html-bin/arcane.html">Arcane Weapon</a>
+          <a href="../html-bin/BTDS.html">Bloons TD Series</a>
+          <a href="../html-bin/burrito.html">Burrito Bison</a>
+          <a href="../html-bin/chibi.html">Chibi Knight</a>
+          <a href="../html-bin/doodlejump.html">Doodle Jump</a>
+          <a href="../html-bin/FPA.html">Fancy Pants Series</a>
+          <a href="../html-bin/knight.html">Knightmare Tower</a>
+          <a href="../html-bin/LTF3">Learn to fly 3</a>
+          <a href="../html-bin/MSIPFI.html">Mike Shadow: I Paid for it!</a>
+          <a href="../html-bin/Pizza.html">Pizza Tower</a>
+          <a href="../html-bin/swords.html">Swords and Souls</a>
         </div>
       </div>
       <h1 id="home">Radio-A's Unblocked Games</h1>
       <div class="nav-links">
-        <a id="about" href="about.html">About</a>
         <a id="credits" href="credits.html">Credits</a>
-        <a id="uplog" href="update.html">Updates</a>
-        <a id="gamesug" href="gamesug.html">Suggestions</a>
+        <a id="about" href="about.html">About</a>
+        <a id="uplog" href="updates.html">Updates</a>
+        <a id="gamesug" href="public/gamesug.html">Suggestions</a>
       </div>
     </nav>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <!-- Centering Container -->
+    <div>
+      <div
+        id="container-wrapper"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <div
+          id="container"
+          style="width: 900px; height: 675px"
+          allowfullscreen
+        ></div>
+      </div>
+      <script type="text/javascript">
+        function play() {
+          const ruffle = window.RufflePlayer?.newest();
+          if (!ruffle || !ruffle.createPlayer) {
+            console.error("Ruffle is not loaded correctly.");
+            return;
+          }
 
-    <!-- Game Embed -->
-    <div id="player" style="text-align: center; margin-top: 20px">
-      <iframe
-        src="pizza_tower_build/index.html"
-        width="960"
-        height="540"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-      <p style="color: #ffffff">
-        If you want to fullscreen, right click the game and select "fullscreen".
+          const player = ruffle.createPlayer();
+          player.config = {
+            autoplay: true,
+            contextMenu: false,
+            splashScreen: false,
+            warnOnUnsupportedContent: false,
+            allowScriptAccess: true,
+            maxExecutionDuration: 30,
+          };
+
+          player.style.width = "100%";
+          player.style.height = "100%";
+
+          const container = document.getElementById("container");
+          container.innerHTML = ""; // Clear any existing content
+          container.appendChild(player);
+
+          player.load("../temporarygames/burritobison.swf").then(() => {
+            window.parent.postMessage({ type: "ruffleready" }, "*");
+          });
+        }
+
+        play();
+      </script>
+      <button id="fullscreen" style="position: absolute; right: 10%">
+        Fullscreen
+      </button>
+      <script>
+        const Fullscreen = getElementById("fullscreen");
+        if (Fullscreen) {
+          Fullscreen.addEventListener("click", function () {
+            container.style.width = "1100px";
+            container.style.height = "200%";
+          });
+        }
+      </script>
+      <p style="text-align: center; color: #ffffff">
+        If you want to fullscreen, right click, then press "fullscreen" near the
+        middle of the list.
       </p>
     </div>
-
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
