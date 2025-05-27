@@ -5,7 +5,7 @@ const dotenv = require("dotenv").config();
 const app = express();
 const PORT = 3000; // CodeSandbox assigns this
 
-const DISCORD_WEBHOOK_URL = process.env.webfeed;
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
 // Middleware
 app.use(express.static(__dirname));
@@ -14,6 +14,12 @@ app.use(express.json());
 // Serve index.html at root
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
+});
+
+// ** Add this env test route here **
+app.get("/test-env", (req, res) => {
+  const webhook = process.env.DISCORD_WEBHOOK_URL || "NOT SET";
+  res.send(`DISCORD_WEBHOOK_URL is: ${webhook}`);
 });
 
 // Feedback route
@@ -41,7 +47,7 @@ app.post("/submit-feedback", async (req, res) => {
   }
 });
 
-// ✅ Start only with environment-assigned port
+// Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
