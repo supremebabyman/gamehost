@@ -26,7 +26,7 @@ app.get("/test-env", (req, res) => {
 app.post("/submit-feedback", async (req, res) => {
   const feedback = req.body.feedback;
   const timestamp = new Date().toISOString();
-  const message = `📩 **New Feedback Submitted**\n🕒 ${timestamp}\n💬 ${feedback}`;
+  const message = `**New Feedback Submitted**\n ${feedback}`;
 
   try {
     const response = await fetch(DISCORD_WEBHOOK_URL, {
