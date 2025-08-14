@@ -416,3 +416,23 @@ if (render) {
     window.location.href = "https://gamehost-h3v4.onrender.com/";
   });
 }
+if (github) {
+  github.addEventListener("click", function () {
+    window.location.href = "https://radio-a.github.io/gamehost/";
+  });
+}
+if (CSB3000) {
+  CSB3000.addEventListener("click", function () {
+    window.location.href = "https://f5glnl-3000.csb.app/";
+  });
+}
+if (CSB50000) {
+  CSB50000.addEventListener("click", function () {
+    window.location.href = "https://f5glnl-50000.csb.app/";
+  });
+}
+if (LME) {
+  LME.addEventListener("click", function () {
+    window.location.href = "https://learnmatheasy.wixsite.com/site";
+  });
+}
