@@ -268,7 +268,13 @@ nav {
 #credits,
 #about,
 #uplog,
-#gamesug {
+#gamesug,
+#render,
+#github,
+#3000,
+#3040,
+#50000,
+#LME {
   padding: 10px 20px;
   font-size: 12px;
   background-color: #111;
@@ -282,7 +288,13 @@ nav {
 #credits:hover,
 #about:hover,
 #uplog:hover,
-#gamesug:hover {
+#gamesug:hover,
+#render:hover,
+#github:hover,
+#3000:hover,
+#3040:hover,
+#50000:hover,
+#LME:hover {
   background-color: #333333;
   transform: scale(1.15);
 }

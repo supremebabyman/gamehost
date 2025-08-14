@@ -70,6 +70,12 @@ const Credits = document.getElementById("credits");
 const Gamesug = document.getElementById("gamesug");
 const Home = document.getElementById("home");
 const Uplog = document.getElementById("uplog");
+const render = document.getElementById("render");
+const github = document.getElementById("github");
+const CSB3000 = document.getElementById("3000");
+const CSB3040 = document.getElementById("3040");
+const CSB50000 = document.getElementById("50000");
+const LME = document.getElementById("LME");
 // Front pages
 // *Crickets*
 
@@ -348,6 +354,11 @@ if (Smash2) {
     window.location.href = "../html-bin/smash2.html";
   });
 }
+if (toss) {
+  toss.addEventListener("click", function () {
+    window.location.href = "../html-bin/tossinturt.html";
+  });
+}
 if (Level) {
   Level.addEventListener("click", function () {
     window.location.href = "../html-bin/thisistheonlylevel.html";
@@ -398,5 +409,10 @@ if (Home) {
 if (Uplog) {
   Uplog.addEventListener("click", function () {
     window.location.href = "../html-bin/updates.html";
+  });
+}
+if (render) {
+  render.addEventListener("click", function () {
+    window.location.href = "https://gamehost-h3v4.onrender.com/";
   });
 }
