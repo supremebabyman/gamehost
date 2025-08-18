@@ -71,6 +71,7 @@ body {
 #souls,
 #smash,
 #smash2,
+#submit,
 #toss,
 #w1,
 #w2,
@@ -146,6 +147,7 @@ body {
 #souls:hover,
 #smash:hover,
 #smash2:hover,
+#submit:hover,
 #toss:hover,
 #w1:hover,
 #w2:hover,
@@ -268,15 +270,9 @@ nav {
 #credits,
 #about,
 #uplog,
-#gamesug,
-#render,
-#github,
-#3000,
-#3040,
-#50000,
-#LME {
+#gamesug {
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #111;
   color: #ffffff;
   border: none;
@@ -297,4 +293,30 @@ nav {
 #LME:hover {
   background-color: #333333;
   transform: scale(1.15);
+}
+
+#feedback {
+  resize: none;
+  max-width: 600;
+
+  margin: 1000;
+  background-color: #ffffff;
+  border-color: #555;
+  border-width: 4px;
+  border-radius: 4px;
+}
+
+#render,
+#github,
+#3000,
+#3040,
+#50000,
+#LME {
+  font-size: 12px;
+  background-color: #111;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
 }
