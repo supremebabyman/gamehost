@@ -297,8 +297,8 @@ nav {
 
 #feedback {
   resize: none;
-  max-width: 600;
-
+  max-width: 800;
+  max-height: 500;
   margin: 1000;
   background-color: #ffffff;
   border-color: #555;
