@@ -38,6 +38,7 @@ const Meat = document.getElementById("meat");
 const Mike = document.getElementById("mike");
 const Moto = document.getElementById("moto");
 const Moto2 = document.getElementById("moto2");
+const MVSL = document.getElementById("MVSL");
 const Paburg = document.getElementById("paburg");
 const Padog = document.getElementById("padog");
 const Pafree = document.getElementById("pafree");
@@ -252,6 +253,11 @@ if (Moto) {
 if (Moto2) {
   Moto2.addEventListener("click", function () {
     window.location.href = "../html-bin/moto2.html";
+  });
+}
+if (MVSL) {
+  MVSL.addEventListener("click", function () {
+    window.location.href = "../html-bin/MVSL.html";
   });
 }
 if (Paburg) {
