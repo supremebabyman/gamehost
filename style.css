@@ -299,13 +299,15 @@ nav {
 
 #feedback {
   resize: none;
-  max-width: 800;
-  max-height: 500;
+  min-width: 50px;
+  width: 60%;
+  min-height: 40px;
   margin: 1000;
   background-color: #ffffff;
   border-color: #555;
   border-width: 4px;
   border-radius: 4px;
+  align-self: auto;
 }
 
 #render,
