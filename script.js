@@ -46,6 +46,7 @@ const Pagames = document.getElementById("pagames");
 const Papan = document.getElementById("papan");
 const Papiz = document.getElementById("papiz");
 const Palu = document.getElementById("palu");
+const Pizza = document.getElementById("pizza")
 const Rss = document.getElementById("rss");
 const Rs1 = document.getElementById("rs1");
 const Rs2 = document.getElementById("rs2");
@@ -59,6 +60,7 @@ const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Smash = document.getElementById("smash");
 const Smash2 = document.getElementById("smash2");
+const SM64 = document.getElementById("sm64");
 const toss = document.getElementById("toss");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
@@ -295,6 +297,11 @@ if (Papiz) {
     window.location.href = "../html-bin/papiz.html";
   });
 }
+if (Pizza) {
+  Pizza.addEventListener("click", function () {
+    window.location.href = "../html-bin/pizza.html";
+  });
+}
 if (Rss) {
   Rss.addEventListener("click", function () {
     window.location.href = "../html-bin/RSS.html";
@@ -358,6 +365,11 @@ if (Smash) {
 if (Smash2) {
   Smash2.addEventListener("click", function () {
     window.location.href = "../html-bin/smash2.html";
+  });
+}
+if (SM64) {
+  SM64.addEventListener("click", function () {
+    window.location.href = "../html-bin/sm64.html";
   });
 }
 if (toss) {
