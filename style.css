@@ -11,9 +11,11 @@ body {
   text-align: center;
 }
 
-#img-wrap {
+#Thumbnails {
+  padding-top: 8px;
   position: inherit;
   align-self: center;
+  border-radius: 40px;
 }
 
 #achievement,
