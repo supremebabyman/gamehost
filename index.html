@@ -34,7 +34,7 @@
           <a href="../html-bin/moto.html">Moto xM3</a>
           <a href="../html-bin/moto2.html">Moto xM3 2</a>
           <a href="../html-bin/MVSL.html">NSMB Mario VS Luigi Online</a>
-          <a href="../html-bin/pagames.html">Papa Louies's games</a>
+          <a href="../html-bin/pls.html">Papa Louies's games</a>
           <a href="../html-bin/pizza.html">Pizza Tower</a>
           <a href="../html-bin/rss.html">Riddle School Series</a>
           <a href="../html-bin/mario.html">Super Mario</a>
@@ -42,7 +42,7 @@
           <a href="../html-bin/smash.html">Super Smash Flash</a>
           <a href="../html-bin/smash2.html">Super Smash Flash 2</a>
           <a href="../html-bin/souls.html">Swords and Souls</a>
-          <a href="../html-bin/souls.html">Super Mario 64</a>
+          <a href="../html-bin/sm64.html">Super Mario 64</a>
           <a href="../html-bin/imposs.html">The Impossible Quiz</a>
           <a href="../html-bin/level.html">This is the only level</a>
           <a href="../html-bin/toss.html">Toss the turtle</a>
@@ -73,42 +73,195 @@
     </div>
     <!-- Main Content -->
     <div>
-      <h2>What game do you want to play:</h2>
-      <button id="achievement">Achievement Unlocked</button>
-      <button id="achievement2">Achievement Unlocked 2</button>
-      <button id="arcane">Arcane Weapon</button>
-      <button id="btds">Bloons TD Series</button>
-      <button id="burrito">Burrito Bison (Broken)</button>
-      <button id="chibi">Chibi Knight</button>
-      <button id="doodle">Doodle Jump</button>
-      <button id="dls">Duck Life Series</button>
-      <button id="electric">Electric Man 2 (Bugged)</button>
-      <button id="balls">Factory Balls</button>
-      <button id="balls2">Factory Balls 2</button>
-      <button id="fancy">Fancy Pants Series</button>
-      <button id="sonic">Flash Sonic</button>
-      <button id="scratch">Getting Over it (Scratch Ver)</button>
-      <button id="hss">Henry Stickman Series</button>
-      <button id="knight">Knightmare Tower</button>
-      <button id="LTFS">Learn To Fly Series</button>
-      <button id="mike">Mike Shadow: I Paid For It!</button>
-      <button id="moto">Moto xM3</button>
-      <button id="moto2">Moto xM3 2</button>
-      <button id="MVSL">NSMB Mario VS Luigi Online</button>
-      <button id="pagames">Papa Louies's games</button>
-      <button id="pizza">Pizza Tower</button>
-      <button id="rss">Riddle School Series</button>
-      <button id="mario">Super Mario</button>
-      <button id="meat">Super Meat Boy</button>
-      <button id="smash">Super Smash Flash</button>
-      <button id="smash2">Super Smash Flash 2</button>
-      <button id="souls">Swords and Souls</button>
-      <button id="sm64">Super Mario 64</button>
-      <button id="imposs">The Impossible Quiz</button> 
-      <button id="level">This is the only level</button>
-      <button id="toss">Toss the turtle</button> 
-      <button id="g2048">2048</button>
-    </div>
+      <h2>What game do you want to play?:</h2>
+      <div>
+    <div class="game-grid">
+      <button id="achievement" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/achievement-unlocked.png" alt="Achievement Unlocked"></div>
+        <span>Achievement Unlocked</span>
+      </button> 
+
+      <button id="achievement2" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/achievement-unlocked-2.png" alt="Achievement Unlocked 2"></div>
+        <span>Achievement Unlocked 2</span>
+      </button>
+
+      <button id="arcane" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/arcane-weapon.png" alt="Arcane Weapon"></div>
+        <span>Arcane Weapon</span>
+      </button>
+
+      <button id="btds" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/bloons-td-series.png" alt="Bloons TD Series"></div>
+        <span>Bloons TD Series</span>
+      </button>
+
+      <button id="burrito" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/burrito-bison.png" alt="Burrito Bison (broken)"></div>
+        <span>Burrito Bison (broken)</span>
+      </button>
+
+      <button id="chibi" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/chibi-knight.png" alt="Chibi Knight"></div>
+        <span>Chibi Knight</span>
+      </button>
+
+      <button id="doodle" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/doodle-jump.png" alt="Doodle Jump"></div>
+        <span>Doodle Jump</span>
+      </button>
+
+      <button id="dls" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/duck-life-series.png" alt="Duck Life Series"></div>
+        <span>Duck Life Series</span>
+      </button>
+      
+      <button id="electric" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/electric-man-2.png" alt="Electric Man 2 (Bugged)"></div>
+        <span>Electric Man 2</span>
+      </button>
+      
+      <button id="balls" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/factory-balls.png" alt="Factory Balls"></div>
+        <span>Factory Balls</span>
+      </button>
+      
+      <button id="balls2" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/factory-balls-2.png" alt="Factory Balls 2"></div>
+        <span>Factory Balls 2</span>
+      </button>
+      
+      <button id="fancy" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/fancy-pants-series.png" alt="Fancy Pants Series"></div>
+        <span>Fancy Pants Series</span>
+      </button>
+      
+      <button id="mario" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/flash-mario.png" alt="Flash Mario"></div>
+        <span>Flash Mario</span>
+      </button>
+      
+      <button id="sonic" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/flash-sonic.png" alt="Flash Sonic"></div>
+        <span>Flash Sonic</span>
+      </button>
+      
+      <button id="scratch" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/getting-over-it-scratch.png" alt="Getting Over it (Scratch Ver)"></div>
+        <span>Getting Over it (Scratch Ver)</span>
+      </button>
+
+      <button id="gknight" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/gun-knight.png" alt="Gun Knight"></div>
+        <span>Gun Knight (broken)</span>
+      </button>
+      
+      <button id="hss" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/henry-stickmin-series.png" alt="Henry Stickmin Series"></div>
+        <span>Henry Stickmin Series</span>
+      </button>
+      
+      <button id="knight" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/knightmare-tower.png" alt="Knightmare Tower"></div>
+        <span>Knightmare Tower</span>
+      </button>
+      
+      <button id="LTFS" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/learn-to-fly-series.png" alt="Learn To Fly Series"></div>
+        <span>Learn To Fly Series</span>
+      </button>
+      
+      <button id="mike" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/mike-shadow-i-paid-for-it.png" alt="Mike Shadow: I Paid For It!"></div>
+        <span>Mike Shadow: I Paid For It!</span>
+      </button>
+      
+      <button id="moto" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/moto-x3m.png" alt="Moto xM3"></div>
+        <span>Moto xM3</span>
+      </button>
+      
+      <button id="moto2" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/moto-x3m-2.png" alt="Moto xM3 2"></div>
+        <span>Moto xM3 2</span>
+      </button>
+      
+      <button id="MVSL" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/new-super-mario-bros-mario-versus-luigi.png" alt="NSMB Mario VS Luigi Online"></div>
+        <span>NSMB Mario VS Luigi Online</span>
+      </button>
+      
+      <button id="pls" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/papa-louie's-series.png" alt="Papa Louie's Series"></div>
+        <span>Papa Louie's Series</span>
+      </button>
+      
+      <button id="pizza" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/pizza-tower.png" alt="Pizza Tower"></div>
+        <span>Pizza Tower</span>
+      </button>
+      
+      <button id="rss" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/riddle-school-series.png" alt="Riddle School Series"></div>
+        <span>Riddle School Series</span>
+      </button>
+
+      <button id="kitty" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/strikeforce-kitty.png" alt="Strikeforce Kitty Series"></div>
+        <span>Strikeforce Kitty Series</span>
+      </button>
+      
+      <button id="sm63" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/super-mario-63.png" alt="Super Mario 63"></div>
+        <span>Super Mario 63</span>
+      </button>
+
+      <button id="sm64" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/super-mario-64.png" alt="Super Mario 64"></div>
+        <span>Super Mario 64</span>
+      </button>
+      
+      <button id="meat" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/super-meat-boy.png" alt="Super Meat Boy"></div>
+        <span>Super Meat Boy</span>
+      </button>
+      
+      <button id="smash" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/super-smash-flash.png" alt="Super Smash Flash"></div>
+        <span>Super Smash Flash</span>
+      </button>
+      
+      <button id="smash2" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/super-smash-flash-2.png" alt="Super Smash Flash 2"></div>
+        <span>Super Smash Flash 2</span>
+      </button>
+      
+      <button id="souls" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/swords-and-souls.png" alt="Swords and Souls"></div>
+        <span>Swords and Souls</span>
+      </button>
+      
+      <button id="imposs" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/the-impossible-quiz.png" alt="The Impossible Quiz"></div>
+        <span>The Impossible Quiz</span>
+      </button>
+      
+      <button id="level" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/this-is-the-only-level.png" alt="This is the only level"></div>
+        <span>This is the only level</span>
+      </button>
+      
+      <button id="toss" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/toss-the-turtle.png" alt="Toss the turtle"></div>
+        <span>Toss the turtle</span>
+      </button>
+      
+      <button id="g2048" class="game-btn">
+        <div class="img-wrap"><img src="../Thumbnails/2048.png" alt="2048"></div>
+        <span>2048</span>
+      </button>
+      <!-- Repeat for other games -->
+    </div>   
     <script src="../script.js"></script>
   </body>
 </html>

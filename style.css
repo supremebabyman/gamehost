@@ -11,6 +11,11 @@ body {
   text-align: center;
 }
 
+#img-wrap {
+  position: inherit;
+  align-self: center;
+}
+
 #achievement,
 #achievement2,
 #arcane,
