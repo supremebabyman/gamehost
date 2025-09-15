@@ -101,7 +101,7 @@ body {
   background-color: #111;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 40px;
   transition: background-color 0.3s, transform 0.2s;
 }
 
