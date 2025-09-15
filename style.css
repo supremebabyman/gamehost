@@ -32,6 +32,7 @@ body {
 #electric,
 #fancy,
 #fullscreen,
+#gknight,
 #hss,
 #hsbtb,
 #hsetp,
@@ -40,6 +41,7 @@ body {
 #hsstd,
 #imposs,
 #knight,
+#kitty,
 #jack,
 #LTFS,
 #LTF1,
@@ -55,7 +57,7 @@ body {
 #paburg,
 #padog,
 #pafree,
-#pagames,
+#pls,
 #palu,
 #papan,
 #papiz,
@@ -69,11 +71,16 @@ body {
 #rt1,
 #rt2,
 #scratch,
-#sonic,
-#souls,
+#skitty,
+#skitty2,
+#skittyl,
+#skittyls,
+#sm63,
+#sm64,
 #smash,
 #smash2,
-#sm64,
+#sonic,
+#souls,
 #submit,
 #toss,
 #w1,
@@ -84,8 +91,8 @@ body {
   font-size: 18px;
   margin: 10px;
   cursor: pointer;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #111;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   transition: background-color 0.3s, transform 0.2s;
@@ -112,6 +119,7 @@ body {
 #electric:hover,
 #fancy:hover,
 #fullscreen:hover,
+#gknight:hover,
 #hss:hover,
 #hsbtb:hover,
 #hsetp:hover,
@@ -120,6 +128,7 @@ body {
 #hsstd:hover,
 #imposs:hover,
 #knight:hover,
+#kitty:hover,
 #LTFS:hover,
 #LTF1:hover,
 #LTF2:hover,
@@ -134,7 +143,7 @@ body {
 #paburg:hover,
 #padog:hover,
 #pafree:hover,
-#pagames:hover,
+#pls:hover,
 #palu:hover,
 #papan:hover,
 #papiz:hover,
@@ -148,18 +157,23 @@ body {
 #rt1:hover,
 #rt2:hover,
 #scratch:hover,
-#sonic:hover,
-#souls:hover,
+#skitty:hover,
+#skitty2:hover,
+#skittyl:hover,
+#skittyls:hover,
+#sm63:hover,
+#sm64:hover,
 #smash:hover,
 #smash2:hover,
+#sonic:hover,
+#souls:hover,
 #submit:hover,
-#sm64:hover,
 #toss:hover,
 #w1:hover,
 #w2:hover,
 #w3:hover,
 #g2048:hover {
-  background-color: #b1b1b1;
+  background-color: #333333;
   transform: scale(1.15);
 }
 
@@ -327,4 +341,53 @@ nav {
   border-radius: 8px;
   transition: background-color 0.3s, transform 0.2s;
   cursor: pointer;
+}
+
+/* ======================= */
+/* Game Buttons   */
+/* ======================= */
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.game-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  margin: 10px;
+  padding: 0;
+  background-color: #111;
+  color: #000000;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.game-btn .img-wrap {
+  width: 100%;
+}
+
+.game-btn .img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto; /* variable height, keeps aspect ratio */
+  object-fit: contain;
+}
+
+.game-btn span {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.game-btn:hover {
+  transform: scale(1.15);
+  background-color: #333333;
 }
