@@ -305,7 +305,7 @@ if (LTF3) {
 }
 if (Mario) {
   Mario.addEventListener("click", function () {
-    window.location.href = "../html-bin/flashmario.html";
+    window.location.href = "../html-bin/mario.html";
   });
 }
 if (Meat) {

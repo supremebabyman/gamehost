@@ -16,6 +16,7 @@ body {
   position: inherit;
   align-self: center;
   border-radius: 40px;
+  margin: 1000;
 }
 
 #achievement,
