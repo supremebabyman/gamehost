@@ -16,6 +16,7 @@ const BTD2 = document.getElementById("btd2");
 const BTD5 = document.getElementById("btd5");
 const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
+const Cookie = document.getElementById("cookie");
 const Doodle = document.getElementById("doodle");
 const DLS = document.getElementById("dls");
 const DL1 = document.getElementById("dl1");
@@ -179,6 +180,11 @@ if (Burrito) {
 if (Chibi) {
   Chibi.addEventListener("click", function () {
     window.location.href = "../html-bin/chibi.html";
+  });
+}
+if (Cookie) {
+  Cookie.addEventListener("click", function () {
+    window.location.href = "../html-bin/cookie.html";
   });
 }
 if (Doodle) {
