@@ -39,6 +39,13 @@
     <div>
       <div
         id="container-wrapper"
+        webkitallowfullscreen="true"
+        ,
+        mozallowfullscreen="true"
+        ,
+        msallowfullscreen="true"
+        ,
+        allowfullscreen="true"
         style="display: flex; justify-content: center; align-items: center"
       >
         <div id="container" style="width: 900px; height: 675px"></div>
@@ -77,16 +84,23 @@
       </script>
       <button id="fullscreen" style="position: absolute; right: 10%">
         Fullscreen
+        <script>
+          function enterFullscreen() {
+            if (document.documentElement.requestFullscreen) {
+              document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+              /* Firefox */
+              document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+              /* Chrome, Safari & Opera */
+              document.documentElement.webkitRequestFullscreen();
+            } else if (document.documentElement.msRequestFullscreen) {
+              /* IE/Edge */
+              document.documentElement.msRequestFullscreen();
+            }
+          }
+        </script>
       </button>
-      <script>
-        const Fullscreen = getElementById("fullscreen");
-        if (Fullscreen) {
-          Fullscreen.addEventListener("click", function () {
-            container.style.width = "1100px";
-            container.style.height = "200%";
-          });
-        }
-      </script>
       <p style="text-align: center; color: #ffffff">
         If you want to fullscreen, right click, then press "fullscreen" near the
         middle of the list.

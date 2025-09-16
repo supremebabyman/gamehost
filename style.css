@@ -21,8 +21,14 @@ body {
 #achievement,
 #achievement2,
 #arcane,
+#aow,
+#aow2,
 #balls,
 #balls2,
+#bics,
+#bic,
+#bic2,
+#bic3,
 #bonk,
 #btds,
 #btd1,
@@ -78,6 +84,7 @@ body {
 #rt1,
 #rt2,
 #scratch,
+#shell,
 #skitty,
 #skitty2,
 #skittyl,
@@ -108,8 +115,14 @@ body {
 #achievement:hover,
 #achievement2:hover,
 #arcane:hover,
+#aow:hover,
+#aow2:hover,
 #balls:hover,
 #balls2:hover,
+#bics:hover,
+#bic:hover,
+#bic2:hover,
+#bic3:hover,
 #bonk:hover,
 #btds:hover,
 #btd1:hover,
@@ -136,6 +149,7 @@ body {
 #imposs:hover,
 #knight:hover,
 #kitty:hover,
+#jack:hover,
 #LTFS:hover,
 #LTF1:hover,
 #LTF2:hover,
@@ -164,6 +178,7 @@ body {
 #rt1:hover,
 #rt2:hover,
 #scratch:hover,
+#shell:hover,
 #skitty:hover,
 #skitty2:hover,
 #skittyl:hover,
@@ -182,15 +197,6 @@ body {
 #g2048:hover {
   background-color: #333333;
   transform: scale(1.15);
-}
-
-/*Ruffle player atributes*/
-#flash-player {
-  width: 70vw;
-  height: 70vh;
-  position: absolute;
-  background: #000;
-  border: 2px solid #555;
 }
 
 nav {

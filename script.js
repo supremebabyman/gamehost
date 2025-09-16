@@ -1,8 +1,14 @@
 const Achievement = document.getElementById("achievement");
 const Achievement2 = document.getElementById("achievement2");
 const Arcane = document.getElementById("arcane");
+const Aow = document.getElementById("aow");
+const Aow2 = document.getElementById("aow2");
 const Balls = document.getElementById("balls");
 const Balls2 = document.getElementById("balls2");
+const Bics = document.getElementById("bics");
+const Bic = document.getElementById("bic");
+const Bic2 = document.getElementById("bic2");
+const Bic3 = document.getElementById("bic3");
 const Bonk = document.getElementById("bonk");
 const BTDS = document.getElementById("btds");
 const BTD1 = document.getElementById("btd1");
@@ -68,6 +74,7 @@ const Smash = document.getElementById("smash");
 const Smash2 = document.getElementById("smash2");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
+const Shell = document.getElementById("shell");
 const toss = document.getElementById("toss");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
@@ -99,6 +106,16 @@ if (Achievement2) {
     window.location.href = "../html-bin/achievement2.html";
   });
 }
+if (Aow) {
+  Aow.addEventListener("click", function () {
+    window.location.href = "../html-bin/aow.html";
+  });
+}
+if (Aow2) {
+  Aow2.addEventListener("click", function () {
+    window.location.href = "../html-bin/aow2.html";
+  });
+}
 if (Arcane) {
   Arcane.addEventListener("click", function () {
     window.location.href = "../html-bin/arcane.html";
@@ -112,6 +129,26 @@ if (Balls) {
 if (Balls2) {
   Balls2.addEventListener("click", function () {
     window.location.href = "../html-bin/balls2.html";
+  });
+}
+if (Bics) {
+  Bics.addEventListener("click", function () {
+    window.location.href = "../html-bin/bics.html";
+  });
+}
+if (Bic) {
+  Bic.addEventListener("click", function () {
+    window.location.href = "../html-bin/bic.html";
+  });
+}
+if (Bic2) {
+  Bic2.addEventListener("click", function () {
+    window.location.href = "../html-bin/bic2.html";
+  });
+}
+if (Bic3) {
+  Bic3.addEventListener("click", function () {
+    window.location.href = "../html-bin/bic3.html";
   });
 }
 if (BTDS) {
@@ -367,6 +404,11 @@ if (Rt2) {
 if (Scratch) {
   Scratch.addEventListener("click", function () {
     window.location.href = "../html-bin/gettingoverit.html";
+  });
+}
+if (Shell) {
+  Shell.addEventListener("click", function () {
+    window.location.href = "../html-bin/shellshock.html";
   });
 }
 if (SKitty) {
