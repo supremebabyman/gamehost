@@ -9,7 +9,7 @@ const Bics = document.getElementById("bics");
 const Bic = document.getElementById("bic");
 const Bic2 = document.getElementById("bic2");
 const Bic3 = document.getElementById("bic3");
-const Bonk = document.getElementById("bonk");
+const Bob = document.getElementById("bob");
 const BTDS = document.getElementById("btds");
 const BTD1 = document.getElementById("btd1");
 const BTD2 = document.getElementById("btd2");
@@ -48,6 +48,7 @@ const Mike = document.getElementById("mike");
 const Moto = document.getElementById("moto");
 const Moto2 = document.getElementById("moto2");
 const MVSL = document.getElementById("MVSL");
+const Osu = document.getElementById("osu");
 const Paburg = document.getElementById("paburg");
 const Padog = document.getElementById("padog");
 const Pafree = document.getElementById("pafree");
@@ -152,6 +153,11 @@ if (Bic3) {
     window.location.href = "../html-bin/bic3.html";
   });
 }
+if (Bob) {
+  Bob.addEventListener("click", function () {
+    window.location.href = "../html-bin/bob.html";
+  });
+}
 if (BTDS) {
   BTDS.addEventListener("click", function () {
     window.location.href = "../html-bin/BTDS.html";
@@ -174,7 +180,7 @@ if (BTD5) {
 }
 if (Burrito) {
   Burrito.addEventListener("click", function () {
-    window.location.href = "../html-bin/construction.html";
+    window.location.href = "../html-bin/burrito.html";
   });
 }
 if (Chibi) {
@@ -325,6 +331,11 @@ if (Moto2) {
 if (MVSL) {
   MVSL.addEventListener("click", function () {
     window.location.href = "../html-bin/MVSL.html";
+  });
+}
+if (Osu) {
+  Osu.addEventListener("click", function () {
+    window.location.href = "../html-bin/osu.html";
   });
 }
 if (Paburg) {
