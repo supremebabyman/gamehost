@@ -3,9 +3,11 @@
   <head>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <title>Feedback</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </head>
+  <title>Papa Louies's games</title>
   <body>
+    <!-- Navigation Bar -->
     <nav>
       <div class="dropdown">
         <button class="dropbtn" link="images/dropdown.png"></button>
@@ -32,18 +34,14 @@
         <a id="gamesug">Suggestions</a>
       </div>
     </nav>
-    <h1>Submit Your Feedback</h1>
-    <form id="feedback-form">
-      <textarea id="feedback" placeholder="Your feedback here"></textarea>
-      <button id="submit" type="submit">Submit</button>
-    </form>
-    <a>
-      Note: Submitting feedback won't work on a local port. If Submitting
-      feedback isn't working anyway, it is an issue on our end that we are
-      currently working to fix
-    </a>
-    <p id="message"></p>
+    <div>
+      <h2>
+        Do you want a tutorial on how to play this? (it gets blocked if you dont
+        know what you are doing)
+      </h2>
+      <button id="pizzatut">Yea</button>
+      <button id="pizza">Nah</button>
+    </div>
     <script src="../script.js"></script>
-    <script defer src="../feedgrab.js"></script>
   </body>
 </html>

@@ -57,6 +57,8 @@ const Papan = document.getElementById("papan");
 const Papiz = document.getElementById("papiz");
 const Palu = document.getElementById("palu");
 const Pizza = document.getElementById("pizza");
+const PizzaQ = document.getElementById("pizzaq");
+const PizzaTut = document.getElementById("pizzatut");
 const Rss = document.getElementById("rss");
 const Rs1 = document.getElementById("rs1");
 const Rs2 = document.getElementById("rs2");
@@ -305,7 +307,7 @@ if (LTF3) {
 }
 if (Mario) {
   Mario.addEventListener("click", function () {
-    window.location.href = "../html-bin/mario.html";
+    window.location.href = "../html-bin/flashmario.html";
   });
 }
 if (Meat) {
@@ -376,6 +378,16 @@ if (Papiz) {
 if (Pizza) {
   Pizza.addEventListener("click", function () {
     window.location.href = "../html-bin/pizza.html";
+  });
+}
+if (PizzaQ) {
+  PizzaQ.addEventListener("click", function () {
+    window.location.href = "../html-bin/pizzaq.html";
+  });
+}
+if (PizzaTut) {
+  PizzaTut.addEventListener("click", function () {
+    window.location.href = "../html-bin/pizzatut.html";
   });
 }
 if (Rss) {
