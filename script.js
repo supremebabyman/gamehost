@@ -28,6 +28,7 @@ const Electric = document.getElementById("electric");
 const Fancy = document.getElementById("fancy");
 const Flash = document.getElementById("flash");
 const GKnight = document.getElementById("gknight");
+const Hard = document.getElementById("hard");
 const HSBTB = document.getElementById("hsbtb");
 const HSETP = document.getElementById("hsetp");
 const HSFTC = document.getElementById("hsftc");
@@ -38,6 +39,7 @@ const IMP = document.getElementById("imposs");
 const Kitty = document.getElementById("kitty");
 const Knight = document.getElementById("knight");
 const Jack = document.getElementById("jack");
+const Last = document.getElementById("last");
 const Level = document.getElementById("level");
 const LTFS = document.getElementById("LTFS");
 const LTF1 = document.getElementById("LTF1");
@@ -53,13 +55,14 @@ const Osu = document.getElementById("osu");
 const Paburg = document.getElementById("paburg");
 const Padog = document.getElementById("padog");
 const Pafree = document.getElementById("pafree");
-const Pls = document.getElementById("pls");
 const Papan = document.getElementById("papan");
 const Papiz = document.getElementById("papiz");
 const Palu = document.getElementById("palu");
+const Pat = document.getElementById("pat");
 const Pizza = document.getElementById("pizza");
 const PizzaQ = document.getElementById("pizzaq");
 const PizzaTut = document.getElementById("pizzatut");
+const Pls = document.getElementById("pls");
 const Rss = document.getElementById("rss");
 const Rs1 = document.getElementById("rs1");
 const Rs2 = document.getElementById("rs2");
@@ -81,10 +84,13 @@ const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Shell = document.getElementById("shell");
 const toss = document.getElementById("toss");
+const Underfell = document.getElementById("underfell");
 const Undertale = document.getElementById("undertale");
+const Undyne = document.getElementById("undyne");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
+const Worst = document.getElementById("worst");
 const G2048 = document.getElementById("g2048");
 
 // Other pages
@@ -247,6 +253,11 @@ if (GKnight) {
     window.location.href = "../html-bin/construction.html";
   });
 }
+if (Hard) {
+  Hard.addEventListener("click", function () {
+    window.location.href = "../html-bin/hard.html";
+  });
+}
 if (HSBTB) {
   HSBTB.addEventListener("click", function () {
     window.location.href = "../html-bin/HSBtB.html";
@@ -295,6 +306,11 @@ if (Knight) {
 if (Jack) {
   Jack.addEventListener("click", function () {
     window.location.href = "../html-bin/jacksmith.html"; //Make Knight.html later
+  });
+}
+if (Last) {
+  Last.addEventListener("click", function () {
+    window.location.href = "../html-bin/last.html";
   });
 }
 if (Level) {
@@ -367,11 +383,6 @@ if (Pafree) {
     window.location.href = "../html-bin/pafree.html";
   });
 }
-if (Pls) {
-  Pls.addEventListener("click", function () {
-    window.location.href = "../html-bin/pls.html";
-  });
-}
 if (Palu) {
   Palu.addEventListener("click", function () {
     window.location.href = "../html-bin/papalouie.html";
@@ -387,6 +398,11 @@ if (Papiz) {
     window.location.href = "../html-bin/papiz.html";
   });
 }
+if (Pat) {
+  Pat.addEventListener("click", function () {
+    window.location.href = "../html-bin/pat.html";
+  });
+}
 if (Pizza) {
   Pizza.addEventListener("click", function () {
     window.location.href = "../html-bin/pizza.html";
@@ -400,6 +416,11 @@ if (PizzaQ) {
 if (PizzaTut) {
   PizzaTut.addEventListener("click", function () {
     window.location.href = "../html-bin/pizzatut.html";
+  });
+}
+if (Pls) {
+  Pls.addEventListener("click", function () {
+    window.location.href = "../html-bin/pls.html";
   });
 }
 if (Rss) {
@@ -507,9 +528,19 @@ if (toss) {
     window.location.href = "../html-bin/tossinturt.html";
   });
 }
+if (Underfell) {
+  Underfell.addEventListener("click", function () {
+    window.location.href = "../html-bin/underfell.html";
+  });
+}
 if (Undertale) {
   Undertale.addEventListener("click", function () {
     window.location.href = "../html-bin/undertale.html";
+  });
+}
+if (Undyne) {
+  Undyne.addEventListener("click", function () {
+    window.location.href = "../html-bin/undyne.html";
   });
 }
 if (W1) {
@@ -525,6 +556,11 @@ if (W2) {
 if (W3) {
   W3.addEventListener("click", function () {
     window.location.href = "../html-bin/w3.html";
+  });
+}
+if (Worst) {
+  Worst.addEventListener("click", function () {
+    window.location.href = "../html-bin/worst.html";
   });
 }
 if (G2048) {
