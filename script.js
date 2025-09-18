@@ -14,6 +14,7 @@ const BTDS = document.getElementById("btds");
 const BTD1 = document.getElementById("btd1");
 const BTD2 = document.getElementById("btd2");
 const BTD5 = document.getElementById("btd5");
+const BTS = document.getElementById("bts");
 const Burrito = document.getElementById("burrito");
 const Chibi = document.getElementById("chibi");
 const Cookie = document.getElementById("cookie");
@@ -80,6 +81,7 @@ const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Shell = document.getElementById("shell");
 const toss = document.getElementById("toss");
+const Undertale = document.getElementById("undertale");
 const W1 = document.getElementById("w1");
 const W2 = document.getElementById("w2");
 const W3 = document.getElementById("w3");
@@ -178,6 +180,11 @@ if (BTD2) {
 if (BTD5) {
   BTD5.addEventListener("click", function () {
     window.location.href = "../html-bin/btd5.html";
+  });
+}
+if (BTS) {
+  BTS.addEventListener("click", function () {
+    window.location.href = "../html-bin/bts.html";
   });
 }
 if (Burrito) {
@@ -288,6 +295,11 @@ if (Knight) {
 if (Jack) {
   Jack.addEventListener("click", function () {
     window.location.href = "../html-bin/jacksmith.html"; //Make Knight.html later
+  });
+}
+if (Level) {
+  Level.addEventListener("click", function () {
+    window.location.href = "../html-bin/thisistheonlylevel.html";
   });
 }
 if (LTFS) {
@@ -495,9 +507,9 @@ if (toss) {
     window.location.href = "../html-bin/tossinturt.html";
   });
 }
-if (Level) {
-  Level.addEventListener("click", function () {
-    window.location.href = "../html-bin/thisistheonlylevel.html";
+if (Undertale) {
+  Undertale.addEventListener("click", function () {
+    window.location.href = "../html-bin/undertale.html";
   });
 }
 if (W1) {
