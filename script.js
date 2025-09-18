@@ -251,7 +251,7 @@ if (Fancy) {
 }
 if (FNF) {
   FNF.addEventListener("click", function () {
-    window.location.href = "../html-bin/fnf.html";
+    window.location.href = "../html-bin/fridaynightfunkin.html";
   });
 }
 if (GKnight) {
