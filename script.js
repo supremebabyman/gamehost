@@ -26,6 +26,7 @@ const DL3 = document.getElementById("dl3");
 const DL4 = document.getElementById("dl4");
 const Electric = document.getElementById("electric");
 const Fancy = document.getElementById("fancy");
+const FNF = document.getElementById("fnf");
 const Flash = document.getElementById("flash");
 const GKnight = document.getElementById("gknight");
 const Hard = document.getElementById("hard");
@@ -246,6 +247,11 @@ if (Electric) {
 if (Fancy) {
   Fancy.addEventListener("click", function () {
     window.location.href = "../html-bin/FPA.html";
+  });
+}
+if (FNF) {
+  FNF.addEventListener("click", function () {
+    window.location.href = "../html-bin/fnf.html";
   });
 }
 if (GKnight) {
