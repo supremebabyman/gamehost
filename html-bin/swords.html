@@ -84,26 +84,6 @@
       <button id="fullscreen" style="position: absolute; right: 10%">
         Fullscreen
       </button>
-      <script>
-        // Use standard JavaScript for the fullscreen button
-        document
-          .getElementById("fullscreen")
-          .addEventListener("click", function (event) {
-            event.preventDefault(); // This is the modern way to stop default actions
-
-            // Get the game container element
-            var gameWrapperElem = document.getElementById("container");
-
-            // Request fullscreen on the container
-            if (gameWrapperElem) {
-              gameWrapperElem.requestFullscreen();
-            }
-          });
-      </script>
-      <p style="text-align: center; color: #ffffff">
-        If you want to fullscreen, right click, then press "fullscreen" near the
-        middle of the list.
-      </p>
     </div>
     <script src="../script.js"></script>
   </body>

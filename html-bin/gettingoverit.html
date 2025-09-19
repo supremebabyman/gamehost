@@ -43,28 +43,9 @@
         scrolling="no"
         allowfullscreen
       ></iframe>
-      <button id="fullscreen" position="absolute" alt="Fullscreen">
+      <button id="fullscreen" style="position: absolute; right: 10%">
         Fullscreen
       </button>
-      <p>Fullscreen might be broken, sorry</p>
-    </div>
-    <script>
-      const Fullscreen = document.getElementById("fullscreen");
-      var mode = 0;
-      Fullscreen.addEventListener("click", function () {
-        if (mode === 0) {
-          fullscreen.style.width = "905";
-          fullscreen.style.height = "750";
-          mode = 1;
-          console.log("New mode is Fullscreen. New Mode = " + mode);
-        } else {
-          fullscreen.style.width = "603";
-          fullscreen.style.height = "500";
-          mode = 0;
-          console.log("New mode is Windowed. New Mode = " + mode);
-        }
-      });
-    </script>
     <script src="../script.js"></script>
   </body>
 </html>

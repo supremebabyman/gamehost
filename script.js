@@ -626,3 +626,18 @@ if (LME) {
     window.location.href = "https://learnmatheasy.wixsite.com/site";
   });
 }
+
+document
+  .getElementById("fullscreen")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // This is the modern way to stop default actions
+
+    // Get the game container element
+    var gameWrapperElem =
+      document.getElementById("container") || document.getElementById("player");
+
+    // Request fullscreen on the container
+    if (gameWrapperElem) {
+      gameWrapperElem.requestFullscreen();
+    }
+  });
