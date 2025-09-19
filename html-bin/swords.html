@@ -39,19 +39,13 @@
     <div>
       <div
         id="container-wrapper"
-        webkitallowfullscreen="true"
-        ,
-        mozallowfullscreen="true"
-        ,
-        msallowfullscreen="true"
-        ,
-        allowfullscreen="true"
         style="display: flex; justify-content: center; align-items: center"
       >
         <div
           id="container"
           style="width: 900px; height: 675px"
           name="shockwave-flash"
+          allowfullscreen="true"
         ></div>
       </div>
       <script type="text/javascript">
@@ -70,6 +64,7 @@
             warnOnUnsupportedContent: false,
             allowScriptAccess: true,
             maxExecutionDuration: 30,
+            allowFullscreen: true,
           };
 
           player.style.width = "100%";
@@ -88,23 +83,23 @@
       </script>
       <button id="fullscreen" style="position: absolute; right: 10%">
         Fullscreen
-        <script>
-          function enterFullscreen() {
-            if (document.documentElement.requestFullscreen) {
-              document.documentElement.requestFullscreen();
-            } else if (document.documentElement.mozRequestFullScreen) {
-              /* Firefox */
-              document.documentElement.mozRequestFullScreen();
-            } else if (document.documentElement.webkitRequestFullscreen) {
-              /* Chrome, Safari & Opera */
-              document.documentElement.webkitRequestFullscreen();
-            } else if (document.documentElement.msRequestFullscreen) {
-              /* IE/Edge */
-              document.documentElement.msRequestFullscreen();
-            }
-          }
-        </script>
       </button>
+      <script>
+        // Use standard JavaScript for the fullscreen button
+        document
+          .getElementById("fullscreen")
+          .addEventListener("click", function (event) {
+            event.preventDefault(); // This is the modern way to stop default actions
+
+            // Get the game container element
+            var gameWrapperElem = document.getElementById("container");
+
+            // Request fullscreen on the container
+            if (gameWrapperElem) {
+              gameWrapperElem.requestFullscreen();
+            }
+          });
+      </script>
       <p style="text-align: center; color: #ffffff">
         If you want to fullscreen, right click, then press "fullscreen" near the
         middle of the list.
