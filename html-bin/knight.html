@@ -34,14 +34,16 @@
             </div>
         </nav>
         <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-            <div id="player">
-                <object type= "application/x-shockwave-flash" width="900" height="500">
+            <div>
+                <object id="player" type= "application/x-shockwave-flash" width="900" height="500">
                     <param name="movie" value="../temporarygames/knightmaretower.swf">
                     <embed src="../temporarygames/knightmaretower.swf" width="900" height="500">
                     </embed>
                 </object>
-                <p style="color: #ffffff;">If you want to fullscreen, right click, then press "fullscreen" near the middle of the list</p>
             </div>
+            <button id="fullscreen" style="position: absolute; right: 10%">
+                Fullscreen
+            </button>
         <script src="../script.js"></script>
     </body>
 </html>

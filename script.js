@@ -27,6 +27,7 @@ const DL4 = document.getElementById("dl4");
 const Electric = document.getElementById("electric");
 const Fancy = document.getElementById("fancy");
 const FNF = document.getElementById("fnf");
+const FNFMods = document.getElementById("fnfmods");
 const Flash = document.getElementById("flash");
 const GKnight = document.getElementById("gknight");
 const Hard = document.getElementById("hard");
@@ -37,6 +38,7 @@ const HSITA = document.getElementById("hsita");
 const HSS = document.getElementById("hss");
 const HSSTD = document.getElementById("hsstd");
 const IMP = document.getElementById("imposs");
+const Indie = document.getElementById("indie");
 const Kitty = document.getElementById("kitty");
 const Knight = document.getElementById("knight");
 const Jack = document.getElementById("jack");
@@ -84,7 +86,8 @@ const Smash2 = document.getElementById("smash2");
 const Sonic = document.getElementById("sonic");
 const Soul = document.getElementById("souls");
 const Shell = document.getElementById("shell");
-const toss = document.getElementById("toss");
+const Toss = document.getElementById("toss");
+const Tricky = document.getElementById("tricky");
 const Underfell = document.getElementById("underfell");
 const Undertale = document.getElementById("undertale");
 const Undyne = document.getElementById("undyne");
@@ -254,6 +257,11 @@ if (FNF) {
     window.location.href = "../html-bin/fridaynightfunkin.html";
   });
 }
+if (FNFMods) {
+  FNFMods.addEventListener("click", function () {
+    window.location.href = "../html-bin/construction.html";
+  });
+}
 if (GKnight) {
   GKnight.addEventListener("click", function () {
     window.location.href = "../html-bin/construction.html";
@@ -297,6 +305,11 @@ if (HSSTD) {
 if (IMP) {
   IMP.addEventListener("click", function () {
     window.location.href = "../html-bin/imposs.html";
+  });
+}
+if (Indie) {
+  Indie.addEventListener("click", function () {
+    window.location.href = "../html-bin/indie.html";
   });
 }
 if (Kitty) {
@@ -529,9 +542,14 @@ if (Soul) {
     window.location.href = "../html-bin/swords.html";
   });
 }
-if (toss) {
-  toss.addEventListener("click", function () {
+if (Toss) {
+  Toss.addEventListener("click", function () {
     window.location.href = "../html-bin/tossinturt.html";
+  });
+}
+if (Tricky) {
+  Tricky.addEventListener("click", function () {
+    window.location.href = "../html-bin/tricky.html";
   });
 }
 if (Underfell) {

@@ -35,17 +35,18 @@
       </div>
     </nav>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-      <div id="player">
-          <object type= "application/x-shockwave-flash" width="900" height="500">
+      <div>
+          <object id="player" type= "application/x-shockwave-flash" width="900" height="500">
               <param name="movie" value="../temporarygames/World3.swf">
               <embed src="../temporarygames/World3.swf" width="900" height="500">
               </embed>
           </object>
-          <p>If you want to fullscreen, right click, then press "fullscreen" near the middle of the list</p>
-          <p style="color: #000000;">█</p>
           <strong>Do not move during transition screens, faliure to follow this rule may result in the game breaking and it will need to be restarted</strong>
           <p>If you need to restart it just reload the page</p>
       </div>
+      <button id="fullscreen" style="position: absolute; right: 10%">
+        Fullscreen
+      </button>
     <script src="../script.js"></script>
   </body>
 </html>

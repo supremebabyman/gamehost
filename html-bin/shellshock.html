@@ -34,14 +34,16 @@
               <a id="gamesug">Suggestions</a>
             </div>
         </nav>
-        <div id="player">
+        <div>
             <object width="900" height="500">
                 <param name="movie" value="https://shellshock.io">
-                <embed src="https://shellshock.io" width="900" height="500">
+                <embed id="player" src="https://shellshock.io" width="900" height="500">
                 </embed>
             </object>
-            <p style="color: #ffffff;">If you want to fullscreen, right click, then press "fullscreen" near the middle of the list</p>
         </div>
+        <button id="fullscreen" style="position: absolute; right: 10%">
+          Fullscreen
+      </button>
       <script src="../script.js"></script>
     </body>
 </html>
