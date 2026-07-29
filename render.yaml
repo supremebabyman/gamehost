@@ -1,10 +1,10 @@
-  - type: web
-    name: my-blog
+    type: web
+    name: gamehost
     runtime: static
     buildCommand: npm install
     staticPublishPath: ./
     previews:
-      generation: automatic # Enable service previews
+      generation: automatic
     headers:
       - path: /*
         name: X-Frame-Options
