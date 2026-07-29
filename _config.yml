@@ -1,5 +1,0 @@
-title: Gamehost
-description: Static site hosted on GitHub Pages
-theme: minima
-plugins:
-  - jekyll-feed
