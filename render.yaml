@@ -1,10 +1,15 @@
-    type: web
+  - type: web
     name: gamehost
     runtime: static
     buildCommand: npm install
     staticPublishPath: ./
     previews:
       generation: automatic
+    buildFilter:
+      paths:
+        - src/**/*.js
+      ignoredPaths:
+        - src/**/*.test.js
     headers:
       - path: /*
         name: X-Frame-Options
