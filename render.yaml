@@ -2,7 +2,7 @@
     name: gamehost
     runtime: static
     buildCommand: npm install
-    staticPublishPath: ./
+    staticPublishPath: ./build
     previews:
       generation: automatic
     buildFilter:
