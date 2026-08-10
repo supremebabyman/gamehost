@@ -1536,7 +1536,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (Gamesug) {
     Gamesug.addEventListener("click", function () {
-      window.location.href = "../html-bin/gamesug.html";
+      const currentURL = window.location.href;
+      if (currentURL == ("https://gamehoststatic.onrender.com" || "gamehoststatic.onrender.com")) {
+          window.alert("Game suggestions cannot be submited on a static instance such as " + currentURL + " try using: gamehost-live.onrender.com"); 
+      } else {
+        window.location.href = "../html-bin/gamesug.html";
+      };
     });
   }
   if (Home) {
@@ -1552,26 +1557,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (render) {
     render.addEventListener("click", function () {
       window.location.href = "https://gamehost-h3v4.onrender.com/";
-    });
-  }
-  if (github) {
-    github.addEventListener("click", function () {
-      window.location.href = "https://radio-a.github.io/gamehost/";
-    });
-  }
-  if (CSB3000) {
-    CSB3000.addEventListener("click", function () {
-      window.location.href = "https://f5glnl-3000.csb.app/";
-    });
-  }
-  if (CSB50000) {
-    CSB50000.addEventListener("click", function () {
-      window.location.href = "https://f5glnl-50000.csb.app/";
-    });
-  }
-  if (LME) {
-    LME.addEventListener("click", function () {
-      window.location.href = "https://learnmatheasy.wixsite.com/site";
     });
   }
 });
