@@ -1538,7 +1538,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Gamesug.addEventListener("click", function () {
       const currentURL = window.location.href;
       //window.alert(currentURL)
-      if (currentURL === ("https://gamehoststatic.onrender.com" || "gamehoststatic.onrender.com" || "https://gamehoststatic.onrender.com/" || "gamehoststatic.onrender.com/")) {
+      if (toString(currentURL) === ("https://gamehost-alt.onrender.com" || "gamehost-alt.onrender.com" || "https://gamehost-alt.onrender.com/" || "gamehost-alt.onrender.com/" || "https://gamehost-alt.onrender.com/index.html" || "gamehost-alt.onrender.com/index.html")) {
           window.alert("Game suggestions cannot be submited on a static instance such as " + currentURL + " try using: gamehost-live.onrender.com"); 
       } else {
         window.location.href = "../html-bin/gamesug.html";
