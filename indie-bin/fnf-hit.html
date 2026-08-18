@@ -22,17 +22,27 @@
         </nav>
         <button id="nav-toggle" class="nav-toggle"><img src="../images/navbutton.png" alt="nav-toggle"></button>
             <!-- Nav toggle button -->
-<div class="player-container">
-  <iframe
-    id="player"
-    src="https://silly-billy-fnf.onrender.com"
-    frameborder="0"
-    scrolling="no"
-  ></iframe>
-</div>
-<div class="controls">
-  <button id="fullscreen">Fullscreen</button>
-</div>
-<script src="/script.js"></script>
-</body>
+    <div class="player-container">
+      <iframe
+        id="player"
+        src="about:blank"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+    <div class="controls">
+      <button id="fullscreen">Fullscreen</button>
+    </div>
+    <tab id="main-tab">
+          <p>test</p>
+    </tab>
+    <script>
+          const iframe = document.getElementById('player');
+          const doc = iframe.contentWindow.document;
+          doc.open();
+          doc.write('<a href="https://supremebabyman.github.io/silly-billy-fnf/">start game</a>');
+          doc.close();
+    </script>
+    <script src="/script.js"></script>
+  </body>
 </html>

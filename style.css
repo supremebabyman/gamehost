@@ -48,6 +48,25 @@ nav {
   font-family: inherit;
   transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
 }
+tab {
+  user-select: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* space between left and right sides */
+  padding: 0 20px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+  transition: background-color 0.6s, transform 0.6s ease, opacity 0.6s ease;
+  transition: translateY(-200%);
+}
 
 /* LEFT SIDE */
 .nav-left {
@@ -372,6 +391,11 @@ nav {
 #main-nav {
   max-height: 200px; /* tweak if your nav is taller */
   overflow: hidden;
+  transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
+  opacity: 1;
+}
+#main-tab {
+  max-height: 200px; /* tweak if your nav is taller */
   transition: background-color 0.6s ease, transform 0.6s ease, opacity 0.6s ease;
   opacity: 1;
 }
