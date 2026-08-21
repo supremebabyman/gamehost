@@ -261,11 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const Home = document.getElementById("home");
   const Uplog = document.getElementById("uplog");
   const render = document.getElementById("render");
-  const github = document.getElementById("github");
-  const CSB3000 = document.getElementById("3000");
-  const CSB50000 = document.getElementById("50000");
-  const LME = document.getElementById("LME");
-
+  const remain = document.getElementById("remain")
   // Other variblaes
   // Front pages
   // *Crickets*
@@ -1538,7 +1534,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Gamesug.addEventListener("click", function () {
       const currentURL = window.location.href;
       //window.alert(currentURL)
-      if (toString(currentURL) === ("https://gamehost-alt.onrender.com" || "gamehost-alt.onrender.com" || "https://gamehost-alt.onrender.com/" || "gamehost-alt.onrender.com/" || "https://gamehost-alt.onrender.com/index.html" || "gamehost-alt.onrender.com/index.html")) {
+      if (toString(currentURL) === ("https://gamehoststatic.onrender.com" || "gamehoststatic.onrender.com" || "https://gamehoststatic.onrender.com/" || "gamehoststatic.onrender.com/" || "https://gamehoststatic.onrender.com/index.html" || "gamehoststatic.onrender.com/index.html")) {
           window.alert("Game suggestions cannot be submited on a static instance such as " + currentURL + " try using: gamehost-live.onrender.com"); 
       } else {
         window.location.href = "../html-bin/gamesug.html";
@@ -1561,6 +1557,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+if (remain) {
+    remain.addEventListener("click", function () {
+      window.location.href = "../games.html";
+    });
+  }
 
 //fullscreen function
 (function () {
@@ -1748,15 +1749,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const consolelist = null;
 
   let search = false;
-  let leftSwitch = document.getElementById("left-switch");
-  let rightSwitch = document.getElementById("right-switch");
 
   const searchExit = document.getElementById("search-exit");
   const textarea = document.getElementById("search-space");
 
-  const indieBox = document.getElementById("indie-box");
-  const consoleBox = null;
-  const indexBox = document.getElementById("index-box");
 
   function searchDisplay() {
     if (search) {
@@ -1765,7 +1761,6 @@ document.addEventListener("DOMContentLoaded", () => {
       searchExit.display = "none";
       gamelist.forEach((btn) => (btn.style.display = "initial"));
       indielist.forEach((btn) => (btn.style.display = "initial"));
-      consolelist.forEach((btn) => (btn.style.display = "initial"));
     }
   }
 
@@ -1774,7 +1769,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (search) {
       search = false;
       searchDisplay();
-      alert("search has changed to: " + search);
+      //alert("search has changed to: " + search);
     }
   });
 
@@ -1783,7 +1778,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "Escape" && search) {
       search = false;
       searchDisplay();
-      alert("search has changed to: " + search);
+      //alert("search has changed to: " + search);
     }
   });
 
