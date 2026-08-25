@@ -1818,3 +1818,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function crossPlatURLGrabber() {
+  const frame = document.getElementById('player');
+  if (frame.value === "https://scramjet-o9kx.onrender.com") {
+    frame.onload = () => {
+      frame.contentWindow.postMessage(
+      { type: 'PARENT_URL', url: window.location.href },
+      'https://scramjet-o9kx.onrender.com' // target origin - be specific, not '*'
+      );
+    };
+  };
+};
