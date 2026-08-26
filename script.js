@@ -1556,12 +1556,13 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "https://gamehost-h3v4.onrender.com/";
     });
   }
-});
-if (remain) {
-    remain.addEventListener("click", function () {
-      window.location.href = "../games.html";
-    });
-  }
+
+  if (remain) {
+      remain.addEventListener("click", function () {
+        window.location.href = "../games.html";
+      });
+    }
+  });
 
 //fullscreen function
 (function () {
