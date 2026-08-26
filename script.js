@@ -1822,7 +1822,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function crossPlatURLGrabber() {
     const parentUrl = encodeURIComponent(window.location.href);
     const frame = document.getElementById('player');
-    frame.src = `https://scramjet-o9kx.onrender.com/#?host=${parentUrl}`;
+    if (parentUrl !== null); {
+      frame.src = `https://scramjet-o9kx.onrender.com/#?host=${parentUrl}`;
+      console.log (parentUrl)
+    }
 }
 
 crossPlatURLGrabber();
