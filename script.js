@@ -1820,30 +1820,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function crossPlatURLGrabber() {
-  let url = window.location.href
+  const frame = document.getElementById('player');
+  const url = window.location.href
   if (url === "https://gamehoststatic.onrender.com/indie-bin/AGAFABH.html") {
     let finalUrl = "https://supreme-s-alt.github.io/CLSTE-12A3BC4EFG5"
   }
-    const frame = document.getElementById("player");
-
-    if (!frame) {
-        console.error("Iframe #player was not found");
-        return;
-    }
-
-    frame.addEventListener("load", () => {
-        const message = {
-            type: "PARENT_URL",
-            url: finalUrl
-        };
-
-        console.log("Sending PARENT_URL:", message);
-
-        frame.contentWindow.postMessage(
-            message,
-            "https://scramjet-o9kx.onrender.com"
-        );
-    });
-}
+  frame.onload = () => {
+    frame.contentWindow.postMessage(
+      { type: 'PARENT_LINK', url: finalUrl},
+      'https://scramjet-o9kx.onrender.com/'
+    );
+  };
+};
 
 crossPlatURLGrabber();
