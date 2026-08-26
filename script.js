@@ -1757,70 +1757,71 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchExit = document.getElementById("search-exit");
   const textarea = document.getElementById("search-space");
 
-
-  function searchDisplay() {
-    if (search) {
-      searchExit.display = "inherit";
-    } else {
-      searchExit.display = "none";
-      gamelist.forEach((btn) => (btn.style.display = "initial"));
-      indielist.forEach((btn) => (btn.style.display = "initial"));
-    }
-  }
-
-  // Exit search via button
-  searchExit.addEventListener("click", () => {
-    if (search) {
-      search = false;
-      searchDisplay();
-      //alert("search has changed to: " + search);
-    }
-  });
-
-  // Exit search via Escape key
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && search) {
-      search = false;
-      searchDisplay();
-      //alert("search has changed to: " + search);
-    }
-  });
-
-  // ENTER search when textarea gains focus
-  textarea.addEventListener("focus", () => {
-    if (!search) {
-      search = true;
-      searchDisplay();
-    }
-  });
-
-  // Filter buttons while typing
-  textarea.addEventListener("input", function () {
-    const filter = this.value.toLowerCase();
-    let results = 0;
-    gamelist.forEach((node) => {
-      const gameName = node.textContent.toLowerCase();
-      if (gameName.includes(filter)) {
-        node.style.display = "block";
-        results += 1;
-      } else if (filter === "") {
-        node.style.display = "block";
+  if (searchExit && textarea && gamelist && indielist) {
+    function searchDisplay() {
+      if (search) {
+        searchExit.display = "inherit";
       } else {
-        node.style.display = "none";
+        searchExit.display = "none";
+        gamelist.forEach((btn) => (btn.style.display = "initial"));
+        indielist.forEach((btn) => (btn.style.display = "initial"));
+      }
+    }
+
+    // Exit search via button
+    searchExit.addEventListener("click", () => {
+      if (search) {
+        search = false;
+        searchDisplay();
+        //alert("search has changed to: " + search);
       }
     });
-    indielist.forEach((node) => {
-      const gameName = node.textContent.toLowerCase();
-      if (gameName.includes(filter)) {
-        node.style.display = "block";
-        results += 1;
-      } else if (filter === "") {
-        node.style.display = "block";
-      } else {
-        node.style.display = "none";
+
+    // Exit search via Escape key
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && search) {
+        search = false;
+        searchDisplay();
+        //alert("search has changed to: " + search);
       }
     });
-  });
+
+    // ENTER search when textarea gains focus
+    textarea.addEventListener("focus", () => {
+      if (!search) {
+        search = true;
+        searchDisplay();
+      }
+    });
+
+    // Filter buttons while typing
+    textarea.addEventListener("input", function () {
+      const filter = this.value.toLowerCase();
+      let results = 0;
+      gamelist.forEach((node) => {
+        const gameName = node.textContent.toLowerCase();
+        if (gameName.includes(filter)) {
+          node.style.display = "block";
+          results += 1;
+        } else if (filter === "") {
+          node.style.display = "block";
+        } else {
+          node.style.display = "none";
+        }
+      });
+      indielist.forEach((node) => {
+        const gameName = node.textContent.toLowerCase();
+        if (gameName.includes(filter)) {
+          node.style.display = "block";
+          results += 1;
+        } else if (filter === "") {
+          node.style.display = "block";
+        } else {
+          node.style.display = "none";
+        }
+      });
+    });
+  };
 });
 
 function crossPlatURLGrabber() {
