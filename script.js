@@ -1820,14 +1820,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function crossPlatURLGrabber() {
-    const parentUrl = encodeURIComponent(window.location.href);
     const frame = document.getElementById('player');
-    if (!frame || !currentUrl) {
-        console.error("Missing player frame or current URL");
+    const currentUrl = window.location.href;
+    if (!currentUrl) {
+        console.error("Missing current URL");
         return;
     }
+    if (!frame) {
+        console.error("Missing player current URL");
+        return;
+    }
+    const parentUrl = encodeURIComponent(currentUrl);
     frame.src = `https://scramjet-o9kx.onrender.com/#?host=${parentUrl}`;
-    console.log (parentUrl)
+    console.log("parentUrl:", parentUrl);
+    console.log("frame src:", frame.src);
 }
 
 crossPlatURLGrabber();
+document.addEventListener("DOMContentLoaded", () => {
+crossPlatURLGrabber();
+});
