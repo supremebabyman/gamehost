@@ -1820,6 +1820,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function crossPlatURLGrabber() {
+  let url = window.location.href
+  if (url === "https://gamehoststatic.onrender.com/indie-bin/AGAFABH.html") {
+    let finalUrl = "https://supreme-s-alt.github.io/CLSTE-12A3BC4EFG5"
+  }
     const frame = document.getElementById("player");
 
     if (!frame) {
@@ -1830,7 +1834,7 @@ function crossPlatURLGrabber() {
     frame.addEventListener("load", () => {
         const message = {
             type: "PARENT_URL",
-            url: window.location.href
+            url: finalUrl
         };
 
         console.log("Sending PARENT_URL:", message);
