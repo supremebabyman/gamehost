@@ -1825,12 +1825,12 @@ function crossPlatURLGrabber() {
   if (url === "https://gamehoststatic.onrender.com/indie-bin/AGAFABH.html") {
     let finalUrl = "https://supreme-s-alt.github.io/CLSTE-12A3BC4EFG5"
   }
-  frame.onload = () => {
-    frame.contentWindow.postMessage(
-      { type: 'PARENT_LINK', url: finalUrl},
-      'https://scramjet-o9kx.onrender.com/'
-    );
-  };
+  window.addEventListener('message', (event) => {
+     if (event.origin !== 'https://scramjet-o9kx.onrender.com') return;
+     if (event.data?.type === 'EMBED_READY') {
+       frame.contentWindow.postMessage({ type: 'PARENT_LINK', url: finalUrl }, 'https://scramjet-o9kx.onrender.com');
+     }
+   });
 };
 
 crossPlatURLGrabber();
