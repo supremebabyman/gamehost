@@ -261,7 +261,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const Home = document.getElementById("home");
   const Uplog = document.getElementById("uplog");
   const render = document.getElementById("render");
-  const remain = document.getElementById("remain")
+  const github = document.getElementById("github");
+  const CSB3000 = document.getElementById("3000");
+  const CSB50000 = document.getElementById("50000");
+  const LME = document.getElementById("LME");
+
   // Other variblaes
   // Front pages
   // *Crickets*
@@ -1533,8 +1537,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (Gamesug) {
     Gamesug.addEventListener("click", function () {
       const currentURL = window.location.href;
-      //window.alert(currentURL)
-      if (toString(currentURL) === ("https://gamehoststatic.onrender.com" || "gamehoststatic.onrender.com" || "https://gamehoststatic.onrender.com/" || "gamehoststatic.onrender.com/" || "https://gamehoststatic.onrender.com/index.html" || "gamehoststatic.onrender.com/index.html")) {
+      if (currentURL == ("https://gamehoststatic.onrender.com" || "gamehoststatic.onrender.com")) {
           window.alert("Game suggestions cannot be submited on a static instance such as " + currentURL + " try using: gamehost-live.onrender.com"); 
       } else {
         window.location.href = "../html-bin/gamesug.html";
@@ -1556,13 +1559,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "https://gamehost-h3v4.onrender.com/";
     });
   }
-
-  if (remain) {
-      remain.addEventListener("click", function () {
-        window.location.href = "../games.html";
-      });
-    }
-  });
+});
 
 //fullscreen function
 (function () {
@@ -1611,140 +1608,190 @@ document.addEventListener("DOMContentLoaded", () => {
 })();
 
 (function () {
-
   let body = document.body;
   let state = 0; //0 is index, 1 is media, 2 is indie
   let direction = "box";
-  const indie = document.getElementById("indie-box");
-  const media = document.getElementById("fnf-box");
-  const index = document.getElementById("index-box");
-  const leftSwitch = document.getElementById("left-switch");
-  const rightSwitch = document.getElementById("right-switch");
-  const pageHeader = document.getElementById("page-header");
-  const nav = document.getElementById("main-nav");
-  const home = document.getElementById("home");
-  const about = document.getElementById("about");
-  const credits = document.getElementById("credits");
-  const gamesug = document.getElementById("gamesug");
-  const uplog = document.getElementById("uplog");
-  const navButtons = [home, about, credits, gamesug, uplog];
-  if (leftSwitch && rightSwitch) {
-    function colorSwap() {
-      if (state === 0) {
-        // Games
-        body.style.backgroundColor = "#000000";
-        nav.style.backgroundColor = "#111";
-        navButtons.forEach((button) => {
-          button.style.backgroundColor = "#111";
-        });
-      } else if (state === 2) {
-        body.style.backgroundColor = "#0d001a";
-        nav.style.backgroundColor = "#1a0030";
-        navButtons.forEach((button) => {
-          button.style.backgroundColor = "#1a0030";
-        });
-      } else if (state === 1) {
-        // Indie
-        body.style.backgroundColor = "#01001a";
-        nav.style.backgroundColor = "#050030";
-        navButtons.forEach((button) => {
-          button.style.backgroundColor = "#050030";
-        });
-      }
+  let indie = document.getElementById("indie-box");
+  let console = document.getElementById("console-box");
+  let index = document.getElementById("index-box");
+  let leftSwitch = document.getElementById("left-switch");
+  let rightSwitch = document.getElementById("right-switch");
+  let pageHeader = document.getElementById("page-header");
+  let nav = document.getElementById("main-nav");
+  let home = document.getElementById("home");
+  let about = document.getElementById("about");
+  let credits = document.getElementById("credits");
+  let gamesug = document.getElementById("gamesug");
+  let uplog = document.getElementById("uplog");
+  let navButtons = [home, about, credits, gamesug, uplog];
+  /*
+    index.style.transform = "translateX(0%)";
+    alert("index's transform value is: " + index.style.transform);
+    if (index.style.transform === "translateX(0%)") {
+      alert("It worked");
+    } else {
+      alert("switch it to '==' maybe?");
     }
+  */
+  function colorSwap() {
+    if (state === 0) {
+      // Games
+      body.style.backgroundColor = "#000000";
+      nav.style.backgroundColor = "#111";
+      navButtons.forEach((button) => {
+        button.style.backgroundColor = "#111";
+      });
+    } else if (state === 2) {
+      /*
+      body.style.backgroundColor = "#0d001a";
+      nav.style.backgroundColor = "#1a0030";
+      navButtons.forEach((button) => {
+        button.style.backgroundColor = "#1a0030";
+      });
+      */
+    } else if (state === 1) {
+      // Indie
+      body.style.backgroundColor = "#01001a";
+      nav.style.backgroundColor = "#050030";
+      navButtons.forEach((button) => {
+        button.style.backgroundColor = "#050030";
+      });
+    }
+  }
 
-    function pageSwitch() {
-      if (direction === "L") {
-        if (state === 2) { // 1 is indie
-          index.style.visibility = "hidden";
-          media.style.visibility = "visible";
-          index.style.transform = "translateX(-200%)";
-          indie.style.transform = "translateX(200%)";
-          media.style.transform = "translateX(0)";
-        } else if (state === 0) { // 0 is flash
-          index.style.visibility = "visible";
-          indie.style.visibility = "hidden";
-          index.style.transform = "translateX(0)";
-          indie.style.transform = "translateX(-200%)";
-          media.style.transform = "translateX(200%)";
-        } else if (state === 1) { // 2 is fnf
-          media.style.visibility = "hidden";
-          indie.style.visibility = "visible";
-          index.style.transform = "translateX(200%)";
-          indie.style.transform = "translateX(0%)";
-          media.style.transform = "translateX(-200%)";
-        }
-      } else if (direction === "R") {
+  function pageSwitch() {
+    if (direction === "R") {
+      /*
         if (state === 1) {
           index.style.visibility = "hidden";
+          media.style.visibility = "visible";
+          index.style.transform = "translateX(200%)";
+          indie.style.transform = "translateX(-200%)";
+          media.style.transform = "translateX(0)";
+        } else if (state === 0) {
+          index.style.visibility = "visible";
+          indie.style.visibility = "hidden";
+          index.style.transform = "translateX(0)";
+          indie.style.transform = "translateX(200%)";
+          media.style.transform = "translateX(-200%)";
+        } else if (state === 2) {
+          media.style.visibility = "hidden";
           indie.style.visibility = "visible";
           index.style.transform = "translateX(200%)";
           indie.style.transform = "translateX(0%)";
           media.style.transform = "translateX(-200%)";
-        } else if (state === 0) {
-          index.style.visibility = "visible";
-          media.style.visibility = "hidden";
-          index.style.transform = "translateX(0)";
-          indie.style.transform = "translateX(-200%)";
-          media.style.transform = "translateX(200%)";
-        } else if (state === 2) {
-          indie.style.visibility = "hidden";
-          media.style.visibility = "visible";
-          index.style.transform = "translateX(-200%)";
-          indie.style.transform = "translateX(200%)";
-          media.style.transform = "translateX(0%)";
         }
-      }
-      //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
-    }
-
-    function toggleState() {
-      
-      if (direction === "L") {
-        state = (state + 2) % 3;
-      } else if (direction === "R") {
-        // decrement with wrap-around
-        state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
-      }
-      /*
-      if (state === 0) {
-        state = 1;
-      } else {
-        state = 0;
-      }
       */
-    }
 
-    function switchContent() {
-      toggleState();
-      pageHeader.textContent = state === 0 ? "HTML5 Games" : state === 1 ? "Indie Games" : "FNF Mods";
-      colorSwap();
-      pageSwitch();
-    }
+      if (state === 1) {
+        if (indie.style.transform === "translateX(200%)") {
+          indie.style.transform = "translateX(-200%)";
+          void indie.offsetHeight;
+        }
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(0%)";
+        index.style.visibility = "hidden";
+      } else {
+        if (index.style.transform === "translateX(200%)") {
+          index.style.transform = "translateX(-200%)";
+          void index.offsetHeight;
+        }
+        index.style.visibility = "visible";
+        index.style.transform = "translateX(0%)";
+        indie.style.transform = "translateX(-200%)";
+        indie.style.visibility = "hidden";
+      }
+    } else if (direction === "L") {
+      /*
+      if (state === 1) {
+        index.style.visibility = "hidden";
+        media.style.visibility = "visible";
+        index.style.transform = "translateX(-200%)";
+        indie.style.transform = "translateX(200%)";
+        media.style.transform = "translateX(0)";
+      } else if (state === 0) {
+        index.style.visibility = "visible";
+        indie.style.visibility = "hidden";
+        index.style.transform = "translateX(0)";
+        indie.style.transform = "translateX(-200%)";
+        media.style.transform = "translateX(200%)";
+      } else if (state === 2) {
+        media.style.visibility = "hidden";
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(0%)";
+        media.style.transform = "translateX(-200%)";
+      }*/
 
-    function disableTimer() {
-      setTimeout(() => {
-        leftSwitch.style.pointerEvents = "auto";
-        rightSwitch.style.pointerEvents = "auto";
-      }, 650);
+      if (state === 1) {
+        if (indie.style.transform === "translateX(-200%)") {
+          indie.style.transform = "translateX(200%)";
+          void indie.offsetHeight;
+        }
+        indie.style.visibility = "visible";
+        index.style.transform = "translateX(200%)";
+        indie.style.transform = "translateX(0%)";
+        index.style.visibility = "hidden";
+      } else {
+        if (index.style.transform === "translateX(-200%)") {
+          index.style.transform = "translateX(200%)";
+          void index.offsetHeight;
+        }
+        index.style.visibility = "visible";
+        index.style.transform = "translateX(0%)";
+        indie.style.transform = "translateX(200%)";
+        indie.style.visibility = "hidden";
+      }
     }
- //maxBtn.addEventListener("click", (event) => {});
-  
-    leftSwitch.addEventListener("click", () => {
-      direction = "L";
-      switchContent();
-      leftSwitch.style.pointerEvents = "none";
-      rightSwitch.style.pointerEvents = "none";
-      disableTimer();
-    });
-    rightSwitch.addEventListener("click", () => {
-      direction = "R";
-      switchContent();
-      leftSwitch.style.pointerEvents = "none";
-      rightSwitch.style.pointerEvents = "none";
-      disableTimer();
-    });
+    //alert("State is now: " + state + " and Direction is: " + direction); //use this for debugging
   }
+
+  function toggleState() {
+    /*
+    if (direction === "R") {
+      state = (state + 2) % 3;
+    } else if (direction === "L") {
+      // decrement with wrap-around
+      state = (state + 1) % 3; // equivalent to (state - 1 + 3) % 3
+    }
+    */
+    if (state === 0) {
+      state = 1;
+    } else {
+      state = 0;
+    }
+  }
+
+  function switchContent() {
+    toggleState();
+    //pageHeader.textContent = state === 0 ? "Flash" : state === 1 ? "Media" : "console";
+    pageHeader.textContent = state === 0 ? "Flash" : "Indie";
+    colorSwap();
+    pageSwitch();
+  }
+
+  function disableTimer() {
+    setTimeout(() => {
+      leftSwitch.style.pointerEvents = "auto";
+      rightSwitch.style.pointerEvents = "auto";
+    }, 650);
+  }
+
+  leftSwitch.addEventListener("click", () => {
+    direction = "L";
+    switchContent();
+    leftSwitch.style.pointerEvents = "none";
+    rightSwitch.style.pointerEvents = "none";
+    disableTimer();
+  });
+  rightSwitch.addEventListener("click", () => {
+    direction = "R";
+    switchContent();
+    leftSwitch.style.pointerEvents = "none";
+    rightSwitch.style.pointerEvents = "none";
+    disableTimer();
+  });
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -1753,95 +1800,78 @@ document.addEventListener("DOMContentLoaded", () => {
   const consolelist = null;
 
   let search = false;
+  let leftSwitch = document.getElementById("left-switch");
+  let rightSwitch = document.getElementById("right-switch");
 
   const searchExit = document.getElementById("search-exit");
   const textarea = document.getElementById("search-space");
 
-  if (searchExit && textarea && gamelist && indielist) {
-    function searchDisplay() {
-      if (search) {
-        searchExit.display = "inherit";
+  const indieBox = document.getElementById("indie-box");
+  const consoleBox = null;
+  const indexBox = document.getElementById("index-box");
+
+  function searchDisplay() {
+    if (search) {
+      searchExit.display = "inherit";
+    } else {
+      searchExit.display = "none";
+      gamelist.forEach((btn) => (btn.style.display = "initial"));
+      indielist.forEach((btn) => (btn.style.display = "initial"));
+      consolelist.forEach((btn) => (btn.style.display = "initial"));
+    }
+  }
+
+  // Exit search via button
+  searchExit.addEventListener("click", () => {
+    if (search) {
+      search = false;
+      searchDisplay();
+      alert("search has changed to: " + search);
+    }
+  });
+
+  // Exit search via Escape key
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && search) {
+      search = false;
+      searchDisplay();
+      alert("search has changed to: " + search);
+    }
+  });
+
+  // ENTER search when textarea gains focus
+  textarea.addEventListener("focus", () => {
+    if (!search) {
+      search = true;
+      searchDisplay();
+    }
+  });
+
+  // Filter buttons while typing
+  textarea.addEventListener("input", function () {
+    const filter = this.value.toLowerCase();
+    let results = 0;
+    gamelist.forEach((node) => {
+      const gameName = node.textContent.toLowerCase();
+      if (gameName.includes(filter)) {
+        node.style.display = "block";
+        results += 1;
+      } else if (filter === "") {
+        node.style.display = "block";
       } else {
-        searchExit.display = "none";
-        gamelist.forEach((btn) => (btn.style.display = "initial"));
-        indielist.forEach((btn) => (btn.style.display = "initial"));
-      }
-    }
-
-    // Exit search via button
-    searchExit.addEventListener("click", () => {
-      if (search) {
-        search = false;
-        searchDisplay();
-        //alert("search has changed to: " + search);
+        node.style.display = "none";
       }
     });
-
-    // Exit search via Escape key
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && search) {
-        search = false;
-        searchDisplay();
-        //alert("search has changed to: " + search);
+    indielist.forEach((node) => {
+      const gameName = node.textContent.toLowerCase();
+      if (gameName.includes(filter)) {
+        node.style.display = "block";
+        results += 1;
+      } else if (filter === "") {
+        node.style.display = "block";
+      } else {
+        node.style.display = "none";
       }
     });
-
-    // ENTER search when textarea gains focus
-    textarea.addEventListener("focus", () => {
-      if (!search) {
-        search = true;
-        searchDisplay();
-      }
-    });
-
-    // Filter buttons while typing
-    textarea.addEventListener("input", function () {
-      const filter = this.value.toLowerCase();
-      let results = 0;
-      gamelist.forEach((node) => {
-        const gameName = node.textContent.toLowerCase();
-        if (gameName.includes(filter)) {
-          node.style.display = "block";
-          results += 1;
-        } else if (filter === "") {
-          node.style.display = "block";
-        } else {
-          node.style.display = "none";
-        }
-      });
-      indielist.forEach((node) => {
-        const gameName = node.textContent.toLowerCase();
-        if (gameName.includes(filter)) {
-          node.style.display = "block";
-          results += 1;
-        } else if (filter === "") {
-          node.style.display = "block";
-        } else {
-          node.style.display = "none";
-        }
-      });
-    });
-  };
-});
-
-function crossPlatURLGrabber() {
-    const frame = document.getElementById('player');
-    const currentUrl = window.location.href;
-    if (!currentUrl) {
-        console.error("Missing current URL");
-        return;
-    }
-    if (!frame) {
-        console.error("Missing player current URL");
-        return;
-    }
-    const parentUrl = encodeURIComponent(currentUrl);
-    frame.src = `https://scramjet-o9kx.onrender.com/#?host=${parentUrl}`;
-    console.log("parentUrl:", parentUrl);
-    console.log("frame src:", frame.src);
-}
-
-crossPlatURLGrabber();
-document.addEventListener("DOMContentLoaded", () => {
-crossPlatURLGrabber();
+  });
 });

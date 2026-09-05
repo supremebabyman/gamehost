@@ -1,111 +1,725 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorry...</title>
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Game Selection</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" alt="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/style.css" alt="/style.css"/>
   </head>
   <body>
+    
+    <!-- Navigation Bar -->
     <nav id="main-nav">
       <div class="dropdown">
-        <button class="nav-toggle"><link src="../images/navbutton.png"></link></button>
+        <button class="nav-toggle"><link src="/dropdown.png"></link></button>
       </div>
       <h1 id="home">Gamehost</h1>
       <div class="nav-links">
         <a id="about">About</a>
         <a id="credits">Credits</a>
         <a id="uplog">Updates</a>
-        <a>Suggestions</a>
+        <a id="gamesug">Suggestions</a>
       </div>
     </nav>
-     <!-- Nav toggle button -->
-    <br>
-    <div style="text-align: center;">
-      <h3>Hi, this is Supremebabyman</h3>
-      <h3>If you are seeing this then something is terribly wrong and the website has been shutdown for the time being; However, we have found a way to fix it and possibly get some even better games! This will take some time though so please be patient</h3>
-      <h3>If you want to vote for which games will be restored vote on the poll below. only 35 of the top voted games will be restored.</h3>
-      <a href="https://forms.gle/1hzmHcKcSCmgWhdZ7" style="color:#ffffff;">The Poll</a>
-      <p>The following games have already been restored and will not be in the poll:</p>
-      <ul style="list-style-position: inside; padding: 0;">
-        <p>Trombone Champion</p>
-        <p>Look Outside</p>
-        <p>Eggy car</p>
-        <p>Fih (you have to find this one)</p>
-        <p>Iron Lung</p>
-        <p>Stardew Valley</p>
-        <p>Celeste</p>
-        <p>FNF Hit Single</p>
-        <p>FNF VS Pico: Retake</p>
-        <p>HAYAI</p>
-        <p>Balatro and Balatro Handy Mod</p>
-        <p>Potion Craft</p>
-        <p>Slime Rancher</p>
-        <p>A Game about feeding a black hole</p>
-      </ul>
+    <form>
+        <textarea id="search-space" resize="none" placeholder="Search"></textarea>
+    </form>
+    <img id="search-exit" src="/images/searchExit.png">
+    <br id="ThisMfRightHere"></br>
+    <div class="header-row">
+      <img id="left-switch" src="/images/navbutton.png" alt="Left Switch"></img>
+      <h2 id="page-header">Flash</h2>
+      <img id="right-switch" src="/images/navbutton.png" alt="Right Switch"></img>
     </div>
-    <br>
-    <hr>
-    <br>
-    <h1>Progress: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 30%</h1>
-    <img src="../images/fish.webp" id=kunami style="top: 10%; right: 34%; align-items: center; max-height: 75%; width: auto; visibility: hidden; position: fixed; border-radius: 0px;"></img>
-    <img src="../images/construct.png" style="max-height: 75%"></img>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p style="size: 25%; color:rgb(53, 53, 53)">This is all I got, press ↑ ↑ ↓ ↓ ← → ← → B A start</p>
-    <script>
-    let kunami = document.getElementById("kunami");
-    const arroay = ["up", "up", "down", "down", "left", "right", "left", "right", "b", "a", "enter"];
-    var arrow = [];
-    up = window.get
-    window.addEventListener('keydown', (event) => {
-      const keyMap = {
-        ArrowUp: "up",
-        ArrowDown: "down",
-        ArrowLeft: "left",
-        ArrowRight: "right",
-        a: "a",
-        b: "b",
-        Enter: "enter",
-      };
+    <hr></hr>
+    <div id="index-box">
+      <div id="DoNotRemove">
+        <h1>Disclamer!</h1> 
+        <p>In order to save progress on flash games you will need to download your game, just right click on the game and click open save manager, then press download. In order to open the save, You will need to replace every file in the Save Manager</p>
+        <!--
+        <h2>Alternate links</h2>
+        <h4>Main Alternate Links</h4>
+        <div align-content="center" align-items="center" align-self="center">
+          <a id="render">Render</a>
+          <a id="static">Static</a>
+          <h4>local ports (may be down)</h4>
+          <a id="g3000">Local</a>
+          <h4>gamehost beta version</h4>
+          <a id="LME">Learn math easy</a>
+        </div>-->
+      </div>
+      <!-- Main Content -->
 
-      const key = keyMap[event.key] || keyMap[event.key.toLowerCase()];
-      if (!key) return;
+      <div class="game-grid">
+        <button id="achievement" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/achievement-unlocked.png"></div>
+          <span>Achievement Unlocked</span>
+        </button>
+        
+        <button id="achievement2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/achievement-unlocked-2.png" alt="Achievement Unlocked 2"></div>
+          <span>Achievement Unlocked 2</span>
+        </button>
+        
+        <button id="aow" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/age-of-war-1.png" alt="Age Of War"></div>
+          <span>Age Of War</span>
+        </button>
+        
+        <button id="aow2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/age-of-war-2.png" alt="Age Of War 2"></div>
+          <span>Age Of War 2</span>
+        </button>
+        
+        <button id="arcane" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/arcane-weapon.png" alt="Arcane Weapon"></div>
+          <span>Arcane Weapon</span>
+        </button>
+        
+        <button id="bics" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/bad-ice-cream.png" alt="Bad Ice-Cream Series"></div>
+          <span>Bad Ice-Cream Series</span>
+        </button>
+        
+        <button id="btds" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/bloons-td-series.png" alt="Bloons TD Series"></div>
+          <span>Bloons TD Series</span>
+        </button>
+        
+        <button id="bob" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/bob-the-robber.png" alt="Bob the robber"></div>
+          <span>Bob the robber</span>
+        </button>
+        
+        <button id="burrito" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/burrito-bison.png" alt="Burrito Bison (broken)"></div>
+          <span>Burrito Bison</span>
+        </button>
+        <!--
+        <button id="catm" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/cat-mario.png" alt="Cat Mario"></div>
+          <span>Cat Mario</span>
+        </button>
+        -->    
 
-      arrow.push(key);
-      // keep only the last N presses, where N = code length
-      arrow = arrow.slice(-arroay.length);
+        <button id="chibi" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/chibi-knight.png" alt="Chibi Knight"></div>
+          <span>Chibi Knight</span>
+        </button>
+<!--
+        <button id="cookie" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/cookie-clicker.png" alt="Cookie Clicker"></div>
+          <span>Cookie Clicker</span>
+        </button>
+-->
 
-      if (arrow.join(',') === arroay.join(',')) {
-        kunami.style.visibility = "visible";
-        new Audio('fish.mp3').play();
-        setTimeout(() => {
-          window.location.href = "../html-bin/fih.html";
-        }, 650);
-        arrow = [];
-      }
-      //HEY CHEATER: Looking around in here spoils the fun, just don't ruin it for others.
-    });
-    </script>
+        <button id="cross" class="game-btn">
+         <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/crossy-road.png" alt="Crossy Road"></div>
+         <span>Crossy Road</span>
+        </button>
+
+        <button id="doodle" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/doodle-jump.png" alt="Doodle Jump"></div>
+          <span>Doodle Jump</span>
+        </button>
+        
+        <button id="dls" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/duck-life-series.png" alt="Duck Life Series"></div>
+          <span>Duck Life Series</span>
+        </button>
+        
+        <button id="earn1" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/earn-to-die.png" alt="Earn to Die"></div>
+          <span>Earn to Die</span>
+        </button>
+        
+        <button id="earn2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/earn-to-die-2.png" alt="Earn to Die 2"></div>
+          <span>Earn to Die 2</span>
+        </button>
+
+        <button id="eggy" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/eggy-car.png" alt="Eggy Car"></div>
+          <span>Eggy Car</span>
+        </button>
+        
+        <button id="electric" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/electric-man-2.png" alt="Electric Man 2 (Bugged)"></div>
+          <span>Electric Man 2</span>
+        </button>
+        
+        <button id="balls" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/factory-balls.png" alt="Factory Balls"></div>
+          <span>Factory Balls</span>
+        </button>
+        
+        <button id="balls2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/factory-balls-2.png" alt="Factory Balls 2"></div>
+          <span>Factory Balls 3</span>
+        </button>
+        
+        <button id="fancy" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/fancy-pants-series.png" alt="Fancy Pants Series"></div>
+          <span>Fancy Pants Series</span>
+        </button>
+        
+        <button id="firewater" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/fireboy-and-watergirl.png" alt="Fireboy and Watergirl"></div>
+          <span>Fireboy and Watergirl Series</span>
+        </button>
+        
+        <button id="mario" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/flash-mario.png" alt="Flash Mario"></div>
+          <span>Flash Mario</span>
+        </button>
+        
+        <button id="sonic" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/flash-sonic.png" alt="Flash Sonic"></div>
+          <span>Flash Sonic</span>
+        </button>
+
+        <button id="fgorilla" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/flying-gorilla.png" alt="Flying Gorilla"></div>
+          <span>Flying Gorilla</span>
+        </button>
+
+        <button id="scratch" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/getting-over-it-scratch.png" alt="Getting Over it (Scratch Ver)"></div>
+          <span>Getting Over it Scratch</span>
+        </button>
+        
+        <button id="gknight" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/gun-knight.png" alt="Gun Knight"></div>
+          <span>Gun Knight</span>
+        </button>
+        
+        <button id="happy" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/happy-wheels.png" alt="Happy Wheels"></div>
+          <span>Happy Wheels</span>
+        </button>
+        
+        <button id="hss" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/henry-stickmin-series.png" alt="Henry Stickmin Series"></div>
+          <span>Henry Stickmin Series</span>
+        </button>
+
+        <button id="idleb" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/idle-breakout.png" alt="Idle Breakout"></div>
+          <span>Idle Breakout</span>
+        </button>
+        
+        <button id="jacksmith" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/jacksmith.png" alt="Jacksmith"></div>
+          <span>Jacksmith</span>
+        </button>
+        
+        <button id="joyride" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/jetpack-joyride.png" alt="Jetpack Joyride"></div>
+          <span>Jetpack Joyride</span>
+        </button>
+        
+        <button id="knight" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/knightmare-tower.png" alt="Knightmare Tower"></div>
+          <span>Knightmare Tower</span>
+        </button>
+        
+        <button id="LTFS" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/learn-to-fly-series.png" alt="Learn To Fly Series"></div>
+          <span>Learn To Fly Series</span>
+        </button>
+        <!--
+        <button id="mad" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/mad-day.png" alt="Mad Day"></div>
+          <span>Mad Day</span>
+        </button>
+        -->
+        <button id="key1" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/me-and-the-key.png" alt="Me and the Key 1"></div>
+          <span>Me and the Key 1</span>
+        </button>
+        
+
+        <button id="key2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/me-and-the-key-2.png" alt="Me and the Key 2"></div>
+          <span>Me and the Key 2</span>
+        </button>
+        
+        <button id="mike" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/mike-shadow-i-paid-for-it.png" alt="Mike Shadow: I Paid For It!"></div>
+          <span>Mike Shadow: I Paid For It!</span>
+        </button>
+        
+        <button id="moto" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/moto-x3m.png" alt="Moto xM3"></div>
+          <span>Moto xM3</span>
+        </button>
+        
+        <button id="moto2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/moto-x3m-2.png" alt="Moto xM3 2"></div>
+          <span>Moto xM3 2</span>
+        </button>
+        
+        <button id="MVSL" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/new-super-mario-bros-mario-versus-luigi.png" alt="NSMB Mario VS Luigi Online"></div>
+          <span>NSMB Mario VS Luigi Online</span>
+        </button>
+        
+        <button id="ngon" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/n-gon-.png" alt="N-Gon"></div>
+          <span>N-Gon</span>
+        </button>
+        
+        <button id="osu" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/osu.png" alt="Osu!"></div>
+          <span>Osu!</span>
+        </button>
+        
+        <button id="osum" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/osu!mania.png" alt="Osu!Mania"></div>
+          <span>Osu!Mania</span>
+        </button>
+        
+        <button id="pls" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/papa-series.png" alt="Papa Louie's Series"></div>
+          <span>Papa Louie's Series</span>
+        </button>
+        
+        <button id="rss" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/riddle-school-series-.png" alt="Riddle School Series"></div>
+          <span>Riddle School Series</span>
+        </button>
+        
+        <button id="rogue1" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/rogue-soul.png" alt="Rogue Soul"></div>
+          <span>Rogue Soul</span>
+        </button>
+        
+        <button id="rogue2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/rogue-soul-2.png" alt="Rogue Soul 2"></div>
+          <span>Rogue Soul 2</span>
+        </button>
+        
+        <button id="run" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/run.png" alt="Run Series"></div>
+          <span>Run Series</span>
+        </button>
+        <!--
+        <button id="shell" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/shell-shock.png" alt="Shell Shock"></div>
+          <span>Shell Shock</span>
+        </button>
+        -->
+        <button id="kitty" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/strikeforce-kitty.png" alt="Strikeforce Kitty Series"></div>
+          <span>Strikeforce Kitty Series</span>
+        </button>
+        
+        <button id="sm63" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/super-mario-63.png" alt="Super Mario 63"></div>
+          <span>Super Mario 63</span>
+        </button>
+        
+        <button id="sm64" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/super-mario-64.png" alt="Super Mario 64"></div>
+          <span>Super Mario 64</span>
+        </button>
+        
+        <button id="smario" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/super-mario-bros.png" alt="Super Mario Bros."></div>
+          <span>Super Mario Bros.</span>
+        </button>
+        
+        <button id="meat" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/super-meat-boy.png" alt="Super Meat Boy"></div>
+          <span>Super Meat Boy</span>
+        </button>
+        
+        <button id="smash" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/super-smash-flash.png" alt="Super Smash Flash"></div>
+          <span>Super Smash Flash</span>
+        </button>
+        <!---
+        <button id="smash2" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/super-smash-flash-2.png" alt="Super Smash Flash 2"></div>
+          <span>Super Smash Flash 2</span>
+        </button>
+        -->
+        <button id="souls" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/swords-and-souls.png" alt="Swords and Souls"></div>
+          <span>Swords and Souls</span>
+        </button>
+        
+        <button id="imposs" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/the-impossible-quiz.png" alt="The Impossible Quiz"></div>
+          <span>The Impossible Quiz</span>
+        </button>
+
+        <button id="nogame" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/no-game.png" alt="There Is No Game"></div>
+          <span>There Is No Game</span>
+        </button>
+        
+        <button id="level" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/this-is-the-only-level.png" alt="This is the only level"></div>
+          <span>This is the only level</span>
+        </button>
+        
+        <button id="toss" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/toss-the-turtle.png" alt="Toss the turtle"></div>
+          <span>Toss the turtle</span>
+        </button>
+        
+        <button id="unfair" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/unfair-mario.png" alt="Unfair Mario"></div>
+          <span>Unfair Mario</span>
+        </button>
+        
+        <button id="g2048" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/2048.png" alt="2048"></div>
+          <span>2048</span>
+        </button>
+        
+        <button id="second60" class="game-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/60-seconds-burger-run.png" alt="60 Seconds BUrger Run"></div>
+          <span>60 Seconds Burger Run</span>
+        </button>        
+
+      </div> <!-- End of game-grid -->
+    </div> <!-- End of index-box -->
+    <div id="indie-box">
+      <h1>Notice</h1>
+      <a>These games all work, but some are insanely huge and take a lot of time to load. They could also could freeze your computer while loading. Be careful!</a>
+      <br></br>
+      <a>All of these games are subject to removal by their respective developers at any time, you have been warned!</a>
+      <br></br>
+      <div class="game-grid">
+        <button id="adofai" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/adofai.png" alt="A Dance of Fire and Ice"></div>
+          <span>A Dance of Fire and Ice</span>
+        </button>
+
+        <button id="neon" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/advent-neon.png" alt="Advent Neon"></div>
+          <span>Advent Neon</span>
+        </button>
+
+        <button id="ablast" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/anton-blast.png" alt="Anton Blast"></div>
+          <span>Anton Blast Demo</span>
+        </button>
+
+        <button id="apple" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/andy's-apple-farm.png" alt="Andy's Apple Farm"></div>
+          <span>Andy's Apple Farm</span>
+        </button>
+
+        <button id="amanda" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/amanda-the-adventurer.png" alt="Amanda the Adventurer"></div>
+          <span>Amanda the Adventurer</span>
+        </button>
+
+        <button id="balatro" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/balatro.png" alt="Balatro"></div>
+          <span>Balatro</span>
+        </button>
+
+        <button id="balatrohandy" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/balatro-handy-mod.png" alt="Balatro Handy Mod"></div>
+          <span>Balatro Handy Mod</span>
+        </button>
+
+        <button id="baldi3" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/-3.png" alt="Baldi's Basics -3 Mod"></div>
+          <span>Baldi's Basics -3 Mod</span>
+        </button>
+
+        <button id="baldic" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/baldi's-basics-classic-remastered.png" alt="Baldi's Basics Classic Remastered"></div>
+          <span>Baldi's Basics Classic Remastered</span>
+        </button>
+
+        <button id="baldiplus" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/baldi's-basics-plus.png" alt="Baldi's Basics Plus"></div>
+          <span>Baldi's Basics Plus</span>
+        </button>
+
+        <button id="bendy" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/bendy-and-the-ink-machine.png" alt="Bendy and the Ink Machine"></div>
+          <span>Bendy and the Ink Machine</span>
+        </button>
+
+        <button id="block" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/block-blast.png" alt="Block Blast"></div>
+          <span>Block Blast</span>
+        </button>
+
+        <button id="money" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/bloodmoney.png" alt="BLOODMONEY!"></div>
+          <span>BLOODMONEY!</span>
+        </button>
+
+        <button id="roulette" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/buckshot-roulette.png" alt="Buckshot Roulette"></div>
+          <span>Buckshot Roulette</span>
+        </button>
+
+        <button id="celeste" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/celeste.png" alt="Celeste"></div>
+          <span>Celeste</span>
+        </button>
+        <!--
+        <button id="class09" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/class-of-09.png" alt="Class of 09"></div>
+          <span>Class of 09</span>
+        </button>
+        -->
+
+        <button id="champion" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/champion-island.png" alt="Champion Island"></div>
+          <span>Champion Island</span>
+        </button>
+
+        <button id="cuphead" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/cuphead.png" alt="Cuphead"></div>
+          <span>Cuphead</span>
+        </button>
+
+        <button id="dsword" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/deepest-sword.png" alt="Deepest Sword"></div>
+          <span>Deepest Sword</span>
+        </button>
+
+        <button id="deltarune" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/DELTARUNE.png" alt="Deltarune"></div>
+          <span>Deltarune</span>
+        </button>
+        <button id="deltatraveler" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/deltatraveler.png" alt="Deltatraveler"></div>
+          <span>Deltatraveler</span>
+        </button>
+        
+        <button id="endo" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/endoparasitic.png" alt="Endoparasitic"></div>
+          <span>Endoparasitic</span>
+        </button>
+
+        <button id="endo2" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/endoparasitic-2.png" alt="Endoparasitic 2"></div>
+          <span>Endoparasitic 2</span>
+        </button>
+
+        <button id="fathom" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/fears-to-fathom-home-alone.png" alt="Fears to Fathom"></div>
+          <span>Fears to Fathom: Home Alone</span>
+        </button>
+        <button id="fnae" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/five-nights-at-epstein.png" alt="Five Nights at Epstein's"></div>
+          <span>Five Nights at Epstein's</span>
+        </button>
+
+        <button id="FNAF" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/five-nights-at-freddy's.png" alt="FNAF Series"></div>
+          <span>FNAF Series</span>
+        </button>
+
+        <button id="fnf" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/friday-night-funkin.png" alt="Friday Night Funkin'"></div>
+          <span>Friday Night Funkin'</span>
+        </button>
+        
+        <button id="fnfmods" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/friday-night-funkin-mods.gif" alt="Friday Night Funkin Mods"></div>
+          <span>Friday Night Funkin' Mods</span>
+        </button>
+
+        <button id="gameinside" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/game-inside.png" alt="Game Inside a Game"></div>
+          <span>Game Inside a Game</span>
+        </button>
+
+        <button id="GOI" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/getting-over-it.png" alt="Getting over it"></div>
+          <span>Getting over it</span>
+        </button>
+
+        <button id="helltaker" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/helltaker.png" alt="Helltaker"></div>
+          <span>Helltaker</span>
+        </button>
+
+        <button id="hollow" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/hollow-knight.png" alt="Hollow Knight"></div>
+          <span>Hollow Knight</span>
+        </button>
+
+        <button id="silksong" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/hollow-knight-silksong.png" alt="Hollow Knight Silksong"></div>
+          <span>Hollow Knight Silksong</span>
+        </button>
+
+        <button id="jsab" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/jsab.png" alt="Just Shapes and Beats"></div>
+          <span>Just Shapes and Beats</span>
+        </button>
+
+        <button id="karlson" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/karlson.png" alt="Karlson"></div>
+          <span>Karlson</span>
+        </button>
+
+        <button id="kindergarten" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/kindergarten.png" alt="Kindergarden Series"></div>
+          <span>Kindergarten Series</span>
+        </button>
+
+        <button id="omori" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/omori.png" alt="OMORI"></div>
+          <span>OMORI</span>
+        </button>
+
+        <button id="pizza" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/pizza-tower.png" alt="Pizza Tower"></div>
+          <span>Pizza Tower</span>
+        </button>
+
+        <button id="raft" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/raft.png" alt="Raft (alpha)"></div>
+          <span>Raft (alpha)</span>
+        </button>
+
+        <button id="repo" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/repo.png" alt="R.E.P.O"></div>
+          <span>R.E.P.O</span>
+        </button>
+
+        <button id="runaway" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/schoolboy-runaway.png" alt="Schoolboy Runaway"></div>
+          <span>Schoolboy Runaway</span>
+        </button>
+
+        <button id="slender" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/slender-the-eight-pages.png" alt="Slender the Eight Pages"></div>
+          <span>Slender the Eight Pages</span>
+        </button>
+
+        <button id="slime" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/slime-rancher.png" alt="Slime Rancher 2.8"></div>
+          <span>Slime Rancher 2.8</span>
+        </button>
+
+        <button id="sonic-exe" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/sonic-exe.png" alt="Sonic.EXE"></div>
+          <span>Sonic.EXE</span>
+        </button>
+
+        <button id="SWI" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/stick-with-it.png" alt="Stick With It"></div>
+          <span>Stick With It</span>
+        </button>
+
+        <button id="tattletail" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/tattletail.png" alt="Tattletail"></div>
+          <span>Tattletail</span>
+        </button>
+
+        <button id="terraria" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/terraria.png" alt="Terraria"></div>
+          <span>Terraria</span>
+        </button>
+
+        <button id="TNMN" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/thats-not-my-neighbor.png" alt="That's not my neighbor"></div>
+          <span>That's not my neighbor</span>
+        </button>
+
+        <button id="deadseat" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/the-deadseat.png" alt="The Deadseat"></div>
+          <span>The Deadseat</span>
+        </button>
+
+        <button id="TMITW" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/the-man-in-the-window.png" alt="The Man from the Window"></div>
+          <span>The Man from the Window</span>
+        </button>
+
+        <button id="ultraplink" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/ultrakill-prelude.png" alt="Ultrakill Prelude"></div>
+          <span>Ultrakill Prelude</span>
+        </button>
+
+        <button id="undertale" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/undertale.png" alt="Undertale"></div>
+          <span>Undertale</span>
+        </button>
+
+        <button id="undertalemods" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/Undertale-mods-.png" alt="Undertale Mods"></div>
+          <span>Undertale Mods</span>
+        </button>
+
+        <button id="undertaley" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/undertale-yellow.png" alt="Undertale Yellow"></div>
+          <span>Undertale: Yellow</span>
+        </button>
+
+        <button id="undertale10" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/undertale-10.png" alt="Undertale 10th Aniversary Battles"></div>
+          <span>Undertale 10th Anniversary Battles</span>
+        </button>
+
+        <button id="webfishing" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/webfishing.png" alt="Webfishing"></div>
+          <span>Webfishing</span>
+        </button>
+
+        <button id="wordle" class="indie-btn">
+          <div class="img-wrap"><img id="Thumbnails" src="https://raw.githubusercontent.com/supremebabyman/Gamehost-files/refs/heads/main/Thumbnails/wordle.png" alt="Wordle"></div>
+          <span>Wordle +</span>
+        </button>
+      </div>
+    </div> 
+    <!--
+    <div id="console-box">
+      <a><strong>*Disclamer*</strong> some of these sites are insecure and can lead to harmful webpages, they will be ranked by either a * or ** to show safety ranking, if they have either of these be causious when using any of these sites</a>
+      <a>
+      *Minimal insecurities, popups, redirects and no sexual content or unsafe links
+      **Alot of insecurities, popups, redirects, sexual content or unsafe links
+      </a>
+      <h2>TV shows and movies</h2>
+      <br></br>
+      <div class="game-grid">
+        <button class="media-btn" src="Lookmovie2.to">Lookmovie</button>
+        <button class="media-btn" src="rgshows.ru">RgShows**</button>
+        <button class="media-btn" src="Bflix.la">Bflix*</button>
+      </div>
+        <h2>Games</h2>
+      <div class="game-grid">
+        <button class="game-grid media-btn" src="rgshows.ru/games">RgShows**</button>
+      </div>
+        <h2>Anime</h2>
+      <div class="game-grid">
+        <button class="game-grid media-btn" src="animekai.to">AnimeKai*</button>
+        <button class="game-grid media-btn" src="aniwave.se">Aniwave*</button>
+        <button class="game-grid media-btn" src="hianime.to">HiAnime*</button>
+        <button class="game-grid media-btn" src="kaido.to">Kaido**</button>
+      </div>
+        <h2>Manga</h2>
+      <div class="game-grid">
+        <button class="game-grid media-btn" src="comix.to">Comix</button>
+      </div>
+        <h2>Other</h2>
+      <div class="game-grid">
+        <button class="game-grid media-btn" src="render.com">Render</button>
+        <button class="game-grid media-btn" src="codesandbox.com">CodeSandbox</button>
+        <button class="game-grid media-btn" src="github.com">Github</button>
+      </div>
+        <h3>contact me ig</h3>
+      <div class="game-grid">
+        <button class="game-grid media-btn" src="https://github.com/supremebabyman">Supremebabyman</button>
+      </div>
+    </div>
+    -->
     <script src="/script.js"></script>
   </body>
 </html>
